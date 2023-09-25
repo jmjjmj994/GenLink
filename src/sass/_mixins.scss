@@ -1,11 +1,11 @@
-@include flex-container($direction: row, $justify-content, $align-items) {
+@mixin flex-container($direction, $justify-content, $align-items) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify-content;
   align-items: $align-items;
 }
 
-@include flex-center-content {
+@mixin flex-center-content {
   display: flex;
   justify-content: center;
   align-items: center;

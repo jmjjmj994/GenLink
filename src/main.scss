@@ -2,6 +2,8 @@
 @import "./src/sass/mixins";
 @import "./src/sass/variables";
 @import "./src/sass/typography";
+@import "./src/sass/forms/forms.scss";
+
 
 *,*::before, *::after {
     padding: 0;
@@ -9,7 +11,55 @@
     box-sizing: border-box;
 }
 
-
-body {
-  font-family: "Hind", sans-serif;
+button{
+border: none;
+cursor: pointer;
 }
+
+input{
+  border: none;
+  cursor: pointer;
+}
+
+html, body{
+height: 100%;
+}
+
+
+
+
+body{
+font-family: "Hind", sans-serif;
+
+}
+
+.index-body{
+  display: flex;
+  flex-direction: column;
+  background-color: $primary--clr;
+  
+}
+
+.header{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+
+}
+
+
+
+.index-main{
+  @include flex-center-content;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.header, .footer{
+  height: 5rem;
+
+}
+
+

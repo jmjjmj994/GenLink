@@ -7,10 +7,59 @@ h2 {
   font-size: clamp(1.25rem, 2.2vw, 1.5rem);
   font-family: 'Montserrat', sans-serif; }
 
+#index-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem; }
+
+.email-box, .password-box, .login-btn {
+  height: 2.5rem;
+  width: 50%;
+  border-radius: 15px;
+  background-color: #219EBC; }
+
+.login-btn {
+  background-color: #FB8500; }
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+button {
+  border: none;
+  cursor: pointer; }
+
+input {
+  border: none;
+  cursor: pointer; }
+
+html, body {
+  height: 100%; }
+
 body {
   font-family: "Hind", sans-serif; }
+
+.index-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #3D3D3D; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.index-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: orange; }
+
+.header, .footer {
+  height: 5rem; }

@@ -1,0 +1,22 @@
+
+
+
+#index-form{
+    @include flex-center-content;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+
+
+.email-box, .password-box,.login-btn{
+    height: 2.5rem;
+    width: 50%;
+    border-radius: 15px;
+    background-color:$secondary--clr;
+}
+.login-btn{
+    background-color: $accent--clr;
+}
