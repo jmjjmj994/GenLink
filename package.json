@@ -1,0 +1,23 @@
+{
+  "name": "some-j-k",
+  "version": "1.0.0",
+  "description": "Javascript 2 - Course Assignment",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --w src/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmjjmj994/some-j-k.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmjjmj994/some-j-k/issues"
+  },
+  "homepage": "https://github.com/jmjjmj994/some-j-k#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
