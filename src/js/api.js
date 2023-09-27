@@ -39,6 +39,7 @@ const login = async (callback) => {
         body: JSON.stringify({
           email: "bukkenebruse@stud.noroff.no",
           password: "password123",
+          token: localStorage.getItem("token") // tokens
           //avatar
           //banner
         }),
@@ -61,7 +62,7 @@ login(getTokens);
 function getTokens(data) {
   const { name, email, accessToken } = data;
   bearerArray.push(accessToken);
-  localStorage.setItem("Bearers", JSON.stringify(bearerArray));
+  localStorage.setItem("token", JSON.stringify(bearerArray));
   console.log(data);
 }
 
