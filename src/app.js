@@ -7,7 +7,7 @@ class NewUser {
         // form input button
     }
    async registerUser (){
-    try {let res = await fetch(BASE_URL+NEW_USER_URL,{
+    try {const res = await fetch(BASE_URL+NEW_USER_URL,{
         method:"POST",
         body: JSON.stringify({
             name: "opTestb",
@@ -35,7 +35,7 @@ constructor(){
 }
 
 async login(){
-        try {let res = await fetch(BASE_URL+LOGIN_URL,{
+        try {const res = await fetch(BASE_URL+LOGIN_URL,{
             method:"POST",
             body: JSON.stringify({
                 email: "opTestb@stud.noroff.no",
