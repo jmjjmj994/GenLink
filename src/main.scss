@@ -28,27 +28,56 @@ body {
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: 'Roboto', sans-serif;
+ 
 }
 
 .index-body {
   display: flex;
   flex-direction: column;
-  background-color: $primary--clr;
+  
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black
 }
 
 .index-main {
   @include flex-center-content;
   flex-direction: column;
   flex-grow: 1;
-  background-color: orange;
+  padding: 10px;
+  background: $primary--bg;
+  position: relative;
+
+  .index-main__title {
+background-color: orange;
+
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+@media screen and (min-width:320px) and (max-width:375px) {
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  padding-inline: 5px;
+  padding-block: 5px;
 }
+    .index-main__title--header {
+    color: white;
+     
+    }
+  }
+
+
+
+}
+
+
 
 .header,
 .footer {
@@ -56,6 +85,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 .form-input, button{
   height: 2.5rem;
   width: 50%;
@@ -96,3 +126,5 @@ body {
   padding-left: 0.5rem;
 }
 
+=======
+>>>>>>> 44243dc35c7342cc0f15fd5db6f169f0e77dce50

@@ -1,25 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
 h1 {
-  font-size: clamp(1.375rem, 2.4vw, 2rem);
-  font-family: 'Montserrat', sans-serif; }
+  font-size: clamp(1.115rem, 2.4vw, 2rem);
+  font-family: 'Poppins', sans-serif; }
 
 h2 {
   font-size: clamp(1.25rem, 2.2vw, 1.5rem);
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Poppins', sans-serif; }
 
 #index-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  gap: 1rem; }
+  gap: 1rem;
+  padding-block: 10px;
+  width: 100%; }
 
-.email-box, .password-box, .login-btn {
+input {
+  padding-inline-start: 10px;
+  outline: none; }
+
+.email-input,
+.password-input,
+.login-btn {
   height: 2.5rem;
-  width: 50%;
+  width: 22rem;
   border-radius: 15px;
   background-color: #219EBC; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .email-input,
+    .password-input,
+    .login-btn {
+      height: 2.5rem;
+      width: 20rem; } }
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+    .email-input,
+    .password-input,
+    .login-btn {
+      height: 2.5rem;
+      width: 22rem; } }
+  @media screen and (min-width: 1000px) and (max-width: 100vw) {
+    .email-input,
+    .password-input,
+    .login-btn {
+      height: 2.5rem;
+      width: 23rem; } }
 
 .login-btn {
   background-color: #FB8500; }
@@ -44,17 +70,17 @@ body {
   height: 100%; }
 
 body {
-  font-family: "Hind", sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .index-body {
   display: flex;
-  flex-direction: column;
-  background-color: #3D3D3D; }
+  flex-direction: column; }
 
 .header {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: black; }
 
 .index-main {
   display: flex;
@@ -62,7 +88,24 @@ body {
   align-items: center;
   flex-direction: column;
   flex-grow: 1;
-  background-color: orange; }
+  padding: 10px;
+  background: linear-gradient(180deg, #212020 0%, #000 100%);
+  position: relative; }
+  .index-main .index-main__title {
+    background-color: orange;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media screen and (min-width: 320px) and (max-width: 375px) {
+      .index-main .index-main__title {
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        padding-inline: 5px;
+        padding-block: 5px; } }
+    .index-main .index-main__title .index-main__title--header {
+      color: white; }
 
 .header,
 .footer {
