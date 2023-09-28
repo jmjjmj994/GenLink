@@ -8,7 +8,7 @@ h2 {
   font-size: clamp(1.25rem, 2.2vw, 1.5rem);
   font-family: 'Poppins', sans-serif; }
 
-#index-form, #terms-form {
+#index-form, #signup-form {
   display: flex;
   justify-content: center;
   align-items: center;

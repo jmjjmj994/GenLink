@@ -1,14 +1,12 @@
 /**
  *
  * @param {HTMLElement} selector
- * @param {Attribute} arg1
- * @param {Attribute} arg2
  * @returns returns one HTMLElement with optional parameters.
  */
 
-function getSingleElements(selector, arg1, arg2) {
+export function getSingleElements(selector) {
   const element = document.querySelector(selector);
-  element.classList.add(arg1, arg2);
+
   return element;
 }
 
