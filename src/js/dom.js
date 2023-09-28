@@ -6,7 +6,6 @@
 
 export function getSingleElements(selector) {
   const element = document.querySelector(selector);
-
   return element;
 }
 

@@ -28,21 +28,19 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
- 
+  font-family: "Roboto", sans-serif;
 }
 
 .index-body {
   display: flex;
   flex-direction: column;
-  
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black
+  background-color: black;
 }
 
 .index-main {
@@ -54,34 +52,27 @@ body {
   position: relative;
 
   .index-main__title {
-background-color: orange;
+    position: absolute;
 
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
-@media screen and (min-width:320px) and (max-width:375px) {
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  padding-inline: 5px;
-  padding-block: 5px;
-}
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 320px) {
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      padding-inline: 5px;
+      padding-block: 5px;
+    }
     .index-main__title--header {
-    color: white;
-     
+      color: #d6d6d6;
+      letter-spacing: 1.5px;
+   
     }
   }
-
-
-
 }
-
-
 
 .header,
 .footer {
   height: 5rem;
 }
-
-
