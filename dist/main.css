@@ -67,3 +67,37 @@ body {
 .header,
 .footer {
   height: 5rem; }
+
+.form-input, button {
+  height: 2.5rem;
+  width: 50%;
+  border-radius: 15px; }
+
+.full-name, .new-email, .new-password {
+  background-color: #219EBC; }
+
+.signup-btn {
+  background-color: #FB8500; }
+
+#terms-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem; }
+
+.terms-container {
+  background-color: #219EBC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 15px;
+  width: 50%;
+  height: 8rem;
+  padding: 1rem;
+  margin-top: 2rem; }
+
+#privacy-text, #newsletter-text {
+  padding-left: 0.5rem; }

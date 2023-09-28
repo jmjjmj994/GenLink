@@ -54,3 +54,45 @@ body {
 .footer {
   height: 5rem;
 }
+
+
+.form-input, button{
+  height: 2.5rem;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.full-name, .new-email,.new-password{
+
+  background-color:$secondary--clr;
+}
+
+.signup-btn{
+  background-color: $accent--clr;
+}
+
+
+#terms-form{
+  @include flex-center-content;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.terms-container{
+  background-color: $secondary--clr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 15px;
+  width: 50%;
+  height: 8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#privacy-text, #newsletter-text{
+  padding-left: 0.5rem;
+}
+
