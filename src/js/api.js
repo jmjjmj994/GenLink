@@ -18,16 +18,18 @@ class NewUser {
                 const fullNameInputValue = fullNameInput.value.trim()
                 const newEmailInputValue = newEmailInput.value.trim()
                 const newPasswordInputValue = newPasswordInput.value.trim()
-
                 console.log(fullNameInputValue)
                 console.log(newEmailInputValue)
                 console.log(newPasswordInputValue)
-
-
         })
+    }
+
+
+    validator(){
         
     }
 
+    
 
 /*    async registerUser (){
     try {const res = await fetch(BASE_URL+NEW_USER_URL,{
