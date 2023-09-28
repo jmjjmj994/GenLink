@@ -21,6 +21,9 @@ input {
   padding-inline-start: 10px;
   outline: none; }
 
+.alert-container {
+  color: white; }
+
 .email-input,
 .password-input, .terms-container, .full-name, .new-email, .new-password {
   background-color: #219EBC; }
