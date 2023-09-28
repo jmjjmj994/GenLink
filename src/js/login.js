@@ -22,6 +22,7 @@ class Login {
         this.userLogin(this.emailInput.value, this.passwordInput.value);
         this.emailInput.value = "";
         this.passwordInput.value = "";
+     
       }
     });
   }
