@@ -1,3 +1,7 @@
-# some-j-k
-Javascript 2 - Course Assignment
-by Jonathan Braaten Mjøs & Kristoffer Myhre
+# GenLink Social Media Application
+## Javascript 2 - Course Assignment
+### Group project by Jonathan Braaten Mjøs & Kristoffer Myhre
+
+
+
+
