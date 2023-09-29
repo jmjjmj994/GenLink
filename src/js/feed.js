@@ -5,8 +5,14 @@ import { getSingleElements } from "./dom.js";
   const subNavbar = getSingleElements(".sub-navbar");
   const subNavbarMenu = getSingleElements(".sub-navbar__menu");
 
-  subNavbarOpen.addEventListener("click", (e) => { //adjust click so span elements can be clicked
-    subNavbar.classList.add("active");
+  subNavbarOpen.addEventListener("click", (e) => {
+
+
+    if (!subNavbar.classList.contains("active")) {
+      subNavbar.classList.add("active");
+    } else {
+      subNavbar.classList.remove("active");
+    }
   });
 
   window.addEventListener("click", (e) => {
