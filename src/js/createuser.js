@@ -5,7 +5,6 @@ const NEW_USER_URL = `social/auth/register`;
 const LOGIN_URL = `social/auth/login`;
 
 class NewUser {
-
     constructor(){
         const signUpForm = getSingleElements("#signup-form")
         const newNameInput = getSingleElements("#full-name")
@@ -14,16 +13,12 @@ class NewUser {
         const signUpBtn = getSingleElements(".signup-btn")
         const agreedprivacy = getSingleElements("#agreed-privacy")
 
-
-
         signUpBtn.disabled = true;
-        
             agreedprivacy.addEventListener("change", function(){
                 signUpBtn.disabled = !agreedprivacy.checked;
             })
-            signUpForm.addEventListener("submit",(e)=>{
-                
 
+            signUpForm.addEventListener("submit",(e)=>{               
                 e.preventDefault();
                 const newNameInputValue = newNameInput.value.trim()
                 const newEmailInputValue = newEmailInput.value.trim()
@@ -34,22 +29,23 @@ class NewUser {
                 const invalidAlert = getSingleElements(".alert-container")
 
                 if(!nameRegex.test(newNameInputValue)){
-                   invalidAlert.innerHTML+=`<p>Full name is invalid. Please enter a valid name</p>`;
+                   invalidAlert.innerHTML=`<p>Full name is invalid. Please enter a valid name</p>`;
                     return; 
                 }
                 if(!emailRegex.test(newEmailInputValue)){
-                   invalidAlert.innerHTML+=`<p>Email is invalid. Please enter a valid Email</p>`;
+                   invalidAlert.innerHTML=`<p>Email is invalid. Please enter a valid Email</p>`;
                     return; 
                 }
                 if(!passwordRegex.test(newPasswordInputValue)){
-                    invalidAlert.innerHTML+=`<p>Password is invalid. Please enter a valid password</p>`;
+                    invalidAlert.innerHTML=`<p>Password is invalid. Please enter a valid password</p>`;
                     return; 
-                } 
+                } else{
+                    invalidAlert.innerHTML=``; 
+                }
                 console.log("All inputs are valid.")
-
         })
-    
     }
+
 
 
    async registerUser (){
