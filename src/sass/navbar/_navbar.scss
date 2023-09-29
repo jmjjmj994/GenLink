@@ -1,0 +1,130 @@
+.feed-body {
+  position: relative;
+}
+
+.flex-adjust {
+  height: 2.5rem;
+  width: 2.5rem;
+} //centering genlink logo
+
+.sub-navbar-open {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 0.5rem);
+  grid-template-rows: repeat(2, 0.5rem);
+  place-content: center;
+  background-color: hsl(0, 0%, 6%);
+  border-radius: 50%;
+  gap: 4px;
+  cursor: pointer;
+  .circle {
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    display: block;
+  }
+}
+
+.sub-navbar {
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(11, 11, 11);
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 250ms, visibility 500ms;
+}
+.sub-navbar.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms, visibility 500ms;
+}
+
+.sub-navbar__menu {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  border-radius: inherit;
+
+  .sub-navbar__menu-item {
+    background-color: rgb(88, 88, 88);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80%;
+    position: relative;
+    width: 80%;
+    .sub-navbar__menu-item__link {
+      display: block;
+      height: 0.9rem;
+      width: 0.9rem;
+
+      border-radius: inherit;
+
+      &::before {
+        content: "";
+        inset: 0;
+        border-radius: inherit;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+    .sub-navbar__icon {
+      font-size: 24px;
+      fill: white;
+    }
+  }
+}
+
+.main-navbar {
+  height: 5rem;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  @media screen and (min-width: 320px) and (max-width: 650px) {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .navbar__menu {
+    background-color: rgb(62, 5, 5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    .navbar__menu-item {
+      .navbar__menu__item__link {
+      }
+      .navbar__icon {
+        height: 1em;
+        fill: white;
+      }
+    }
+  }
+}
+
+.header__logo__feed {
+  height: 5rem;
+  width: 5rem;
+  margin-inline: 5rem; // pushing sub-navbar-open to the left
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

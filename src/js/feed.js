@@ -1,12 +1,11 @@
 import { getSingleElements } from "./dom.js";
 
-
 (() => {
   const subNavbarOpen = getSingleElements(".sub-navbar-open");
   const subNavbar = getSingleElements(".sub-navbar");
   const subNavbarMenu = getSingleElements(".sub-navbar__menu");
 
-  subNavbarOpen.addEventListener("click", (e) => {
+  subNavbarOpen.addEventListener("click", (e) => { //adjust click so span elements can be clicked
     subNavbar.classList.add("active");
   });
 

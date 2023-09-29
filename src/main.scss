@@ -2,7 +2,9 @@
 @import "./src/sass/mixins";
 @import "./src/sass/variables";
 @import "./src/sass/typography";
+@import "./src/sass/reset";
 @import "./src/sass/forms/forms.scss";
+@import "../src/sass/navbar/navbar.scss";
 
 *,
 *::before,
@@ -31,7 +33,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.index-body {
+.index-body, .feed-body {
   display: flex;
   flex-direction: column;
 }
@@ -40,8 +42,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  flex-basis: content;
+  .header__logo {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 15px;
+
+    max-width: 50%;
+    width: auto;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
 }
+
+  .feed-main {
+    background: $primary--bg;
+    flex: 1;
+  }
+
 
 .index-main {
   @include flex-center-content;
@@ -67,12 +91,9 @@ body {
     .index-main__title--header {
       color: #d6d6d6;
       letter-spacing: 1.5px;
-   
     }
   }
 }
 
-.header,
-.footer {
-  height: 5rem;
-}
+
+
