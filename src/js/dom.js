@@ -21,3 +21,5 @@ function getMultipleElements(selector, arg1) {
   elements.classList.add(arg1, arg2);
   return elements;
 }
+
+
