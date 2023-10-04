@@ -65,3 +65,6 @@ const user = new Login(
             email: "testbruker123@stud.noroff.no",
             password: "testbruker123123",
  */
+
+
+
