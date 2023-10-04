@@ -43,21 +43,35 @@ class NewUser {
         invalidAlert.innerHTML = ``;
       }
       console.log("All inputs are valid.");
+
+
+
+      if(nameRegex.test(newNameInputValue)&&(emailRegex.test(newEmailInputValue)&&(passwordRegex.test(newPasswordInputValue)))){
+        this.registerUser(newNameInputValue,newEmailInputValue,newPasswordInputValue)
+        window.location.href="./index.html"
+      }
+
+
     });
   }
+//km.stud.noroff.no
+//banan1234
 
-  async registerUser() {
+
+  async registerUser(name, email, password) {
+    console.log(name, email, password)
     try {
       const res = await fetch(BASE_URL + NEW_USER_URL, {
         method: "POST",
         body: JSON.stringify({
-          name: "norofftest123",
-          email: "norofftest123@stud.noroff.no",
-          password: "norofftest123",
+          name: name,
+          email: email,
+          password: password,
         }),
         headers: { "content-type": "application/json; charset=UTF-8" },
       });
       console.log(res.status);
+      //gjør denne erroren bedre
       if (res.status !== 201) {
         console.log("profile already exists");
       } else {
