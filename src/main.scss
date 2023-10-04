@@ -30,15 +30,16 @@ body {
 }
 
 body {
-font-family: "Roboto", sans-serif;
-/*
+  font-family: "Roboto", sans-serif;
+  /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=000000&c2=13012e&gt=r&gd=dbb
 */
-background-color: black;
+  background-color: black;
 }
 
-.index-body, .feed-body {
+.index-body,
+.feed-body {
   display: flex;
   flex-direction: column;
 }
@@ -66,18 +67,12 @@ background-color: black;
   }
 }
 
-  .feed-main {
-
-    flex: 1;
-  }
-
-
 .index-main {
   @include flex-center-content;
   flex-direction: column;
   flex-grow: 1;
   padding: 10px;
-/*   background: $primary--bg; */
+  /*   background: $primary--bg; */
 
   position: relative;
 
@@ -101,5 +96,55 @@ background-color: black;
   }
 }
 
+.feed-main {
+  flex: 1;
+  background-color: rgb(207, 207, 207);
+  padding-block-start: 30px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.feed-main__posts {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(15rem, 30rem);
+  grid-auto-rows: 20rem;
+  place-content: center;
+  padding: 10px;
+}
+
+.feed-main__posts-card {
+  background-color: rgb(255, 255, 255);
+}
+
+.feed-main__posts-card__header {
+
+  padding: 10px;
+  .feed-main__posts-card--header--title {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  }
+}
+
+.feed-main__posts-card__body {
 
 
+  .feed-main__posts-card--body--text {
+    color: royalblue;
+  }
+  img {
+   height: 5rem;
+   width: 5rem;
+    object-fit: cover;
+ 
+  }
+}
+
+.feed-main__posts-card__footer {
+  .feed-main__posts-card--body--tags {
+    background-color: orchid;
+  }
+}

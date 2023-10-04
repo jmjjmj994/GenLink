@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="/dist/main.css" />
   <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
   <script src="/src/js/navbar.js" type="module"></script>
-  <script src="/src/js/feed.js" type="module"></script>
+
   <title>Feed</title>
 </head>
 
@@ -57,12 +58,12 @@
           +
         </button>
         <div class="sub-navbar__wrapper-content-left">
-          <button class="btn"><i class="fa-solid fa-house-user"></i></button>
-          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn" aria-label="home"><i class="fa-solid fa-house-user"></i></button>
+          <button class="btn" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="sub-navbar__wrapper-content-right">
-          <button class="btn"><i class="fa-solid fa-envelope"></i></button>
-          <button class="btn"><i class="fa-regular fa-user"></i></button>
+          <button class="btn" aria-label="message"><i class="fa-solid fa-envelope"></i></button>
+          <button class="btn" aria-label="profile"><i class="fa-regular fa-user"></i></button>
         </div>
       </div>
     </div>
@@ -71,13 +72,15 @@
   </nav>
 
   <main class="feed-main">
-
+    <section class="feed-main__posts">
+   
+    </section>
 
 
 
   </main>
 
-
+  <script src="/src/js/feed.js" type="module"></script>
 </body>
 
 </html>

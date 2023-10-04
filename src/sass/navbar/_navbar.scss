@@ -1,5 +1,7 @@
 .feed-header {
-
+background-color: white;
+width: 100%;
+flex-basis: 2rem;
 } //centering genlink logo
 
 
@@ -117,6 +119,7 @@ transition: 150ms ease-in-out;
     height: 90px;
     border-radius: 100%;
 background-color: black;
+  clip-path: ellipse(100% 50% at 50% 100%);
 
     left: 50%;
     transform: translate(-50%, -50%);
