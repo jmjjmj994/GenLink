@@ -1,0 +1,68 @@
+import { getSingleElements } from "./dom.js";
+const BASE_URL = `https://api.noroff.dev/api/v1/`;
+const POST_PARAM = `social/posts`;
+
+class AllPosts {
+  constructor(postFeedEl) {
+    this.postFeedEl = postFeedEl;
+  }
+
+  async allPostsEntries() {
+    try {
+      const res = await fetch(BASE_URL + POST_PARAM, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+        /*   credentials:"include", */
+      });
+
+      const data = await res.json();
+
+      return data;
+    } catch (error) {}
+  }
+
+  async handleEntries() {
+    try {
+      const data = await this.allPostsEntries();
+
+      const postLimit = 15; //adjust?
+      const limitResult = data.slice(0, 20);
+      this.createFeedEl(limitResult);
+    } catch (error) {}
+  }
+
+  createFeedEl(data) {
+    data.forEach((post) => {
+      const { title, body, tags, id, media } = post;
+      const div = document.createElement("div");
+      div.className = "feed-main__posts-card";
+       div.setAttribute("id", id);
+      console.log(div)
+     
+      div.innerHTML += `
+    <div class="feed-main__posts-card__header2>
+<p class="feed-main__posts-card__header--title"> ${title}</p>
+
+    </div>
+    <div class="feed-main__posts-card__body">
+<p class="feed-main__posts-card--body--text">${body} </p>
+<img src="${media}" />
+    </div>
+ 
+
+    </div>
+    `;
+
+      this.postFeedEl.append(div);
+    });
+  }
+
+  async init() {
+    try {
+      await this.handleEntries();
+    } catch (error) {}
+  }
+}

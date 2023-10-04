@@ -10,16 +10,15 @@ class AllPosts {
   async allPostsEntries() {
     try {
       const res = await fetch(BASE_URL + POST_PARAM, {
-        method:"GET",
+        method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
           "content-type": "application/json; charset=UTF-8",
         },
-      /*   credentials:"include", */
       });
 
       const data = await res.json();
-
+     
       return data;
     } catch (error) {}
   }
@@ -27,90 +26,61 @@ class AllPosts {
   async handleEntries() {
     try {
       const data = await this.allPostsEntries();
-
       const postLimit = 15; //adjust?
-      const limitResult = data.slice(0)
-      const dataWithMedia = limitResult.filter(entry => entry.media)
-      dataWithMedia.forEach(entry => {
+      const limitResult = data.slice(0);
+      const dataWithMedia = limitResult.filter((entry) => entry.media);
+      dataWithMedia.forEach((entry) => {
         const { title, body, id, tags, media } = entry;
-        
- this.createFeedEl(title, body, id, tags, media);
-      })
-
+        this.createFeedEl(title, body, id, tags, media);
+    
+      });
     } catch (error) {}
   }
 
   createFeedEl(title, body, id, tags, media) {
-   
-
-
-    this.postFeedEl.innerHTML += 
-
-    
-    
-    
-
-
-  /* 
     const card = document.createElement("div");
     card.className = "feed-main__posts-card";
     card.setAttribute("id", id);
- 
-
     const cardHeader = document.createElement("div");
     cardHeader.className = "feed-main__posts-card__header";
     const cardBody = document.createElement("div");
     cardBody.className = "feed-main__posts-card__body";
+
     const cardFooter = document.createElement("div");
     cardFooter.className = "feed-main__posts-card__footer";
+      if (media) {
+        const feedHeaderImage = document.createElement("img");
+        feedHeaderImage.className = "feed-main__posts-card--header--img";
+        feedHeaderImage.src = media;
+        cardHeader.appendChild(feedHeaderImage);
+      }
 
- 
-    const feedHeader = document.createElement("p");
-    feedHeader.className = "feed-main__posts-card--header--title";
-    feedHeader.textContent = title;
+    const feedBodyTitle = document.createElement("p")
+    feedBodyTitle.className = "feed-main__posts-card--body--title"
+    feedBodyTitle.textContent = title
     const feedBodyContent = document.createElement("p");
     feedBodyContent.className = "feed-main__posts-card--body--text";
     feedBodyContent.textContent = body;
-
-    if (media) {
-
-      console.log(media)
-
-    
-           const feedBodyImage = document.createElement("img");
-           feedBodyImage.src = media;  cardBody.appendChild(feedBodyImage);
-
-    }
-
-
     const feedTagsContent = document.createElement("p");
     feedTagsContent.className = "feed-main__posts-card--body--tags";
     feedTagsContent.textContent = tags;
-
-
-    cardHeader.append(feedHeader);
-    cardBody.append(feedBodyContent);
+   
+    cardBody.append(feedBodyTitle,feedBodyContent);
     cardFooter.append(feedTagsContent);
-
     card.append(cardHeader, cardBody, cardFooter);
-    this.postFeedEl.append(card); */
+    this.postFeedEl.append(card);
   }
 
   async init() {
     try {
       await this.handleEntries();
     } catch (error) {}
-  } 
+  }
 }
 
 const test = new AllPosts(getSingleElements(".feed-main__posts"));
- test.allPostsEntries(); 
-test.init()
-
-
-
-
-
+test.allPostsEntries();
+test.init();
 
 //create posts
 
@@ -122,11 +92,11 @@ class Post {
       const res = await fetch(BASE_URL + param, {
         method: "POST",
         body: JSON.stringify({
-          title: "Todays Dinner",
-          body: "lorem ipsum",
-          tags: ["life", "food", "dogs"],
+          title: "test12ww3",
+          body: "test123",
+          tags: ["game", "mountain", "dancing"],
           media:
-            "https://unsplash.com/photos/a-close-up-of-a-green-plant-with-leaves-2eU1r1ANyRE",
+            "https://images.unsplash.com/photo-1696024344604-46b33ba2c753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
         }),
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -139,5 +109,6 @@ class Post {
   }
 }
 
-/* const createTest = new Post(); */
-/*  createTest.createPost("social/posts")   */
+const createTest = new Post(); 
+/* createTest.createPost()
+  */
