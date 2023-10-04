@@ -31,18 +31,27 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  /*
+/*
 * Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=000000&c2=13012e&gt=r&gd=dbb
+* Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
 */
-  background-color: black;
+background: #18011E;
+background: radial-gradient(at left top, #18011E, #000000);
 }
 
-.index-body,
-.feed-body {
+.index-body {
   display: flex;
   flex-direction: column;
 }
+
+.feed-body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5rem 1fr;
+}
+
+
+
 
 .header {
   display: flex;
@@ -65,6 +74,12 @@ body {
       max-width: 100%;
     }
   }
+}
+
+
+.feed-header {
+  height: 5rem;
+  background-color: rgb(35, 0, 175)
 }
 
 .index-main {
@@ -98,11 +113,10 @@ body {
 
 .feed-main {
   flex: 1;
-  background-color: rgb(207, 207, 207);
-  padding-block-start: 30px;
-
+  padding-block-start: 50px;
   display: flex;
   justify-content: center;
+
 
 }
 
@@ -120,11 +134,13 @@ body {
 
 .feed-main__posts-card {
   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
 }
 
 .feed-main__posts-card__header {
   outline: 1px solid red;
-  height: 15rem;
+ flex: 30%;
   position: relative;
 
   .feed-main__posts-card--header--img {
@@ -138,6 +154,7 @@ body {
 }
 
 .feed-main__posts-card__body {
+  flex: 60%;
   .feed-main__posts-card--body--title {
     font-size: clamp(1.1rem, 2.2vw, 1.3rem);
   }
@@ -153,8 +170,10 @@ body {
 }
 
 .feed-main__posts-card__footer {
-
+flex: 10%;
   .feed-main__posts-card--body--tags {
     background-color: orchid;
+    height: 100%;
+    width: 100%;
   }
 }

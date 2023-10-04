@@ -52,6 +52,7 @@ class AllPosts {
         const feedHeaderImage = document.createElement("img");
         feedHeaderImage.className = "feed-main__posts-card--header--img";
         feedHeaderImage.src = media;
+        feedHeaderImage.alt = "image"
         cardHeader.appendChild(feedHeaderImage);
       }
 
