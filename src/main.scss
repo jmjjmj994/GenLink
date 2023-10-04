@@ -30,18 +30,28 @@ body {
 }
 
 body {
-font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 /*
 * Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=000000&c2=13012e&gt=r&gd=dbb
+* Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
 */
-background-color: black;
+background: #18011E;
+background: radial-gradient(at left top, #18011E, #000000);
 }
 
-.index-body, .feed-body {
+.index-body {
   display: flex;
   flex-direction: column;
 }
+
+.feed-body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5rem 1fr;
+}
+
+
+
 
 .header {
   display: flex;
@@ -66,18 +76,18 @@ background-color: black;
   }
 }
 
-  .feed-main {
 
-    flex: 1;
-  }
-
+.feed-header {
+  height: 5rem;
+  background-color: rgb(35, 0, 175)
+}
 
 .index-main {
   @include flex-center-content;
   flex-direction: column;
   flex-grow: 1;
   padding: 10px;
-/*   background: $primary--bg; */
+  /*   background: $primary--bg; */
 
   position: relative;
 
@@ -101,5 +111,69 @@ background-color: black;
   }
 }
 
+.feed-main {
+  flex: 1;
+  padding-block-start: 50px;
+  display: flex;
+  justify-content: center;
 
 
+}
+
+.feed-main__posts {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(15rem, 25rem);
+  grid-auto-rows: 100dvh;
+  place-content: center;
+  padding: 10px;
+}
+
+.feed-main__posts-card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-main__posts-card__header {
+  outline: 1px solid red;
+ flex: 30%;
+  position: relative;
+
+  .feed-main__posts-card--header--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.feed-main__posts-card__body {
+  flex: 60%;
+  .feed-main__posts-card--body--title {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  }
+
+  .feed-main__posts-card--body--text {
+    color: royalblue;
+  }
+  img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+  }
+}
+
+.feed-main__posts-card__footer {
+flex: 10%;
+  .feed-main__posts-card--body--tags {
+    background-color: orchid;
+    height: 100%;
+    width: 100%;
+  }
+}
