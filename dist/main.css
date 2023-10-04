@@ -287,7 +287,9 @@ body {
   height: 100%; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background: #0F0151;
+  background: radial-gradient(at center top, #0F0151, #030106); }
 
 .index-body, .feed-body {
   display: flex;
@@ -297,7 +299,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   flex-basis: content; }
   .header .header__logo {
     height: 8rem;
@@ -312,7 +313,6 @@ body {
       max-width: 100%; }
 
 .feed-main {
-  background: linear-gradient(180deg, #212020 0%, #000 100%);
   flex: 1; }
 
 .index-main {
@@ -322,7 +322,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   padding: 10px;
-  background: linear-gradient(180deg, #212020 0%, #000 100%);
+  /*   background: $primary--bg; */
   position: relative; }
   .index-main .index-main__title {
     position: absolute;
