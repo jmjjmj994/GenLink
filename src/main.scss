@@ -30,10 +30,12 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-
-background: #0F0151;
-background: radial-gradient(at center top, #0F0151, #030106);
+font-family: "Roboto", sans-serif;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=000000&c2=13012e&gt=r&gd=dbb
+*/
+background-color: black;
 }
 
 .index-body, .feed-body {

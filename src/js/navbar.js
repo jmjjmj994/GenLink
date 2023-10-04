@@ -1,4 +1,4 @@
-import { getSingleElements } from "./dom.js";
+/* import { getSingleElements } from "./dom.js";
 
 (() => {
   const subNavbarOpen = getSingleElements(".sub-navbar-open");
@@ -17,4 +17,4 @@ import { getSingleElements } from "./dom.js";
       subNavbar.classList.remove("active");
     }
   });
-})();
+})(); */
