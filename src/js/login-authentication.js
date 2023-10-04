@@ -43,11 +43,11 @@ class Login {
       } else {
         const data = await res.json();
         const token = localStorage.setItem("token", data.accessToken);
-        window.location.href = "./feed.html"
+        window.location.href = "./feed.html";
       }
     } catch (error) {
-      console.error("Something went wrong", error) //Eror handling awaiting
-      return
+      console.error("Something went wrong", error); //Eror handling awaiting
+      return;
     }
   }
 }

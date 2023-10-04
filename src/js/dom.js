@@ -1,7 +1,7 @@
 /**
  *
  * @param {HTMLElement} selector
- * @returns returns one HTMLElement with optional parameters.
+ * @returns returns one HTMLElement
  */
 
 export function getSingleElements(selector) {
@@ -14,9 +14,9 @@ export function getSingleElements(selector) {
  * @param {HTMLElement} selector
  * @param {Attribute} arg1
  * @param {Attribute} arg2
- * @returns returns mutiple HTMLElements with optional parameters.
+ * @returns returns mutiple HTMLElements with one parameter.
  */
-function getMultipleElements(selector, arg1, arg2) {
+function getMultipleElements(selector, arg1) {
   const elements = document.querySelectorAll(selector);
   elements.classList.add(arg1, arg2);
   return elements;

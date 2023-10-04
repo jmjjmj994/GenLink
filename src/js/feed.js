@@ -1,24 +1,50 @@
 import { getSingleElements } from "./dom.js";
+/* 
+Properties
 
-(() => {
-  const subNavbarOpen = getSingleElements(".sub-navbar-open");
-  const subNavbar = getSingleElements(".sub-navbar");
-  const subNavbarMenu = getSingleElements(".sub-navbar__menu");
+{
+id{integer} - identifier for post
+title {string} title of post
+body {body} of post
+tags{a string of array tags}
+media {a url to an image/video}
+created {date of post creation}
+updated {date of post updated}
+_count {JSON object containing the number of comments and reactions
+}
 
-  subNavbarOpen.addEventListener("click", (e) => {
+
+Params
+_author {true} if set to true, the comments of the post will be include in the response
+_comments {true} --..--
+_reactions{true} --..--   
+*/
 
 
-    if (!subNavbar.classList.contains("active")) {
-      subNavbar.classList.add("active");
-    } else {
-      subNavbar.classList.remove("active");
-    }
-  });
 
-  window.addEventListener("click", (e) => {
-    if (!subNavbar.contains(e.target) && e.target !== subNavbarOpen) {
-      console.log(e.target);
-      subNavbar.classList.remove("active");
-    }
-  });
-})();
+const BASE_URL = `https://api.noroff.dev/api/v1/`;
+const POST_PARAM = `social/posts`;
+
+class AllPosts {
+  constructor() {}
+
+  async getPosts() {
+    try {
+      const res = await fetch(BASE_URL + POST_PARAM, {
+        method: "POST",
+        body: JSON.stringify({
+          title: "string",
+        }),
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {}
+  }
+}
+
+const test = new AllPosts();
+test.getPosts();
