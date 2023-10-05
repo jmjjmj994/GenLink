@@ -1,61 +1,76 @@
-.index-body,
+ .index-body,
 .sign-up-body {
+
+  background-color: orange;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr;
 }
 
-/*********************************/
+
+
+
 .feed-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: max-content 1fr 5rem;
-  grid-template-areas:
-     "head head"
-    "main main"
-    "bottombar bottombar";
+  display: flex;
+  flex-direction: column;
+}
+.feed-main {
+  display: flex;
+  flex: 1;
+  background-color: pink;
+  justify-content: center;
+  .feed-main__posts  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  @media screen and (min-width: 748px) and (max-width: 1200px) {
-    grid-template-areas:
-   
-      "sidebar main"
-      "sidebar main";
-    grid-template-rows: 1fr;
-    grid-template-columns: 5rem 100%;
+.feed-main__posts-card {
+  height: 75dvh;
+  gap: 10px;
+@media screen and (max-width:375px) {
+  width: 100%;
+}
+   @media screen and (min-width:767px) and (max-width:1440px) {
+    width: 25rem;
   }
-
-  @media screen and (min-width: 1200px) {
-    grid-template-areas:
-    "sidebar main"
-   "sidebar main"
-      "sidebar main";
-    grid-template-rows: 1fr;
-    grid-template-columns: 15rem 1fr;
+   @media screen and (min-width:1440px) {
+    width: 30rem;
   }
 }
 
-.header {
-  grid-area: head;
+  @media screen and (max-width:767px) {
+   width: 100%;
+  }
+   @media screen and (min-width:767px) and (max-width:1440px) {
+    width: 35rem;
+  }
+   @media screen and (min-width:1440px) {
+    width: 40rem;
+  }
+}
+}
+
+
+
+.main-navbar, .sub-navbar {
+  position: fixed;
+
 }
 
 .main-navbar {
-   grid-area: sidebar;
-}
-.sub-navbar {
-    grid-area: bottombar;
-}
-.feed-main {
-  grid-area: main;
-  display: grid;
- grid-template-columns: auto;
- grid-template-rows: auto;
-
-  background-color: orange;
-  .feed-main__posts {
-    display: grid;
-    grid-template-columns: minmax(15rem, 36.5rem);
-    grid-auto-rows: 5dvh;
-    place-content: center;
+  height: 100%;
+  @media screen and (min-width:768px) and (max-width:1440px) {
+    width: 7rem;
   }
+    @media screen and (min-width:1440px) {
+    width: 10rem;
+  
+  }
+}
+
+.sub-navbar {
+z-index: 1;
+bottom: 0;
+height: 5rem;
+width: 100%;
 }

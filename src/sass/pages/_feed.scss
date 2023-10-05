@@ -1,29 +1,29 @@
 .feed-main {
 
-
 }
 
 .feed-main__posts {
-  background-color: rgb(176, 12, 39);
-  display: flex;
-  flex-direction: column;
+
   gap: 10px;
   position: relative;
+  background-color: rgb(238, 15, 52);
 
-  /*  overflow-y: scroll; */
 }
-
 .feed-main__posts-card {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(72, 5, 166);
   display: flex;
   flex-direction: column;
+  height: 20rem;
+  width: 10rem;
+
+  
 }
-.feed-main__posts-card:first-child {
-  margin-block-start: 50rem;
+/* .feed-main__posts-card:first-child {
+  margin-block-start: 5rem;
 }
 .feed-main__posts-card:last-child {
   margin-block-end: calc(5rem + 1rem);
-}
+} */
 .feed-main__posts-card__header {
   flex: 30%;
   position: relative;

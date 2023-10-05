@@ -113,48 +113,63 @@ p {
 
 .index-body,
 .sign-up-body {
+  background-color: orange;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr; }
 
-/*********************************/
 .feed-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: max-content 1fr 5rem;
-  grid-template-areas: "head head" "main main" "bottombar bottombar"; }
-  @media screen and (min-width: 748px) and (max-width: 1200px) {
-    .feed-body {
-      grid-template-areas: "sidebar main" "sidebar main";
-      grid-template-rows: 1fr;
-      grid-template-columns: 5rem 100%; } }
-  @media screen and (min-width: 1200px) {
-    .feed-body {
-      grid-template-areas: "sidebar main" "sidebar main" "sidebar main";
-      grid-template-rows: 1fr;
-      grid-template-columns: 15rem 1fr; } }
-
-.header {
-  grid-area: head; }
-
-.main-navbar {
-  grid-area: sidebar; }
-
-.sub-navbar {
-  grid-area: bottombar; }
+  display: flex;
+  flex-direction: column; }
 
 .feed-main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  background-color: orange; }
+  display: flex;
+  flex: 1;
+  background-color: pink;
+  justify-content: center; }
   .feed-main .feed-main__posts {
-    display: grid;
-    grid-template-columns: minmax(15rem, 36.5rem);
-    grid-auto-rows: 5dvh;
-    place-content: center; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .feed-main .feed-main__posts .feed-main__posts-card {
+      height: 75dvh;
+      gap: 10px; }
+      @media screen and (max-width: 375px) {
+        .feed-main .feed-main__posts .feed-main__posts-card {
+          width: 100%; } }
+      @media screen and (min-width: 767px) and (max-width: 1440px) {
+        .feed-main .feed-main__posts .feed-main__posts-card {
+          width: 25rem; } }
+      @media screen and (min-width: 1440px) {
+        .feed-main .feed-main__posts .feed-main__posts-card {
+          width: 30rem; } }
+    @media screen and (max-width: 767px) {
+      .feed-main .feed-main__posts {
+        width: 100%; } }
+    @media screen and (min-width: 767px) and (max-width: 1440px) {
+      .feed-main .feed-main__posts {
+        width: 35rem; } }
+    @media screen and (min-width: 1440px) {
+      .feed-main .feed-main__posts {
+        width: 40rem; } }
+
+.main-navbar, .sub-navbar {
+  position: fixed; }
+
+.main-navbar {
+  height: 100%; }
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    .main-navbar {
+      width: 7rem; } }
+  @media screen and (min-width: 1440px) {
+    .main-navbar {
+      width: 10rem; } }
+
+.sub-navbar {
+  z-index: 1;
+  bottom: 0;
+  height: 5rem;
+  width: 100%; }
 
 .header {
   background-color: #811dde;
@@ -199,7 +214,7 @@ p {
 
 .sub-navbar {
   display: flex;
-  background-color: black;
+  background-color: #0f1de0;
   color: white; }
   @media screen and (min-width: 748px) {
     .sub-navbar {
@@ -209,7 +224,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
+  flex-grow: 1;
   padding-inline: 20px; }
 
 .sub-navbar__menu-item .sub-navbar__menu-item--link {
@@ -241,24 +256,23 @@ p {
   margin: 0 auto; }
 
 .feed-main__posts {
-  background-color: #b00c27;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
   position: relative;
-  /*  overflow-y: scroll; */ }
+  background-color: #ee0f34; }
 
 .feed-main__posts-card {
-  background-color: white;
+  background-color: #4805a6;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 20rem;
+  width: 10rem; }
 
-.feed-main__posts-card:first-child {
-  margin-block-start: 50rem; }
-
+/* .feed-main__posts-card:first-child {
+  margin-block-start: 5rem;
+}
 .feed-main__posts-card:last-child {
-  margin-block-end: calc(5rem + 1rem); }
-
+  margin-block-end: calc(5rem + 1rem);
+} */
 .feed-main__posts-card__header {
   flex: 30%;
   position: relative; }
@@ -305,5 +319,5 @@ body {
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
 */
-  background: #18011e;
-  background: radial-gradient(at left top, #0b0123, #000000); }
+  /*   background: #18011e;
+  background: radial-gradient(at left top, #0b0123, #000000); */ }
