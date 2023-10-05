@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,500;1,400&display=swap');
 @import "./src/sass/mixins";
 @import "./src/sass/variables";
 @import "./src/sass/typography";
 @import "./src/sass/reset";
 @import "./src/sass/forms/forms.scss";
 @import "../src/sass/navbar/navbar.scss";
-
+@import "../src/sass/pages/feed";
+@import "../src/sass/pages/index";
+@import "../src/sass/pages/signup.";
 *,
 *::before,
 *::after {
@@ -36,7 +38,7 @@ body {
 * Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
 */
 background: #18011E;
-background: radial-gradient(at left top, #18011E, #000000);
+background: radial-gradient(at left top, #0b0123, #000000);
 }
 
 .index-body {
@@ -44,11 +46,6 @@ background: radial-gradient(at left top, #18011E, #000000);
   flex-direction: column;
 }
 
-.feed-body {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 5rem 1fr;
-}
 
 
 
@@ -77,106 +74,4 @@ background: radial-gradient(at left top, #18011E, #000000);
 }
 
 
-.feed-header {
-  height: 5rem;
-  background-color: rgb(35, 0, 175)
-}
 
-.index-main {
-  @include flex-center-content;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 10px;
-  /*   background: $primary--bg; */
-
-  position: relative;
-
-  .index-main__title {
-    position: absolute;
-
-    padding: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @media screen and (min-width: 320px) {
-      top: 30%;
-      width: 100%;
-      text-align: center;
-      padding-inline: 5px;
-      padding-block: 5px;
-    }
-    .index-main__title--header {
-      color: #d6d6d6;
-      letter-spacing: 1.5px;
-    }
-  }
-}
-
-.feed-main {
-  flex: 1;
-  padding-block-start: 50px;
-  display: flex;
-  justify-content: center;
-
-
-}
-
-.feed-main__posts {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  display: grid;
-  grid-template-columns: minmax(15rem, 25rem);
-  grid-auto-rows: 100dvh;
-  place-content: center;
-  padding: 10px;
-}
-
-.feed-main__posts-card {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-}
-
-.feed-main__posts-card__header {
-  outline: 1px solid red;
- flex: 30%;
-  position: relative;
-background-color: #030313;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23211A48' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23030313' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23050416' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23070418' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2309041a' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%230b051c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230e051e' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23100520' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23120521' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23140523' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23160525' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23180526' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231a0528' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%231c0429' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%231e042a' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2321032b' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2323022c' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%2326012c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%2329002D' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-  .feed-main__posts-card--header--img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.feed-main__posts-card__body {
-  flex: 60%;
-  .feed-main__posts-card--body--title {
-    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
-  }
-
-  .feed-main__posts-card--body--text {
-    color: royalblue;
-  }
-  img {
-    height: 5rem;
-    width: 5rem;
-    object-fit: cover;
-  }
-}
-
-.feed-main__posts-card__footer {
-flex: 10%;
-  .feed-main__posts-card--body--tags {
-    background-color: orchid;
-    height: 100%;
-    width: 100%;
-  }
-}

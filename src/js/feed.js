@@ -1,10 +1,13 @@
 import { getSingleElements } from "./dom.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
-const POST_PARAM = `social/posts`;
+const POST_PARAM = `social/posts?limit=10&offset=0`;
 
 class AllPosts {
-  constructor(postFeedEl) {
+  constructor(postFeedEl, btn) {
     this.postFeedEl = postFeedEl;
+    this.paginationBtn = btn
+
+
   }
 
   async allPostsEntries() {
@@ -25,8 +28,10 @@ class AllPosts {
 
   async handleEntries() {
     try {
+     
+      let postLimit = 1;
       const data = await this.allPostsEntries();
-      const postLimit = 15; //adjust?
+       //adjust?
       const limitResult = data.slice(0);
       const dataWithMedia = limitResult.filter((entry) => entry.media);
       dataWithMedia.forEach((entry) => {
@@ -45,7 +50,6 @@ class AllPosts {
     cardHeader.className = "feed-main__posts-card__header";
     const cardBody = document.createElement("div");
     cardBody.className = "feed-main__posts-card__body";
-
     const cardFooter = document.createElement("div");
     cardFooter.className = "feed-main__posts-card__footer";
       if (media) {
@@ -65,12 +69,15 @@ class AllPosts {
     const feedTagsContent = document.createElement("p");
     feedTagsContent.className = "feed-main__posts-card--body--tags";
     feedTagsContent.textContent = tags;
-   
     cardBody.append(feedBodyTitle,feedBodyContent);
     cardFooter.append(feedTagsContent);
     card.append(cardHeader, cardBody, cardFooter);
     this.postFeedEl.append(card);
   }
+
+  
+
+
 
   async init() {
     try {
@@ -79,9 +86,13 @@ class AllPosts {
   }
 }
 
-const test = new AllPosts(getSingleElements(".feed-main__posts"));
+
+
+const test = new AllPosts(getSingleElements(".feed-main__posts"),getSingleElements(".pagination-btn"));
 test.allPostsEntries();
-test.init();
+test.init(); 
+
+
 
 //create posts
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
 <script src="/src/js/user-authentication.js" type="module"></script>
+
     <title>Home</title>
   </head>
 
@@ -17,10 +18,9 @@
     </header>
 
     <main class="index-main">
-      <form id="signup-form">
-
+      <form id="signup-form" class="form">
         <input
-        placeholder="Full Name"
+        placeholder="Full name"
         class="full-name form-input"
         id="full-name"
         name="full-name"
@@ -47,7 +47,7 @@
         />
 
         <button class="btn signup-btn success danger">Sign up</button>
-        <div class="alert-container"></div>
+       
         <div class="terms-container">
           <div class="privacy-container">
             <input type="checkbox" name="agreed-privacy" id="agreed-privacy">
@@ -55,7 +55,7 @@
           </div>
           <div class="news-letter">
             <input type="checkbox" name="agreed-to-newsletter" id="agreed-to-newsletter">
-            <label id="newsletter-text" for="agreed-to-newsletter">I agree to recive periodic product updates, offers and promotions </label>
+            <label id="newsletter-text" for="agreed-to-newsletter">I agree to receive periodic product updates, offers and promotions </label>
           </div>
         </div>
       </form>

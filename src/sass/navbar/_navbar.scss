@@ -5,20 +5,14 @@ flex-basis: 2rem;
 } //centering genlink logo
 
 
-
-
-
-
-
-
-
 .main-navbar {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   background-color: white;
-  width: 5rem;
+  width: 6rem;
+  z-index: 1;
   .main-navbar__menu{
     height: 100%;
     background-color: red;
@@ -28,8 +22,9 @@ flex-basis: 2rem;
     align-items: center;
   } //add more icons
 
-  @media screen and (min-width:1px) and (max-width:650px) {
+  @media screen and (min-width:1px) and (max-width:747px) {
     display: none;
+    
   }
 
 }
@@ -51,11 +46,11 @@ flex-basis: 2rem;
   z-index: 1;
   transition: 150ms;
 
-  @media screen and (min-width: 320px) and (max-width: 650px) {
+  @media screen and (min-width: 320px) and (max-width: 748px) {
     width: 100%;
     bottom: 0;
   }
-  @media screen and (min-width:650px) {
+  @media screen and (min-width:748px) {
  display: none;
   }
   }
