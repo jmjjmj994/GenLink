@@ -1,77 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,500;1,400&display=swap');
-@import "./src/sass/mixins";
-@import "./src/sass/variables";
-@import "./src/sass/typography";
-@import "./src/sass/reset";
-@import "./src/sass/forms/forms.scss";
-@import "../src/sass/navbar/navbar.scss";
-@import "../src/sass/pages/feed";
-@import "../src/sass/pages/index";
-@import "../src/sass/pages/signup.";
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,500;1,400&display=swap");
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+@import "./sass/components/buttons";
+@import "./sass/utils/mixins";
+@import "./sass/utils/variables";
+/* @import "./sass/components/carousel"; */
+@import "./sass/forms/forms.scss";
+@import "./sass/layout/grid";
+@import "./sass/layout/header";
+@import "./sass/layout/navbar";
+@import "./sass/pages/feed";
+@import "./sass/pages/index";
+@import "./sass/pages/signup";
+@import "./sass/utils/helpers";
 
-button {
-  border: none;
-  cursor: pointer;
-}
 
-input {
-  border: none;
-  cursor: pointer;
-}
-
-html,
-body {
+html, body {
   height: 100%;
 }
 
+
 body {
+
   font-family: "Roboto", sans-serif;
-/*
+  /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
 */
-background: #18011E;
-background: radial-gradient(at left top, #0b0123, #000000);
+  background: #18011e;
+  background: radial-gradient(at left top, #0b0123, #000000);
 }
-
-.index-body {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-basis: content;
-  .header__logo {
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-block-start: 15px;
-
-    max-width: 50%;
-    width: auto;
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-  }
-}
-
-
-
