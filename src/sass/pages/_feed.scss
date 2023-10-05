@@ -1,67 +1,33 @@
-.feed-body {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 5rem 1fr;
-}
-
-
-.feed-header {
-  height: 5rem;
-  background-color: rgb(35, 0, 175)
-}
-
-
-
-
-
-
 .feed-main {
-  flex: 1;
-background-color: white;
-  display: flex;
-  justify-content: center;
-align-items: center;
-
-
-
 
 }
-
-
-
-
-
-
-
-
 
 .feed-main__posts {
-background-color: rgb(176, 12, 39);
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  display: grid;
-  grid-template-columns: minmax(15rem, 36.5rem);
-  grid-auto-rows: 70dvh;
-   position: relative;
-}
 
+  gap: 10px;
+  position: relative;
+  background-color: rgb(238, 15, 52);
+
+}
 .feed-main__posts-card {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(72, 5, 166);
   display: flex;
   flex-direction: column;
+  height: 20rem;
+  width: 10rem;
+
+  
 }
-.feed-main__posts-card:first-child {
-    margin-block-start: 2rem;
+/* .feed-main__posts-card:first-child {
+  margin-block-start: 5rem;
 }
-.feed-main__posts-card:last-child{
-    margin-block-end: calc(5rem + 1rem) ;
-}
+.feed-main__posts-card:last-child {
+  margin-block-end: calc(5rem + 1rem);
+} */
 .feed-main__posts-card__header {
- flex: 30%;
-position: relative;
-.feed-main__posts-card--header--img {
+  flex: 30%;
+  position: relative;
+  .feed-main__posts-card--header--img {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,21 +54,10 @@ position: relative;
 }
 
 .feed-main__posts-card__footer {
-flex: 10%;
+  flex: 10%;
   .feed-main__posts-card--body--tags {
     background-color: orchid;
     height: 100%;
     width: 100%;
   }
-}
-
-
-.pagination-btn {
-    background-color: orange;
-    position: absolute;
-    padding: 10px;
-    border-radius: 15px;
-    bottom: 5rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

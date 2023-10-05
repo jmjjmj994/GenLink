@@ -1,0 +1,76 @@
+ .index-body,
+.sign-up-body {
+
+  background-color: orange;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+}
+
+
+
+
+.feed-body {
+  display: flex;
+  flex-direction: column;
+}
+.feed-main {
+  display: flex;
+  flex: 1;
+  background-color: pink;
+  justify-content: center;
+  .feed-main__posts  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.feed-main__posts-card {
+  height: 75dvh;
+  gap: 10px;
+@media screen and (max-width:375px) {
+  width: 100%;
+}
+   @media screen and (min-width:767px) and (max-width:1440px) {
+    width: 25rem;
+  }
+   @media screen and (min-width:1440px) {
+    width: 30rem;
+  }
+}
+
+  @media screen and (max-width:767px) {
+   width: 100%;
+  }
+   @media screen and (min-width:767px) and (max-width:1440px) {
+    width: 35rem;
+  }
+   @media screen and (min-width:1440px) {
+    width: 40rem;
+  }
+}
+}
+
+
+
+.main-navbar, .sub-navbar {
+  position: fixed;
+
+}
+
+.main-navbar {
+  height: 100%;
+  @media screen and (min-width:768px) and (max-width:1440px) {
+    width: 7rem;
+  }
+    @media screen and (min-width:1440px) {
+    width: 10rem;
+  
+  }
+}
+
+.sub-navbar {
+z-index: 1;
+bottom: 0;
+height: 5rem;
+width: 100%;
+}

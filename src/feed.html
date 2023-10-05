@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="/dist/main.css" />
   <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
   <script src="/src/js/navbar.js" type="module"></script>
@@ -15,71 +14,87 @@
 <body class="feed-body">
 
 
-
-  <header class="feed-header">
-
-    <nav class="main-navbar">
-      <ul class="main-navbar__menu">
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"></a>
-        </li>
-        <li class="main-navbar__menu-item">
-          <a href="" class="main-navbar__menu-item--link"></a>
-        </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <button class="btn btn-open-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
 
 
-
+    <button class="btn btn-open-settings">
+      <i class="fa-solid fa-gear"></i>
+    </button>
   </header>
+  <nav class="main-navbar">
+    <ul class="main-navbar__menu">
+
+      <li class="main-navbar__menu-item">
+      <a  href="#" class="btn main-navbar__menu--item--link main-msg--link" aria-label="post">
+        <i class="fa-solid fa-plus"></i>
+      </a>
+      </li>
+      <li class="main-navbar__menu-item">
+        <a href="#" class="main-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
+      </li>
+      <li class="main-navbar__menu-item">
+        <a href="#" class="main-navbar__menu-item--link" aria-label="search"><i
+            class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+      <li class="main-navbar__menu-item">
+        <a href="#" class="main-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+      </li>
+
+      <li class="main-navbar__menu-item">
+        <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i class="fa-solid fa-user"></i></a>
+      </li>
+      <li class="main-navbar__menu-item">
+        <a href="#" class="main-navbar__menu-item--link" aria-label="settings">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </li>
+
+      <li class="main-navbar__menu-item">
+        <a class="main-navbar__menu-item--link" aria-label="log out">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+
+
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <nav class="sub-navbar">
-<ul class="sub-navbar__menu">
-  <li class="sub-navbar__menu-item">
-              <button class="btn sub-navbar__menu-item--btn" aria-label="home"><i class="fa-solid fa-house-user"></i></button>
-  </li>
-    <li class="sub-navbar__menu-item">
-          <button class="btn sub-navbar__menu-item--btn" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </li>
+     <ul class="sub-navbar__menu">
       <li class="sub-navbar__menu-item">
-<button class="btn sub-navbar__menu--item--l-btn">
-<i class="fa-solid fa-plus"></i>
-</button>
+        <a class=" sub-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
       </li>
-        <li class="sub-navbar__menu-item">
-          <button class="btn sub-navbar__menu-item--btn" aria-label="message"><i class="fa-solid fa-envelope"></i></button>
-        </li>
-          <li class="sub-navbar__menu-item">
-          <button class="btn sub-navbar__menu-item--btn" aria-label="profile"><i class="fa-regular fa-user"></i></button>
-          </li>
-</ul>
+      <li class="sub-navbar__menu-item">
+        <a class=" sub-navbar__menu-item--link" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+      <li class="sub-navbar__menu-item">
+        <a class=" sub-navbar__menu--item--link sub-msg--link" aria-label="post">
+          <i class="fa-solid fa-plus"></i>
+        </a>
+      </li>
+      <li class="sub-navbar__menu-item">
+        <a class="sub-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+      </li>
+      <li class="sub-navbar__menu-item">
+        <a class="sub-navbar__menu-item--link" aria-label="profile"><i class="fa-regular fa-user"></i></a>
+      </li>
+
+    </ul> 
 
 
   </nav>
 
   <main class="feed-main">
-<!--     <section class="feed-main__posts">
+    <section class="feed-main__posts">
 
-      <div class="feed-main__posts-card">h</div>
-        <div class="feed-main__posts-card">h</div>
-          <div class="feed-main__posts-card">h</div>
-      <button class="btn pagination-btn">Load more</button>
-    </section> -->
+       <div class="feed-main__posts-card">1</div>
+      <div class="feed-main__posts-card">2</div>
+          <div class="feed-main__posts-card">3</div><div class="feed-main__posts-card">4</div><div class="feed-main__posts-card">5</div>
+    </section>
 
 
 
@@ -88,7 +103,7 @@
 
   </main>
 
-<!--  <script src="/src/js/feed.js" type="module"></script>  -->
+  <!--  <script src="/src/js/feed.js" type="module"></script>  -->
 </body>
 
 </html>
