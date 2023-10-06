@@ -255,11 +255,24 @@ p {
   border-radius: 100%;
   margin: 0 auto; }
 
+.feed-main__wrapper {
+  background-color: red;
+  position: relative;
+  display: flex; }
+  .feed-main__wrapper .observer-trigger {
+    visibility: hidden;
+    position: absolute;
+    padding: 10px;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .feed-main__posts {
+  flex: 1;
   gap: 10px;
   position: relative;
-  background-color: #ee0f34;
-  overflow-y: auto; }
+  background-color: #6b6667;
+  /*   overflow-y: auto; */ }
 
 .feed-main__posts-card {
   background-color: #4805a6;
@@ -302,11 +315,6 @@ p {
     background-color: orchid;
     height: 100%;
     width: 100%; }
-
-.observer-trigger {
-  background-color: pink;
-  position: absolute;
-  bottom: 200px; }
 
 .index-main {
   display: flex;

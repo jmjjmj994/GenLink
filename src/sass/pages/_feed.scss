@@ -1,15 +1,30 @@
 .feed-main {
 
 }
+.feed-main__wrapper {
+  background-color: red;
+  position: relative;
+  display: flex;
+  .observer-trigger {
+    visibility: hidden;
+    position: absolute;
+    padding: 10px;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
+ 
 .feed-main__posts {
-
+flex: 1;
   gap: 10px;
   position: relative;
-  background-color: rgb(238, 15, 52);
-   overflow-y: auto;
+  background-color: rgb(107, 102, 103);
+ /*   overflow-y: auto; */
 
 }
+
 .feed-main__posts-card {
   background-color: rgb(72, 5, 166);
   display: flex;
@@ -61,11 +76,4 @@
     height: 100%;
     width: 100%;
   }
-}
-
-.observer-trigger {
-  background-color:pink;
-  position: absolute;
-  bottom: 200px;
-
 }
