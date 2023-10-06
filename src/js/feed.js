@@ -65,18 +65,21 @@ function observe(trigger) {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (limit < 16) {
-          getAllPosts(limit, offset);
 
-          limit += load;
-          offset = limit;
+
+   if (entry.isIntersecting) {
+        if (offset < 16) {
+          getAllPosts(limit, offset);
+ offset += limit;
+          
+         
+                    console.log(limit, load, offset);
+
         } else {
-          limit = 0;
-          offset = 0;
+        
 
           console.log("done");
-        }
+        } 
       }
     });
   });

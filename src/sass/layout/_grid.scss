@@ -1,76 +1,76 @@
- .index-body,
+.index-body,
 .sign-up-body {
-
-  background-color: orange;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr;
 }
-
-
-
 
 .feed-body {
   display: flex;
   flex-direction: column;
 }
 .feed-main {
-
   display: flex;
-flex: 1;
-  background-color: pink;
+  flex: 1;
   justify-content: center;
-  .feed-main__posts  {
+
+  .feed-main__wrapper {
+      display: flex;
+  justify-content: center;
+  }
+  .feed-main__posts {
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
-.feed-main__posts-card {
-  height: 75dvh;
-  gap: 10px;
-@media screen and (max-width:375px) {
-  width: 100%;
-}
-   @media screen and (min-width:767px) and (max-width:1440px) {
-    width: 25rem;
+    flex-direction: column;
+
+    .feed-main__posts-card {
+      height: 75dvh;
+      @media screen and (min-width: 320px) and (max-width:500px){
+        width: 100%;
+      }
+
+ @media screen and (min-width: 500px) {
+        width: 30rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 30rem;
+
+        margin-inline-start: 5.5em;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 30rem;
+      }
+    }
   }
-   @media screen and (min-width:1440px) {
-    width: 30rem;
+  .feed-main__posts-card:first-child {
+    margin-block-start: 5rem;
+  }
+  .feed-main__posts-card:last-child {
+    margin-block-end: 5rem;
   }
 }
 
-  @media screen and (max-width:767px) {
-   width: 100%;
-  }
-   @media screen and (min-width:767px) and (max-width:1440px) {
-    width: 35rem;
-  }
-   @media screen and (min-width:1440px) {
-    width: 40rem;
-  }
-}
-}
-
-
-
-.main-navbar, .sub-navbar {
+.main-navbar,
+.sub-navbar {
   position: fixed;
-
+  z-index: 1;
 }
 
 .main-navbar {
   height: 100%;
-  @media screen and (min-width:768px) and (max-width:1440px) {
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
     width: 7rem;
   }
-    @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     width: 10rem;
-  
   }
 }
 
-.sub-navbar {  position: fixed;
-z-index: 1;
-bottom: 0;
-height: 5rem;
-width: 100%;
+.sub-navbar {
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
 }
