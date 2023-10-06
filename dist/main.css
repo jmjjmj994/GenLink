@@ -166,6 +166,7 @@ p {
       width: 10rem; } }
 
 .sub-navbar {
+  position: fixed;
   z-index: 1;
   bottom: 0;
   height: 5rem;
