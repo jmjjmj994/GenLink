@@ -258,7 +258,8 @@ p {
 .feed-main__posts {
   gap: 10px;
   position: relative;
-  background-color: #ee0f34; }
+  background-color: #ee0f34;
+  overflow-y: auto; }
 
 .feed-main__posts-card {
   background-color: #4805a6;
@@ -301,6 +302,11 @@ p {
     background-color: orchid;
     height: 100%;
     width: 100%; }
+
+.observer-trigger {
+  background-color: pink;
+  position: absolute;
+  bottom: 200px; }
 
 .index-main {
   display: flex;
