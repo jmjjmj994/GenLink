@@ -3,6 +3,7 @@ const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const POST_PARAM = `social/posts?`;
  const container = getSingleElements(".feed-main__posts");
 async function getAllPosts(limit, offset) {
+  console.log(offset)
   try {
     const response = await fetch(
       BASE_URL + `social/posts?limit=${limit}&offset=${offset}`,
@@ -23,6 +24,8 @@ async function getAllPosts(limit, offset) {
     console.error(err);
   }
 }
+
+
 
 function createHTML(title, body, media, id, tags) {
   const card = document.createElement("div");
@@ -57,21 +60,29 @@ function createHTML(title, body, media, id, tags) {
   return card;
 }
 
-function observe(trigger) {
-  let limit = 5;
-  let load = 5;
-
+ function observe(trigger) {
+  let limit = 4;
+   let offset = 0;
+  const load = 4;
+ 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 
      
 if (entry.isIntersecting) {
       
-    
-      
-              getAllPosts(limit, 0);
+  if (limit < 16) {
+     getAllPosts(limit, offset);
 
-          limit += load;
+     limit += load;
+     offset = limit; 
+      
+  } else {
+    limit = 0
+    offset = 0
+  
+    console.log("done")
+}
           
         
       } 
@@ -82,7 +93,7 @@ if (entry.isIntersecting) {
 }
 
 observe(getSingleElements(".observer-trigger"));
-
+ 
 
 
 /*  

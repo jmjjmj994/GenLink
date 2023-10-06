@@ -259,6 +259,15 @@ p {
   background-color: red;
   position: relative;
   display: flex; }
+  @media screen and (max-width: 375px) {
+    .feed-main__wrapper {
+      width: 100%; } }
+  @media screen and (min-width: 767px) and (max-width: 1440px) {
+    .feed-main__wrapper {
+      width: 25rem; } }
+  @media screen and (min-width: 1440px) {
+    .feed-main__wrapper {
+      width: 30rem; } }
   .feed-main__wrapper .observer-trigger {
     visibility: hidden;
     position: absolute;
