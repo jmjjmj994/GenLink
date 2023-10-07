@@ -1,0 +1,150 @@
+
+
+.profile-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.profile-user-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+background-color: orange;
+.profile-user, .profile-user-buttons, .profile-user-information {
+
+display: flex;
+flex: 1;
+}
+
+} // PARENT
+
+
+.profile-user {background-color: lightblue;
+justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 10px;
+  .profile-user--stats {
+    margin-inline: 10px;
+    text-align: center;
+  }
+
+.profile-user--img {margin-inline-end: 15px;
+ display: block;
+  max-width: 10%;
+  border-radius: 100%;
+}}// BLOCK ELEMENT
+
+.profile-user-information {
+  flex-direction: column;
+  align-items: center;
+  background-color: blue;
+
+} // BLOCK ELEMENT
+.profile-user-buttons {
+  background-color: lightcoral;
+
+} //BLOCK ELEMENT
+
+
+
+
+
+
+
+.profile-posts {flex: 3;
+background-color: pink;}
+
+
+/* .profile-body {
+background-color: black;
+}
+.profile-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+}
+
+.profile-main__profile { 
+background-color:rgb(180, 85, 8);
+height: 20rem;
+ width: 100%;
+}
+.profile-main__profile-user {
+  
+    .profile-main__profile-img {
+          padding-block: 10px;
+        text-align: center;
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius:100%;
+        }
+    }
+    .profile-main__profile-details {
+          padding-block: 5px;
+          text-align: center;
+          .profile-main__profile-details--header {
+
+          }
+          .profile-main__profile-details--subheader {
+
+          }
+    }
+
+}
+    .profile-main__profile-stats {
+   
+       display: flex;
+       justify-content: center;
+       .profile-main__posts-following, .profile-main__posts-followers, .profile-main__posts-posts {
+        text-align: center;
+        padding-inline: 5px;
+        padding-block: 10px;
+        margin-inline: 0.5rem;
+       }
+       .profile-main__posts-following {
+     
+       }
+       .profile-main__posts-followers {
+     
+       }
+       .profile-main__posts-posts {
+       
+       }
+
+       .count {
+        color: black; //js
+       }
+       [data-attribute-following] {}
+       [data-attribute-followers]{}
+       [data-attribute-posts]{}
+    }
+      
+    
+
+
+
+
+
+
+
+.profile-main__user-posts { 
+  background-color: rgb(1, 94, 145);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+flex: 1;
+flex-basis: 20rem;
+background-color: orange;
+outline: 1px solid black;
+  }
+}
+ */

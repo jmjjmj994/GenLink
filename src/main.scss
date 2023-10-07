@@ -6,27 +6,24 @@
 @import "./sass/utils/variables";
 /* @import "./sass/components/carousel"; */
 @import "./sass/forms/forms.scss";
-@import "./sass/layout/grid";
+@import "./sass/layout/layout";
 @import "./sass/layout/header";
 @import "./sass/layout/navbar";
 @import "./sass/pages/feed";
 @import "./sass/pages/index";
 @import "./sass/pages/signup";
+@import "./sass/pages/profile";
 @import "./sass/utils/helpers";
 
 
  html, body {
   height: 100%;
+
 }
- 
+
 
 body {
 
   font-family: "Roboto", sans-serif;
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=18011e&c2=000000&gt=r&gd=dtl
-*/
-/*   background: #18011e;
-  background: radial-gradient(at left top, #0b0123, #000000); */
+
 }

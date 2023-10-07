@@ -25,3 +25,21 @@ input {
   border: none;
   cursor: pointer;
 }
+/* Hide scrollbars on Chrome, Firefox, IE, and Edge */
+.feed-main__posts {
+  /* Hide scrollbar on Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+
+  /* Hide scrollbar on Edge and IE */
+  -ms-overflow-style: none;
+
+  /* Hide scrollbar on Chrome */
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}

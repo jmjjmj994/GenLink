@@ -1,0 +1,46 @@
+.index-body,
+.sign-up-body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+}
+
+
+
+.feed-body, .profile-body {
+  display: flex;
+  @media screen and (min-width:320px) and (max-width:767px) {
+    flex-direction: column;
+  }
+}
+.feed-main {
+  display: flex;
+  flex-grow: 1;
+  background-color: lightcoral;
+    @media screen and (min-width:320px) and (max-width:767px) {
+    order:2;
+  }
+
+  .feed-main__wrapper {
+display: flex;
+justify-content: center;
+
+.feed-main__posts {
+  background-color: rgb(179, 0, 255);
+  padding: 10px;
+  min-height: 100dvh; //change?
+
+}
+  }
+}
+.main-navbar {
+  display: flex;
+  flex-basis: 5rem;
+}
+.sub-navbar {
+  z-index: 1;
+position: fixed;
+bottom: 0;
+width: 100%;}
+/*****************/
+
