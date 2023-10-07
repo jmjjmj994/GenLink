@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -36,19 +36,18 @@ input {
     background-color: transparent; }
 
 h1 {
-  font-size: clamp(1.1rem, 4vw, 2.5rem);
-  font-family: 'Poppins', sans-serif; }
+  font-size: clamp(0.9rem, 2.3vw, 1.8rem); }
 
 h2 {
-  font-size: clamp(1rem, 2.2vw, 1.5rem);
-  font-family: 'Poppins', sans-serif; }
-
-p {
-  font-family: 'Nunito', sans-serif; }
+  font-size: clamp(0.8rem, 2vw, 1.35rem); }
 
 /*  */
 h1, h2 {
   font-weight: normal; }
+
+#subheading {
+  font-weight: 0;
+  font-size: clamp(0.6rem, 1.8vw, 1.2rem); }
 
 /* @import "./sass/components/carousel"; */
 .form .login-btn:hover,
@@ -133,16 +132,13 @@ h1, h2 {
   grid-template-columns: auto;
   grid-template-rows: 1fr; }
 
-.feed-body, .profile-body {
+.feed-body,
+.profile-body {
   display: flex; }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    .feed-body, .profile-body {
-      flex-direction: column; } }
 
 .feed-main {
   display: flex;
-  flex-grow: 1;
-  background-color: lightcoral; }
+  flex-grow: 1; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     .feed-main {
       order: 2; } }
@@ -156,12 +152,14 @@ h1, h2 {
 
 .main-navbar {
   display: flex;
-  flex-basis: 5rem; }
+  min-width: 5rem;
+  width: 15%; }
 
 .sub-navbar {
   z-index: 1;
   position: fixed;
   bottom: 0;
+  height: 5rem;
   width: 100%; }
 
 /*****************/
@@ -176,16 +174,24 @@ h1, h2 {
       display: none; } }
 
 .main-navbar {
-  background-color: #7e0ece; }
+  background-color: rgba(25, 26, 25, 0.902); }
   .main-navbar .main-navbar__menu {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    color: white; }
+    color: white;
+    /* .main-navbar__menu-item:not(:first-child) {
+  padding: 10px;
+} */ }
     .main-navbar .main-navbar__menu .main-navbar__menu-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
       border-radius: 10px;
+      height: 2rem;
       background-color: rgba(26, 26, 62, 0.406);
       position: relative; }
       .main-navbar .main-navbar__menu .main-navbar__menu-item .main-navbar__menu-item--link {
@@ -195,8 +201,6 @@ h1, h2 {
         border-radius: inherit;
         inset: 0;
         position: absolute; }
-    .main-navbar .main-navbar__menu .main-navbar__menu-item:not(:first-child) {
-      padding: 10px; }
     .main-navbar .main-navbar__menu .main-navbar__menu-item:nth-child(6) {
       margin-block-start: 5.5rem; }
     .main-navbar .main-navbar__menu .main-navbar__menu-item:nth-child(7) {
@@ -227,19 +231,18 @@ h1, h2 {
     transition: 150ms;
     color: #416af1; }
 
-.main-msg--link,
-.sub-msg--link {
+.main-msg--link, .sub-msg--link {
   background-color: #416af1;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
   position: relative; }
 
 .main-msg--link {
-  border-radius: 10px; }
+  width: 35px;
+  height: 35px;
+  border-radius: inherit; }
 
 .sub-msg--link {
   font-size: 20px;
@@ -319,139 +322,87 @@ h1, h2 {
   position: relative; }
 
 .profile-main {
-  display: flex;
-  flex: 1;
-  flex-direction: column; }
-
-.profile-user-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: orange; }
-  .profile-user-wrapper .profile-user, .profile-user-wrapper .profile-user-buttons, .profile-user-wrapper .profile-user-information {
-    display: flex;
-    flex: 1; }
-
-.profile-user {
-  background-color: lightblue;
-  justify-content: center;
-  align-items: center;
-  padding-block: 10px;
-  padding-inline: 10px; }
-  .profile-user .profile-user--stats {
-    margin-inline: 10px;
-    text-align: center; }
-  .profile-user .profile-user--img {
-    margin-inline-end: 15px;
-    display: block;
-    max-width: 10%;
-    border-radius: 100%; }
-
-.profile-user-information {
-  flex-direction: column;
-  align-items: center;
-  background-color: blue; }
-
-.profile-user-buttons {
-  background-color: lightcoral; }
-
-.profile-posts {
-  flex: 3;
-  background-color: pink; }
-
-/* .profile-body {
-background-color: black;
-}
-.profile-main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: black; }
+
+.profile-main__wrapper {
+  flex-shrink: 1;
+  display: grid;
+  grid-template-areas: "top-left top-right";
+  grid-template-columns: minmax(30%, 50%) auto;
+  grid-template-rows: auto;
   color: white;
+  letter-spacing: 1px;
+  padding-block-start: 40px; }
 
-}
-
-.profile-main__profile { 
-background-color:rgb(180, 85, 8);
-height: 20rem;
- width: 100%;
-}
-.profile-main__profile-user {
-  
-    .profile-main__profile-img {
-          padding-block: 10px;
-        text-align: center;
-        img {
-            width: 5rem;
-            height: 5rem;
-            border-radius:100%;
-        }
-    }
-    .profile-main__profile-details {
-          padding-block: 5px;
-          text-align: center;
-          .profile-main__profile-details--header {
-
-          }
-          .profile-main__profile-details--subheader {
-
-          }
-    }
-
-}
-    .profile-main__profile-stats {
-   
-       display: flex;
-       justify-content: center;
-       .profile-main__posts-following, .profile-main__posts-followers, .profile-main__posts-posts {
-        text-align: center;
-        padding-inline: 5px;
-        padding-block: 10px;
-        margin-inline: 0.5rem;
-       }
-       .profile-main__posts-following {
-     
-       }
-       .profile-main__posts-followers {
-     
-       }
-       .profile-main__posts-posts {
-       
-       }
-
-       .count {
-        color: black; //js
-       }
-       [data-attribute-following] {}
-       [data-attribute-followers]{}
-       [data-attribute-posts]{}
-    }
-      
-    
-
-
-
-
-
-
-
-.profile-main__user-posts { 
-  background-color: rgb(1, 94, 145);
-  height: 100%;
-  width: 100%;
+.profile-main__user,
+.profile-main__stats,
+.profile-main__buttons {
   display: flex;
-  flex-wrap: wrap;
+  padding-block: 10px; }
 
-  .card {
-flex: 1;
-flex-basis: 20rem;
-background-color: orange;
-outline: 1px solid black;
-  }
-}
- */
+.profile-main__user {
+  grid-area: top-left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .profile-main__user .profile-main__user--img {
+    display: block;
+    min-width: 3rem;
+    width: 25%;
+    border-radius: 100%;
+    border: 3px solid  #4982f7; }
+
+.profile-main__stats {
+  grid-area: top-right;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2; }
+  @media screen and (min-width: 1400px) {
+    .profile-main__stats {
+      align-items: flex-start; } }
+  @media screen and (min-width: 1400px) {
+    .profile-main__stats [data-follow-stat], .profile-main__stats [data-followers-stat], .profile-main__stats [data-posts-stat], .profile-main__stats .count, .profile-main__stats .btn-follow, .profile-main__stats .btn-message {
+      margin-inline-end: 60px; } }
+  .profile-main__stats .profile-main__stats-wrapper {
+    display: flex; }
+  .profile-main__stats .profile-main-stats-stat {
+    margin-inline: 10px; }
+
+.profile-main__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; }
+  @media screen and (min-width: 1400px) {
+    .profile-main__buttons {
+      margin-block-start: 20px;
+      gap: 0px;
+      justify-content: center;
+      padding-inline-start: 8px; } }
+  .profile-main__buttons .btn-follow,
+  .profile-main__buttons .btn-message {
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    background-color: #4982f7;
+    color: white;
+    /*   @media screen  and (min-width:1400px){
+margin-inline-start: 40px;
+margin-block-start: 10px;
+} */ }
+
+.profile-main-posts {
+  background-color: black;
+  flex: 1; }
+
 html, body {
   height: 100%; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: 'Poppins', sans-serif; }

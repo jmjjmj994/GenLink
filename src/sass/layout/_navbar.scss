@@ -1,8 +1,6 @@
 .main-navbar {
  
-  background-color: rgb(126, 14, 206);
- 
-  
+background-color: rgba(25, 26, 25, 0.902);
 .main-navbar__menu {
 flex: 1;
 display: flex;
@@ -12,12 +10,16 @@ justify-content: space-evenly;
 
 color: white;
 .main-navbar__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
   border-radius: 10px;
+  height: 2rem;
   background-color: rgba(26, 26, 62, 0.406);
   position: relative;
   .main-navbar__menu-item--link {
  border-radius: inherit;
-;
   }
   .main-navbar__menu-item--link::before {
     content: "";
@@ -26,9 +28,9 @@ color: white;
     position: absolute;
   }
 }
-.main-navbar__menu-item:not(:first-child) {
+/* .main-navbar__menu-item:not(:first-child) {
   padding: 10px;
-}
+} */
 
 .main-navbar__menu-item:nth-child(6) {
   margin-block-start: 5.5rem;
@@ -79,21 +81,24 @@ padding-inline: 20px;
 }
 
 
-.main-msg--link,
-.sub-msg--link {
-  background-color: #416af1;
+.main-msg--link, .sub-msg--link {
+     background-color: #416af1;
   color: white;
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  position: relative;
+   position: relative;
+}
+.main-msg--link {
+ 
+ 
+  width: 35px;
+  height: 35px;
+border-radius: inherit;
+
 }
 
-.main-msg--link {
-  border-radius: 10px;
-}
+
 
 .sub-msg--link{
   font-size: 20px;

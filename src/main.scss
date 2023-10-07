@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,500;1,400&display=swap");
-@import "./sass/base/reset";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');@import "./sass/base/reset";
 @import "./sass/base/typography";
 @import "./sass/components/buttons";
 @import "./sass/utils/mixins";
@@ -23,7 +22,6 @@
 
 
 body {
-
-  font-family: "Roboto", sans-serif;
+font-family: 'Poppins', sans-serif;
 
 }

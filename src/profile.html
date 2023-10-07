@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
-<script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
     <title>Profile</title>
 </head>
 
 <body class="profile-body">
     <nav class="main-navbar">
         <ul class="main-navbar__menu">
-    
+
             <li class="main-navbar__menu-item">
                 <a href="#" class="btn main-navbar__menu--item--link main-msg--link" aria-label="post">
                     <i class="fa-solid fa-plus"></i>
@@ -30,22 +30,23 @@
                 <a href="#" class="main-navbar__menu-item--link" aria-label="message"><i
                         class="fa-solid fa-envelope"></i></a>
             </li>
-    
+
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i
+                        class="fa-solid fa-user"></i></a>
             </li>
             <li class="main-navbar__menu-item">
                 <a href="#" class="main-navbar__menu-item--link" aria-label="settings">
                     <i class="fa-solid fa-gear"></i>
                 </a>
             </li>
-    
+
             <li class="main-navbar__menu-item">
                 <a class="main-navbar__menu-item--link" aria-label="log out">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
-    
-    
-    
+
+
+
                 </a>
             </li>
         </ul>
@@ -56,7 +57,8 @@
                 <a class=" sub-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu-item--link" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class=" sub-navbar__menu-item--link" aria-label="search"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
                 <a class=" sub-navbar__menu--item--link sub-msg--link" aria-label="post">
@@ -69,50 +71,52 @@
             <li class="sub-navbar__menu-item">
                 <a class="sub-navbar__menu-item--link" aria-label="profile"><i class="fa-regular fa-user"></i></a>
             </li>
-    
+
         </ul>
-    
-    
+
+
     </nav>
 
     <main class="profile-main">
+        <section class="profile-main__wrapper">
+            <section class="profile-main__user">
+                <img class="profile-main__user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+                <h1 class="profile-main__user--name">John Doe</h1>
+                <h2 class="profile-main__user--tagname">@JohnDoe</h2>
+            </section>
 
 
 
-<section class="profile-user-wrapper">
-<section class="profile-user">
-    <img class="profile-user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
-    <div class="profile-user--stats">
-        <h3>120</h3>
-        <span class="count" data-attribute-following>Following</span>
-    </div>
-    <div class="profile-user--stats">
-        <h3>120</h3>
-        <span class="count" data-attribute-followers>Followers</span>
-    </div>
-    <div class="profile-user--stats">
-        <h3>10</h3>
-        <span class="count" data-attribute-posts>Posts</span>
-    </div>
-</section>
+            <section class="profile-main__stats">
+                <div class="profile-main__stats-wrapper">
+                <div class="profile-main-stats-stat">
+                    <p data-follow-stat id="subheading">120</p>
+                    <span class="count follow-count" id="subheading">Following</span>
+                </div>
+                <div class="profile-main-stats-stat">
+                    <p data-followers-stat id="subheading">120</p>
+                    <span class="count followers-count" id="subheading">Followers</span>
+                </div>
+                <div class="profile-main-stats-stat">
+                    <p data-posts-stat id="subheading">120</p>
+                    <span class="count posts-count" id="subheading">Posts</span>
+                </div>
+                </div>
+                    <section class="profile-main__buttons">
+                        <button class="btn btn-follow" id="subheading">Follow</button>
+                        <button class="btn btn-message" id="subheading">Send message</button>
+                    </section>
+                    </section>
+            </section>
 
-<section class="profile-user-information">
-    <h3>John Doe</h3>
-    <h3>@JohnDoe</h3>
-</section>
-
-<section class="profile-user-buttons">
-    <button class="btn follow-btn">Follow</button>
-    <button class="btn send-message-btn">Send message</button>
-</section>
-</section>
+        
 
 
-<section class="profile-posts">
 
-</section>
-
-<!-- <section class="profile-main__profile">
+        <section class="profile-main-posts">
+            e
+        </section>
+        <!-- <section class="profile-main__profile">
 
     <div class="profile-main__profile-user">
    <div class="profile-main__profile-img">
@@ -154,8 +158,7 @@
     </main>
 
 
-<script src="/src/app.js" type="module"></script>
+    <script src="/src/app.js" type="module"></script>
 </body>
 
 </html>
-
