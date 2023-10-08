@@ -41,7 +41,11 @@ padding-block-start: 30px;
     width: 30%;
    border-radius: 100%;
  /*   padding: 10px; */
- 
+ @media screen  and (max-width:1440px){
+  min-width: 8rem;
+  width: 20%;
+  
+ }
 
   }
   .profile-main__user--img, .profile-main__user--name, .profile-main__user--tagname{
