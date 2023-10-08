@@ -1,4 +1,127 @@
+
+
+
+
+
+
 .profile-main {
+  flex: 1;
+display: flex;
+flex-direction: column;
+background-color: black;
+
+}
+.profile-main__wrapper, .profile-main__stats, .profile-main__buttons {
+  display: flex;
+}
+
+.profile-main__wrapper {
+color: white;
+padding-block-start: 30px;
+ 
+
+@media screen and (max-width:1440px) {
+  flex-direction: column;
+}
+}
+.profile-main__user {
+  padding-block-start: 0.5rem;
+  flex: 1;
+ 
+
+  display: flex;
+ align-items:center;
+  flex-direction: column;
+@media screen and (max-width:1440px) {
+  gap: 15px;
+}
+
+    .profile-main__user--img {
+    min-width: 5rem;
+    width: 30%;
+   border-radius: 100%;
+ /*   padding: 10px; */
+ 
+
+  }
+  .profile-main__user--img, .profile-main__user--name, .profile-main__user--tagname{
+     @media screen and (min-width:1440px) {
+     margin-inline-start: 15rem;
+
+   }
+  }
+}
+.profile-main__stats {
+  flex: 1;
+flex-direction: column;
+padding-inline: 5px;
+
+;
+[data-follow-stat], [data-followers-stat], [data-posts-stat], .count{
+  margin-inline-start: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width:1440px) {
+ justify-content: center;
+ align-items: center;
+gap: 10px;
+padding-block-start: 15px;
+}
+/*     @media screen and (max-width:767px) {
+   flex: 2;
+
+   } */
+
+
+.profile-main__stats-wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.profile-main__buttons {
+flex: 1;
+  display: flex;
+  gap: 10px;
+.btn-follow, .btn-message {
+   background-color: #141414;
+  border: 1px solid rgba(54, 54, 54, 0.6);
+  font-weight: 600;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: auto;
+  height: 2rem;
+  margin-inline-start: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+}
+}
+
+
+.profile-main-posts {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .profile-main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -8,13 +131,14 @@
 .profile-main__wrapper {
   flex-shrink: 1;
   display: grid;
-  grid-template-areas:
-    "top-left top-right";
-  grid-template-columns: minmax(30%, 50%) auto;
-  grid-template-rows: auto ;
+  grid-template-areas: "top-left top-right";
+  grid-template-columns: 50%, 50%;
+  grid-template-rows: auto;
   color: white;
   letter-spacing: 1px;
   padding-block-start: 40px;
+  background-color: #303030;
+
 }
 .profile-main__user,
 .profile-main__stats,
@@ -24,48 +148,46 @@
 }
 
 .profile-main__user {
-
   grid-area: top-left;
 
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  
 
   .profile-main__user--img {
     display: block;
     min-width: 3rem;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      min-width: 6rem;
+    }
     width: 25%;
     border-radius: 100%;
-    border: 3px solid  #4982f7;
-   
+    border: 3px solid #4982f7;
   }
-
-
-  
 }
 .profile-main__stats {
   grid-area: top-right;
   justify-content: center;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   line-height: 1.2;
-@media screen  and (min-width:1400px){
-  align-items: flex-start;
-  
-}
+  @media screen and (min-width: 1400px) {
+    align-items: flex-start;
+  }
 
-  [data-follow-stat], [data-followers-stat],[data-posts-stat],.count, .btn-follow, .btn-message {
-    @media screen  and (min-width:1400px){
-
+  [data-follow-stat],
+  [data-followers-stat],
+  [data-posts-stat],
+  .count,
+  .btn-follow,
+  .btn-message {
+    @media screen and (min-width: 1400px) {
       margin-inline-end: 60px;
     }
-
   }
   .profile-main__stats-wrapper {
     display: flex;
-
   }
   .profile-main-stats-stat {
     margin-inline: 10px;
@@ -84,40 +206,31 @@ flex-direction: column;
   }
 }
 .profile-main__buttons {
-
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-   @media screen  and (min-width:1400px){
+  @media screen and (min-width: 1400px) {
     margin-block-start: 20px;
-gap: 0px;
-justify-content: center;
+    gap: 0px;
+    justify-content: center;
 
-padding-inline-start: 8px;
-} 
+    padding-inline-start: 8px;
+  }
   .btn-follow,
   .btn-message {
-    
     border-radius: 10px;
-   height: auto;
- width: auto;
+    height: auto;
+    width: auto;
     padding: 8px;
     background-color: #4982f7;
     color: white;
-    
-/*   @media screen  and (min-width:1400px){
-margin-inline-start: 40px;
-margin-block-start: 10px;
-} */
+
   }
-
-
-
 }
 
 .profile-main-posts {
   background-color: black;
   flex: 1;
 }
+ */
