@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
     <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
+   <!--  <script src="/src/js/navbar.js" type="module"></script> -->
     <title>Profile</title>
 </head>
 
@@ -14,36 +15,31 @@
         <ul class="main-navbar__menu">
 
             <li class="main-navbar__menu-item">
-                <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn"
-                    aria-label="post">
+                <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="home"><i
-                        class="fa-solid fa-house-user"></i></a>
+                <a href="./feed.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="search"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="message"><i
-                        class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
             </li>
 
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i
-                        class="fa-solid fa-user"></i></a>
+                <a href="./profile.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-user"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="settings">
+                <a href="#" class="main-navbar__menu-item--link">
                     <i class="fa-solid fa-gear"></i>
                 </a>
             </li>
 
             <li class="main-navbar__menu-item">
-                <a class="main-navbar__menu-item--link" aria-label="log out">
+                <a class="main-navbar__menu-item--link">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
 
@@ -55,22 +51,21 @@
     <nav class="sub-navbar">
         <ul class="sub-navbar__menu">
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
+                <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu-item--link" aria-label="search"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu--item--link sub-msg--link" aria-label="post">
+                <a class=" sub-navbar__menu--item--link sub-msg--link" id="sub-navbar-btn">
                     <i class="fa-solid fa-plus"></i>
                 </a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class="sub-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+                <a class="sub-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class="sub-navbar__menu-item--link" aria-label="profile"><i class="fa-regular fa-user"></i></a>
+                <a class="sub-navbar__menu-item--link"><i class="fa-regular fa-user"></i></a>
             </li>
 
         </ul>
@@ -81,7 +76,7 @@
     <main class="profile-main">
         <section class="profile-main__wrapper">
             <section class="profile-main__user">
-                <img class="profile-main__user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+                <img class="profile-main__user--img" alt="profile-image">
                 <h1 class="profile-main__user--name"><!-- John Doe --></h1>
                 <!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
  -->
@@ -92,21 +87,21 @@
             <section class="profile-main__stats">
                 <div class="profile-main__stats-wrapper">
                     <div class="profile-main-stats-stat">
-                        <p data-follow-stat id="subheading">120</p>
-                        <span class="count follow-count" id="subheading">Following</span>
+                        <p data-follow-stat class="subheading">120</p>
+                        <span class="count follow-count" class="subheading">Following</span>
                     </div>
                     <div class="profile-main-stats-stat">
-                        <p data-followers-stat id="subheading">120</p>
-                        <span class="count followers-count" id="subheading">Followers</span>
+                        <p data-followers-stat class="subheading">120</p>
+                        <span class="count followers-count" class="subheading">Followers</span>
                     </div>
                     <div class="profile-main-stats-stat">
-                        <p data-posts-stat id="subheading">120</p>
-                        <span class="count posts-count" id="subheading">Posts</span>
+                        <p data-posts-stat class="subheading">120</p>
+                        <span class="count posts-count" class="subheading">Posts</span>
                     </div>
                 </div>
                 <section class="profile-main__buttons">
-                    <button class="btn btn-edit btn-standard" id="subheading">Edit</button>
-                    <button class="btn btn-message btn-standard" id="subheading">Send message</button>
+                    <button class="btn btn-edit btn-standard" class="subheading">Edit</button>
+                    <button class="btn btn-view btn-standard" class="subheading">View profile</button>
                 </section>
             </section>
         </section>
@@ -118,27 +113,42 @@
         <section class="profile-main-posts">
             e
         </section>
-        <section class="create-post hidden">
-            <form action="submit" class="create-post__form">
-                <label for="create-post__title"></label>
-                <input type="text" id="create-post__title" placeholder="Title*">
-                <label for="create-post__image"></label>
-                <input type="text" id="create-post__image" placeholder="Image*">
-                <label for="create-post__tags"></label>
-                <input type="text" id="create-post__tags" placeholder="Post tags">
-                <label for="create-post__content"></label>
-                <textarea name="create-post__content" id="create-post__content" cols="30" rows="15"></textarea>
 
+        <!--Modals-->
+        <section class="create-post-wrapper hidden">
+            <button class="btn btn-close__wrapper btn-standard">X</button>
+            <form action="submit" class="create-post__form">
+                <label for="create-post__title" class="label-hidden">Title*</label>
+                <input type="text" id="create-post__title" placeholder="Title*">
+                <label for="create-post__image" class="label-hidden">Image*</label>
+                <input type="text" id="create-post__image" placeholder="Image*">
+                <label for="create-post__tags" class="label-hidden">Post tags</label>
+                <input type="text" id="create-post__tags" placeholder="Post tags">
+                <label for="create-post__content" class="label-hidden">Content</label>
+                <textarea name="create-post__content" id="create-post__content" cols="30" rows="10"></textarea>
                 <button type="submit" class="btn btn-create__post btn-standard">
                     Submit
                 </button>
             </form>
         </section>
 
+
+
+
+        <section class="show-user-wrapper">
+            <section class="show-user-information">
+                <img class="show-user-information__image" alt="">
+                <p class="show-user-information__username"></p>
+                <p class="show-user-information__useremail"></p>
+                <p class="show-user-information__avatar"></p>
+            </section>
+        </section>
+        <!--Modals-->
+
     </main>
 
 
-    <script src="/src/app.js" type="module"></script>
+    <script src="js/userprofile.js" type="module"></script>
 </body>
 
 </html>

@@ -52,7 +52,6 @@ async function specificPost(param) {
 specificPost("Zorro");
  */
 
-
 /* 
 class Post {
   constructor() {}
@@ -81,9 +80,8 @@ class Post {
 const createTest = new Post();
  createTest.createPost("hei */
 
-(() => {
+/* (() => {
   async function createPost(title, body, tags, media) {
-    console.log(title);
     try {
       const res = await fetch(BASE_URL + `social/posts`, {
         method: "POST",
@@ -112,9 +110,19 @@ const createTest = new Post();
     const bodyInput = getSingleElements("#create-post__content");
     const submitBtn = getSingleElements(".btn-create__post");
     const mainNavbarBtn = getSingleElements("#main-navbar-btn");
+    const subNavbarBtn = getSingleElements("#sub-navbar-btn");
+
     mainNavbarBtn.addEventListener("click", (e) => {
-      modalFormWrapper.classList.add("active");
-      modalFormWrapper.classList.remove("hidden");
+      if (e.currentTarget === mainNavbarBtn) {
+        modalFormWrapper.classList.add("active");
+        modalFormWrapper.classList.remove("hidden");
+      }
+    });
+    subNavbarBtn.addEventListener("click", (e) => {
+      if (e.currentTarget === subNavbarBtn) {
+        modalFormWrapper.classList.add("active");
+        modalFormWrapper.classList.remove("hidden");
+      }
     });
     modalFormWrapper.addEventListener("click", (e) => {
       if (e.currentTarget === modalForm || modalForm.contains(e.target)) {
@@ -155,16 +163,43 @@ const createTest = new Post();
   input();
 })();
 
-
 function renderProfile() {
-  const nameTest = getSingleElements(".profile-main__user--name")
-
-  const profileData = JSON.parse(localStorage.getItem("user"))
- 
+  const username = getSingleElements(".profile-main__user--name");
+  const profileImg = getSingleElements(".profile-main__user--img");
+  const profileData = JSON.parse(localStorage.getItem("user"));
+  console.log(profileData);
   const user = {
-    name: profileData.name
-  }
-  nameTest.textContent = user.name;
-  
+    name: profileData.name,
+    email: profileData.email,
+    avatar: profileData.avatar,
+    banner: profileData.banner,
+  };
+
+  username.textContent = user.name;
+  !user.avatar
+    ? (profileImg.src =
+        "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png ")
+    : (profileImg.src = user.avatar);
+
+  showUserDetails(user.name, user.email, user.avatar);
 }
-renderProfile()
+renderProfile();
+
+function showUserDetails(name, email, avatar) {
+  const btnView = getSingleElements(".btn-view");
+  const userModal = getSingleElements(".show-user-wrapper");
+  const userName = getSingleElements(".show-user-information__username");
+  const userEmail = getSingleElements(".show-user-information__useremail");
+  const profileImage = getSingleElements(".show-user-information__image");
+
+  btnView.addEventListener("click", (e) => {
+    userModal.style.visibility = "visible";
+    userName.textContent = name;
+    userEmail.textContent = email;
+    !avatar
+      ? (profileImage.src =
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png ")
+      : (profileImage.src = avatar);
+    const data = JSON.parse(localStorage.getItem("user"));
+  });
+} */

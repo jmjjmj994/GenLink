@@ -40,8 +40,9 @@ class Login {
       });
 
       const data = await res.json();
+      console.log(data)
       localStorage.setItem("user", JSON.stringify(data))
-      window.location.href = "./yourprofile.html"
+     /*  window.location.href = "./yourprofile.html" */
 
     /*   if (res.status !== 200) {
       } else {

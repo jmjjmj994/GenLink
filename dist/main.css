@@ -45,7 +45,7 @@ h2 {
 h1, h2 {
   font-weight: normal; }
 
-#subheading {
+.subheading {
   font-weight: 0;
   font-size: clamp(0.9rem, 1.8vw, 1.2rem); }
 
@@ -67,7 +67,6 @@ h1, h2 {
   letter-spacing: 1px;
   color: white; }
 
-/* @import "./sass/components/carousel"; */
 .form .login-btn:hover,
 .form .signup-btn:hover {
   background-color: black; }
@@ -144,20 +143,24 @@ h1, h2 {
 #newsletter-text {
   padding-left: 0.5rem; }
 
-.create-post {
+.create-post-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #18161637; }
+  background-color: #18161644; }
+  .create-post-wrapper .btn-close__wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
 
-.create-post__form {
+.create-post-wrapper .create-post__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2px;
+  gap: 8px;
   align-items: center;
   border-radius: 10px;
   padding-block: 10px;
@@ -169,11 +172,11 @@ h1, h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */ }
-  .create-post__form #create-post__title,
-  .create-post__form #create-post__image,
-  .create-post__form #create-post__tags,
-  .create-post__form #create-post__content,
-  .create-post__form .btn-create__post {
+  .create-post-wrapper .create-post__form #create-post__title,
+  .create-post-wrapper .create-post__form #create-post__image,
+  .create-post-wrapper .create-post__form #create-post__tags,
+  .create-post-wrapper .create-post__form #create-post__content,
+  .create-post-wrapper .create-post__form .btn-create__post {
     color: white;
     width: 100%;
     padding: 10px;
@@ -182,42 +185,77 @@ h1, h2 {
     border-radius: 10px;
     outline: none; }
     @media screen and (min-width: 340px) and (max-width: 767px) {
-      .create-post__form #create-post__title,
-      .create-post__form #create-post__image,
-      .create-post__form #create-post__tags,
-      .create-post__form #create-post__content,
-      .create-post__form .btn-create__post {
-        width: 16rem; } }
+      .create-post-wrapper .create-post__form #create-post__title,
+      .create-post-wrapper .create-post__form #create-post__image,
+      .create-post-wrapper .create-post__form #create-post__tags,
+      .create-post-wrapper .create-post__form #create-post__content,
+      .create-post-wrapper .create-post__form .btn-create__post {
+        width: 20rem; } }
     @media screen and (min-width: 767px) {
-      .create-post__form #create-post__title,
-      .create-post__form #create-post__image,
-      .create-post__form #create-post__tags,
-      .create-post__form #create-post__content,
-      .create-post__form .btn-create__post {
+      .create-post-wrapper .create-post__form #create-post__title,
+      .create-post-wrapper .create-post__form #create-post__image,
+      .create-post-wrapper .create-post__form #create-post__tags,
+      .create-post-wrapper .create-post__form #create-post__content,
+      .create-post-wrapper .create-post__form .btn-create__post {
         width: 30rem; } }
     @media screen and (min-width: 1440px) {
-      .create-post__form #create-post__title,
-      .create-post__form #create-post__image,
-      .create-post__form #create-post__tags,
-      .create-post__form #create-post__content,
-      .create-post__form .btn-create__post {
+      .create-post-wrapper .create-post__form #create-post__title,
+      .create-post-wrapper .create-post__form #create-post__image,
+      .create-post-wrapper .create-post__form #create-post__tags,
+      .create-post-wrapper .create-post__form #create-post__content,
+      .create-post-wrapper .create-post__form .btn-create__post {
         width: 35rem; } }
-  .create-post__form #create-post__content {
+  .create-post-wrapper .create-post__form #create-post__content {
     resize: none;
     columns: 1; }
-  .create-post__form .btn-create__post {
+  .create-post-wrapper .create-post__form .btn-create__post {
     margin-block-start: 5px;
     width: 50%; }
 
-.create-post.active {
+.create-post-wrapper.active {
   visibility: visible;
   opacity: 1;
   transition: visibility 150ms, opacity 300ms; }
 
-.create-post.hidden {
+.create-post-wrapper.hidden {
   visibility: hidden;
   opacity: 0;
   transition: visibility 150ms, opacity 300ms; }
+
+.show-user-wrapper {
+  visibility: hidden;
+  background-color: rgba(74, 13, 216, 0.842);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .show-user-wrapper .show-user-information {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #292929;
+    gap: 10px;
+    color: white; }
+    .show-user-wrapper .show-user-information img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 100%; }
+    .show-user-wrapper .show-user-information p {
+      display: block; }
+
+.label-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0; }
 
 .index-body,
 .sign-up-body {
@@ -432,7 +470,7 @@ h1, h2 {
 
 .profile-main__wrapper {
   color: white;
-  padding-block-start: 30px; }
+  padding-block: 30px; }
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
       flex-direction: column; } }
@@ -447,14 +485,20 @@ h1, h2 {
     .profile-main__user {
       gap: 15px; } }
   .profile-main__user .profile-main__user--img {
-    min-width: 5rem;
-    width: 20%;
     border-radius: 100%;
     /*   padding: 10px; */ }
-    @media screen and (max-width: 1440px) {
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       .profile-main__user .profile-main__user--img {
-        min-width: 5rem;
-        width: 10%; } }
+        width: 5.5rem;
+        height: 5.5rem; } }
+    @media screen and (min-width: 767px) and (max-width: 1440px) {
+      .profile-main__user .profile-main__user--img {
+        width: 7.5rem;
+        height: 7.5rem; } }
+    @media screen and (min-width: 1440px) {
+      .profile-main__user .profile-main__user--img {
+        width: 9rem;
+        height: 9rem; } }
   @media screen and (min-width: 1441px) {
     .profile-main__user .profile-main__user--img, .profile-main__user .profile-main__user--name {
       margin-inline-start: 15rem; } }
