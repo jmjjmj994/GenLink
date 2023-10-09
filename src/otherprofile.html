@@ -14,9 +14,10 @@
         <ul class="main-navbar__menu">
 
             <li class="main-navbar__menu-item">
-                <a href="#" class="btn main-navbar__menu--item--link main-msg--link" aria-label="post">
+                <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn"
+                    aria-label="post">
                     <i class="fa-solid fa-plus"></i>
-                </a>
+                </button>
             </li>
             <li class="main-navbar__menu-item">
                 <a href="#" class="main-navbar__menu-item--link" aria-label="home"><i
@@ -80,80 +81,59 @@
     <main class="profile-main">
         <section class="profile-main__wrapper">
             <section class="profile-main__user">
-                <img class="profile-main__user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
-                <h1 class="profile-main__user--name">John Doe</h1>
-<!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
- -->            </section>
+               <img class="profile-main__user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt=""> 
+                <h1 class="profile-main__user--name">Username</h1>
+                <!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
+ -->
+            </section>
 
 
 
             <section class="profile-main__stats">
                 <div class="profile-main__stats-wrapper">
-                <div class="profile-main-stats-stat">
-                    <p data-follow-stat id="subheading">120</p>
-                    <span class="count follow-count" id="subheading">Following</span>
+                    <div class="profile-main-stats-stat">
+                        <p data-follow-stat id="subheading">120</p>
+                        <span class="count follow-count" id="subheading">Following</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-followers-stat id="subheading">120</p>
+                        <span class="count followers-count" id="subheading">Followers</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-posts-stat id="subheading">120</p>
+                        <span class="count posts-count" id="subheading">Posts</span>
+                    </div>
                 </div>
-                <div class="profile-main-stats-stat">
-                    <p data-followers-stat id="subheading">120</p>
-                    <span class="count followers-count" id="subheading">Followers</span>
-                </div>
-                <div class="profile-main-stats-stat">
-                    <p data-posts-stat id="subheading">120</p>
-                    <span class="count posts-count" id="subheading">Posts</span>
-                </div>
-                </div>
-                    <section class="profile-main__buttons">
-                        <button class="btn btn-follow btn-standard" id="subheading">Follow</button>
-                        <button class="btn btn-message btn-standard" id="subheading">Send message</button>
-                    </section>
-                    </section>
+                <section class="profile-main__buttons">
+                    <button class="btn btn-follow btn-standard" id="subheading">Follow</button>
+                    <button class="btn btn-message btn-standard" id="subheading">Send message</button>
+                </section>
             </section>
+        </section>
 
-        
+
 
 
 
         <section class="profile-main-posts">
             e
         </section>
-        <!-- <section class="profile-main__profile">
+        <section class="create-post hidden">
+            <form action="submit" class="create-post__form">
+                <label for="create-post__title"></label>
+                <input type="text" id="create-post__title" placeholder="Title*">
+                <label for="create-post__image"></label>
+                <input type="text" id="create-post__image" placeholder="Image*">
+                <label for="create-post__tags"></label>
+                <input type="text" id="create-post__tags" placeholder="Post tags">
+                <label for="create-post__content"></label>
+                <textarea name="create-post__content" id="create-post__content" cols="30" rows="15"></textarea>
 
-    <div class="profile-main__profile-user">
-   <div class="profile-main__profile-img">
-    <img src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="avatar">
-   </div>
-   <div class="profile-main__profile-details">
-   <h1 class="profile-main__profile-details--header">John Doe</h1>
-    <p class="profile-main__profile-details--subheader">@JohnDoe</p>
-   </div>
-</div>
-
-<div class="profile-main__profile-stats">
-<div class="profile-main__posts-following">
-    <p>Following</p>
-    <span class="count" data-attribute-following>10</span>
-</div>
-
-<div class="profile-main__posts-followers" data-attribute-followers>
-    <p>Followers</p>
-    <span class="count">20</span>
-</div>
-
-<div class="profile-main__posts-posts" data-attribute-posts>
-    <p>Posts</p>
-    <span class="count">200</span>
-</div>
-</div>
-</section>
-
-<section class="profile-main__user-posts">
-<div class="card">1</div>
-<div class="card">2</div>
-<div class="card">3</div>
-<div class="card">4</div>
-<div class="card">5</div>
-<div class="card">6</div>
-</section> -->
+                <button type="submit" class="btn btn-create__post btn-standard">
+                    Submit
+                </button>
+            </form>
+        </section>
 
     </main>
 

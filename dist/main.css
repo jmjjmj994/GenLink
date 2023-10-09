@@ -144,6 +144,81 @@ h1, h2 {
 #newsletter-text {
   padding-left: 0.5rem; }
 
+.create-post {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18161637; }
+
+.create-post__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  align-items: center;
+  border-radius: 10px;
+  padding-block: 10px;
+  padding-inline: 10px;
+  background-color: #303030;
+  height: auto;
+  width: auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */ }
+  .create-post__form #create-post__title,
+  .create-post__form #create-post__image,
+  .create-post__form #create-post__tags,
+  .create-post__form #create-post__content,
+  .create-post__form .btn-create__post {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: #3030302c;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none; }
+    @media screen and (min-width: 340px) and (max-width: 767px) {
+      .create-post__form #create-post__title,
+      .create-post__form #create-post__image,
+      .create-post__form #create-post__tags,
+      .create-post__form #create-post__content,
+      .create-post__form .btn-create__post {
+        width: 16rem; } }
+    @media screen and (min-width: 767px) {
+      .create-post__form #create-post__title,
+      .create-post__form #create-post__image,
+      .create-post__form #create-post__tags,
+      .create-post__form #create-post__content,
+      .create-post__form .btn-create__post {
+        width: 30rem; } }
+    @media screen and (min-width: 1440px) {
+      .create-post__form #create-post__title,
+      .create-post__form #create-post__image,
+      .create-post__form #create-post__tags,
+      .create-post__form #create-post__content,
+      .create-post__form .btn-create__post {
+        width: 35rem; } }
+  .create-post__form #create-post__content {
+    resize: none;
+    columns: 1; }
+  .create-post__form .btn-create__post {
+    margin-block-start: 5px;
+    width: 50%; }
+
+.create-post.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 150ms, opacity 300ms; }
+
+.create-post.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 150ms, opacity 300ms; }
+
 .index-body,
 .sign-up-body {
   display: grid;
@@ -349,7 +424,8 @@ h1, h2 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: black; }
+  background-color: black;
+  position: relative; }
 
 .profile-main__wrapper, .profile-main__stats, .profile-main__buttons {
   display: flex; }
@@ -379,8 +455,8 @@ h1, h2 {
       .profile-main__user .profile-main__user--img {
         min-width: 5rem;
         width: 10%; } }
-  @media screen and (min-width: 1440px) {
-    .profile-main__user .profile-main__user--img, .profile-main__user .profile-main__user--name, .profile-main__user .profile-main__user--tagname {
+  @media screen and (min-width: 1441px) {
+    .profile-main__user .profile-main__user--img, .profile-main__user .profile-main__user--name {
       margin-inline-start: 15rem; } }
 
 .profile-main__stats {
@@ -408,6 +484,10 @@ h1, h2 {
     flex: 1;
     display: flex;
     gap: 10px; }
+
+.profile-main-posts {
+  background-color: red;
+  flex: 1; }
 
 /* .profile-main {
   flex: 1;

@@ -4,6 +4,7 @@
 display: flex;
 flex-direction: column;
 background-color: black;
+position: relative;
 
 }
 .profile-main__wrapper, .profile-main__stats, .profile-main__buttons {
@@ -29,6 +30,7 @@ padding-block-start: 30px;
   flex-direction: column;
 @media screen and (max-width:1440px) {
   gap: 15px;
+ 
 }
 
     .profile-main__user--img {
@@ -43,8 +45,8 @@ padding-block-start: 30px;
  }
 
   }
-  .profile-main__user--img, .profile-main__user--name, .profile-main__user--tagname{
-     @media screen and (min-width:1440px) {
+  .profile-main__user--img , .profile-main__user--name{
+     @media screen and (min-width:1441px) {
      margin-inline-start: 15rem;
 
    }
@@ -82,6 +84,8 @@ padding-block-start: 15px;
 flex: 1;
   display: flex;
   gap: 10px;
+
+  
 .btn-follow, .btn-message {
 
 }
@@ -90,7 +94,8 @@ flex: 1;
 
 
 .profile-main-posts {
-
+background-color: red;
+flex: 1;
 
 }
 

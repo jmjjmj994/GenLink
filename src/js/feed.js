@@ -92,31 +92,3 @@ observe(getSingleElements(".observer-trigger"));
 
 //create posts
 
-class Post {
-  constructor() {}
-
-  async createPost(param) {
-    try {
-      const res = await fetch(BASE_URL + param, {
-        method: "POST",
-        body: JSON.stringify({
-          title: "test12ww3",
-          body: "test123",
-          tags: ["game", "mountain", "dancing"],
-          media:
-            "https://images.unsplash.com/photo-1696024344604-46b33ba2c753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-        }),
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          "content-type": "application/json; charset=UTF-8",
-        },
-      });
-      const data = await res.json();
-      console.log(data);
-    } catch (error) {}
-  }
-}
-
-const createTest = new Post();
-/* createTest.createPost()
- */
