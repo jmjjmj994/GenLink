@@ -1,9 +1,4 @@
 
-
-
-
-
-
 .profile-main {
   flex: 1;
 display: flex;
@@ -38,12 +33,12 @@ padding-block-start: 30px;
 
     .profile-main__user--img {
     min-width: 5rem;
-    width: 30%;
+    width: 20%;
    border-radius: 100%;
  /*   padding: 10px; */
  @media screen  and (max-width:1440px){
-  min-width: 8rem;
-  width: 20%;
+  min-width: 5rem;
+  width: 10%;
   
  }
 
@@ -88,22 +83,7 @@ flex: 1;
   display: flex;
   gap: 10px;
 .btn-follow, .btn-message {
-   background-color: #141414;
-  border: 1px solid rgba(54, 54, 54, 0.6);
-  font-weight: 600;
-  outline: none;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: auto;
-  height: 2rem;
-  margin-inline-start: 15px;
-  padding: 5px;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  color: white;
+
 }
 }
 }

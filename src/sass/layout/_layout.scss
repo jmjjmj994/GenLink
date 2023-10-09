@@ -12,8 +12,16 @@
 .feed-main {
   display: flex;
   flex-grow: 1;
+  flex-direction: column;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     order: 2;
+  }
+
+  .feed-main__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
   }
 
   .feed-main__wrapper {
