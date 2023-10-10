@@ -10,6 +10,7 @@
   display: flex;
 }
 .feed-main {
+  
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -29,7 +30,7 @@
     justify-content: center;
 
     .feed-main__posts {
-      background-color: rgb(179, 0, 255);
+      
       padding: 10px;
       min-height: 100dvh; //change?
     }

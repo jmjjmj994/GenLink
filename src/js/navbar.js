@@ -1,9 +1,7 @@
 import { getSingleElements } from "./dom.js";
- const mainNavbarBtn = getSingleElements("#main-navbar-btn");
- const subNavbarBtn = getSingleElements("#sub-navbar-btn");
- const modalFormWrapper = getSingleElements(".create-post-wrapper");
- const modalForm = getSingleElements(".create-post__form");
- mainNavbarBtn.onclick = () => showPostModal();
+
+const BASE_URL = `https://api.noroff.dev/api/v1/`;
+
 async function createPost(title, body, tags, media) {
   console.log(title, body, tags, media);
   try {
@@ -26,7 +24,6 @@ async function createPost(title, body, tags, media) {
 }
 
 function handleNavbarClick() {
-    
   const mainNavbarBtn = getSingleElements("#main-navbar-btn");
   const subNavbarBtn = getSingleElements("#sub-navbar-btn");
   const modalFormWrapper = getSingleElements(".create-post-wrapper");
@@ -55,6 +52,7 @@ function handleNavbarClick() {
 }
 
 function handleInput() {
+  const modalFormWrapper = getSingleElements(".create-post-wrapper");
   const titleInput = getSingleElements("#create-post__title");
   const mediaInput = getSingleElements("#create-post__image");
   const tagsInput = getSingleElements("#create-post__tags");
@@ -81,7 +79,9 @@ function handleInput() {
   });
 }
 
+
 (() => {
-    handleNavbarClick()
-    handleInput()
-})()
+  handleNavbarClick()
+  handleInput()
+})();
+

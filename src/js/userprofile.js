@@ -1,4 +1,5 @@
 import { getSingleElements } from "./dom.js";
+/* import { getSingleElements } from "./dom.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 
 async function createPost(title, body, tags, media) {
@@ -52,7 +53,6 @@ subNavbarBtn.onclick = () => showPostModal();
 
 function handleInput() {
  const modalFormWrapper = getSingleElements(".create-post-wrapper");
- 
   const titleInput = getSingleElements("#create-post__title");
   const mediaInput = getSingleElements("#create-post__image");
   const tagsInput = getSingleElements("#create-post__tags");
@@ -78,12 +78,12 @@ function handleInput() {
     }
   });
 }
-
+ */
 function renderProfile() {
   const username = getSingleElements(".profile-main__user--name");
   const profileImg = getSingleElements(".profile-main__user--img");
   const profileData = JSON.parse(localStorage.getItem("user"));
-  console.log(profileData);
+ 
   const user = {
     name: profileData.name,
     email: profileData.email,
@@ -120,8 +120,8 @@ function showUserDetails(name, email, avatar) {
 }
 
 (() => {
-  handleNavbarClick();
-  handleInput();
+/*   handleNavbarClick();
+  handleInput(); */
   renderProfile();
 })();
 
