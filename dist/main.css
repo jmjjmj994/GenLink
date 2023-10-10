@@ -505,8 +505,27 @@ h1, h2 {
   display: flex; }
 
 .profile-main__wrapper {
+  position: relative;
   color: white;
-  padding-block: 30px; }
+  padding-block: 30px;
+  /*   @media screen and (min-width:1440px) {
+     height: 30rem;
+    } */ }
+  @media screen and (max-width: 1440px) {
+    .profile-main__wrapper {
+      height: 25rem; } }
+  .profile-main__wrapper .profile-main__wrapper--banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    /*   @media screen and (min-width:1440px) {
+      display: none;
+    } */ }
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
       flex-direction: column; } }
@@ -514,6 +533,7 @@ h1, h2 {
 .profile-main__user {
   padding-block-start: 0.5rem;
   flex: 1;
+  z-index: 1;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -540,6 +560,7 @@ h1, h2 {
       margin-inline-start: 15rem; } }
 
 .profile-main__stats {
+  z-index: 1;
   flex: 1;
   flex-direction: column;
   padding-inline: 5px;

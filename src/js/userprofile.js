@@ -80,26 +80,25 @@ function getCurrentUsername() {
 }
 async function changeUserInput() {
   const imageForm = getSingleElements("#change-user-img__form");
-  const imageInput = getSingleElements("#change-user-img__form--input");
+  const imageInput = getSingleElements("#change-user-img__form--input-avatar");
   const submitBtn = getSingleElements(".btn-change-img");
 
   submitBtn.addEventListener("click", async (e) => {
     const username = getCurrentUsername();
     e.preventDefault();
-    
+
     const imageInputValue = imageInput.value.trim();
     if (!imageInputValue) {
-      console.log("please enter a valid image url")
+      console.log("please enter a valid image url");
     } else {
       try {
         await changeUserImage(imageInputValue, username);
         imageInput.value = "";
-        window.location.reload()
+        window.location.reload();
       } catch (error) {
         //error
       }
     }
-
   });
 }
 
@@ -110,8 +109,6 @@ async function changeUserInput() {
   renderProfile();
   getCurrentUsername();
 })();
-
-
 
 async function singleEntry(param) {
   try {
