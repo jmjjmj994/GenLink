@@ -79,12 +79,7 @@ function handleInput() {
   });
 }
 
-/* function logOut() {
-  const logOutBtn = document.getElementById("main-logout-btn");
-  logOutBtn.addEventListener("click", (e) => {
-  
-})
-} */
+
 
 
 (() => {

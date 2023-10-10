@@ -11,7 +11,8 @@
 
 //input placeholders
 %input-danger {
-    outline: 1px solid red;
+    background-color: red;
+    transition: 200ms;
 }
 %input-success {
        outline: 1px solid lime;

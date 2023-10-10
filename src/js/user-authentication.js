@@ -1,6 +1,6 @@
 import { getSingleElements } from "./dom.js";
 import { nameRegex, emailRegex, passwordRegex } from "./validation.js";
-
+import {inputState} from "./errors.js"
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const NEW_USER_URL = `social/auth/register`;
 const LOGIN_URL = `social/auth/login`;

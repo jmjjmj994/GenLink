@@ -1,5 +1,6 @@
 import { getSingleElements } from "./dom.js";
 import { emailRegex, passwordRegex } from "./validation.js";
+import { inputState } from "./errors.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const LOGIN_URL = `social/auth/login`;
 
@@ -13,15 +14,40 @@ class Login {
       e.preventDefault();
     });
     this.loginBtn.addEventListener("click", (e) => {
-      if (
-        !emailRegex.test(this.emailInput.value.trim()) &&
+      if (this.emailInput.value === "" && this.passwordInput.value === "") {
+        inputState(
+          this.emailInput,
+          "Please enter your email address",
+          "red",
+          2000
+        );
+        inputState(
+          this.passwordInput,
+          "Please enter your password",
+          "red",
+          2000
+        );
+      } else if (
+        emailRegex.test(this.emailInput.value.trim()) &&
         !passwordRegex.test(this.passwordInput.value.trim())
       ) {
-        console.log("email"); //will be an error
-      } else {
-        this.userLogin(this.emailInput.value, this.passwordInput.value);
-        this.emailInput.value = "";
-        this.passwordInput.value = "";
+        inputState(
+          this.passwordInput,
+          "Please enter your password",
+          "red",
+          4000
+        );
+      } else if (
+        passwordRegex.test(this.passwordInput.value.trim()) &&
+        !emailRegex.test(this.emailInput.value.trim())
+      ) {
+        inputState(this.emailInput, "Please enter your email", "red", 4000);
+      } else if (
+        passwordRegex.test(this.passwordInput.value.trim()) &&
+        emailRegex.test(this.emailInput.value.trim())
+      ) {
+        this.loginBtn.style.backgroundColor = "limegreen"
+        window.location.href = "./feed.html"
       }
     });
   }
@@ -39,14 +65,13 @@ class Login {
         headers: { "content-type": "application/json; charset=UTF-8" },
       });
 
-    if (res.status !== 200) {
+      if (res.status !== 200) {
       } else {
-
-      const data = await res.json();
-      localStorage.setItem("user", JSON.stringify(data))
+        const data = await res.json();
+        localStorage.setItem("user", JSON.stringify(data));
         const token = localStorage.setItem("token", data.accessToken);
         window.location.href = "./feed.html";
-      } 
+      }
     } catch (error) {
       console.error("Something went wrong", error); //Eror handling awaiting
       return;
@@ -67,6 +92,3 @@ const user = new Login(
             email: "testbruker123@stud.noroff.no",
             password: "testbruker123123",
  */
-
-
-

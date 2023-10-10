@@ -1,19 +1,16 @@
-
 .feed-main {
   position: relative;
 }
 .feed-main__observer {
-  background-color: rgb(192, 36, 36);
   flex: 1;
   overflow-y: scroll;
 }
 .feed-main__wrapper {
   flex-grow: 1;
   width: 100%;
-  background-color: blue;
 
   .observer-trigger {
-         visibility: hidden;  
+    visibility: hidden;
     background-color: pink;
     position: absolute;
     padding: 10px;
@@ -23,31 +20,21 @@
   }
 }
 .feed-main__posts {
- padding: 0;
- margin: 0;
-width: 100%;
-  background-color: white;
+  width: 100%;
+  background-color: rgb(105, 6, 6);
   display: grid;
-
-
- /*  grid-template-columns:100%;
-  grid-template-rows: 80dvh; */
-
-  @media screen and (min-width:320px) and (max-width:768px) {
-  grid-template-columns: 100%;
-  grid-auto-rows: 80dvh;
-  background-color: orangered;
-
- } 
-  @media screen and (min-width:768px) {
-  grid-template-columns: 25rem;
-  grid-auto-rows: 65dvh;
-    justify-content: center;
-
- }
-  
   position: relative;
   gap: 10px;
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    grid-template-columns: 100%;
+    grid-auto-rows: 80dvh;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 25rem;
+    grid-auto-rows: 65dvh;
+    justify-content: center;
+  }
 }
 .feed-main__posts-card {
   background-color: rgb(196, 195, 195);
@@ -74,6 +61,7 @@ width: 100%;
 
 .feed-main__posts-card__body {
   flex: 20%;
+  background-color: lightcoral;
   .feed-main__posts-card--body--title {
     font-size: clamp(1.1rem, 2.2vw, 1.3rem);
   }
@@ -82,14 +70,10 @@ width: 100%;
     color: royalblue;
     overflow: hidden;
   }
-  img {
-    height: 5rem;
-    width: 5rem;
-    object-fit: cover;
-  }
 }
 
 .feed-main__posts-card__footer {
+  background-color: lightgreen;
   display: flex;
   align-items: flex-end;
   flex: 5%;
@@ -98,4 +82,3 @@ width: 100%;
     width: 100%;
   }
 }
-
