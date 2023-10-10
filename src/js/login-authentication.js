@@ -39,18 +39,14 @@ class Login {
         headers: { "content-type": "application/json; charset=UTF-8" },
       });
 
-      const data = await res.json();
-      console.log(data)
-      localStorage.setItem("user", JSON.stringify(data))
-     /*  window.location.href = "./yourprofile.html" */
-
-    /*   if (res.status !== 200) {
+    if (res.status !== 200) {
       } else {
 
-        const data = await res.json();
+      const data = await res.json();
+      localStorage.setItem("user", JSON.stringify(data))
         const token = localStorage.setItem("token", data.accessToken);
         window.location.href = "./feed.html";
-      } */
+      } 
     } catch (error) {
       console.error("Something went wrong", error); //Eror handling awaiting
       return;
