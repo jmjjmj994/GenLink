@@ -1,18 +1,19 @@
-%btn-focused{
-  background-color: black
+%button-error {
+  background-color: red
 }
 
-.form {
+.index-main__form {
   @include flex-center-content;
   flex-direction: column;
   gap: 1rem;
   padding-block: 10px;
-  max-width: 20rem;
+  max-width: 30rem;
   width: 100%;
-  
+  background-color: orange;
   input{
     outline: none;
   }
+
 
   [type="text"], [type="password"]{
    background-color: $secondary--clr;
@@ -51,9 +52,16 @@
 .login-btn,
 .signup-btn {
   background-color: $accent--clr;
-  &:hover{
- @extend %btn-focused;
-  } 
+  &:hover {
+      @extend %button-success;
+  }
+
+}
+
+
+
+.signup-btn.danger {
+
 }
 
 }

@@ -9,9 +9,11 @@
 }
 .feed-main__wrapper {
   flex-grow: 1;
+  width: 100%;
+  background-color: blue;
 
   .observer-trigger {
-        visibility: hidden; 
+         visibility: hidden;  
     background-color: pink;
     position: absolute;
     padding: 10px;
@@ -21,15 +23,27 @@
   }
 }
 .feed-main__posts {
+ padding: 0;
+ margin: 0;
+width: 100%;
+  background-color: white;
   display: grid;
 
- @media screen and (min-width:320px) and (max-width:768px) {
-  grid-template-columns: 1fr;
+
+ /*  grid-template-columns:100%;
+  grid-template-rows: 80dvh; */
+
+  @media screen and (min-width:320px) and (max-width:768px) {
+  grid-template-columns: 100%;
   grid-auto-rows: 80dvh;
- }
+  background-color: orangered;
+
+ } 
   @media screen and (min-width:768px) {
   grid-template-columns: 25rem;
   grid-auto-rows: 65dvh;
+    justify-content: center;
+
  }
   
   position: relative;
