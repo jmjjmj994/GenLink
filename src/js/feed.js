@@ -137,15 +137,16 @@ async function userSearchInput(id) {
     const data = await response.json();
     const parsedId = parseInt(id); // Parse the input id as an integer
     const singlePost = data.find((post) => {
-/*       const { title, body, media, id, tags } = post;
- */      return post.id === parsedId; // Compare with the parsed id
+    const { title, body, media, id, tags } = post;
+       return post.id === parsedId; // Compare with the parsed id
     });
     
     function loadList(){
       const output = getSingleElements(".list-output")
       let createList = `<ul class="list-item">`;
       data.forEach((item)=>{
-        createList += `<li class="list-item"> ${item.id}</li>`
+        createList += `<li class="list-item"><a href="/src/post-specific-page.html?id=${item.id}">${item.id}</a></li>`;
+
       });
       createList += `</ul>`;
       output.innerHTML = createList;

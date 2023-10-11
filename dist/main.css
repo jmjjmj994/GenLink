@@ -344,10 +344,12 @@ h1, h2 {
   height: 10rem;
   max-height: 8rem;
   margin: 0 auto;
-  padding: 2rem;
   border-radius: 10px;
   background-color: white;
   overflow: hidden; }
+  .output-container .list-item {
+    border-bottom: 1px solid blue;
+    width: 100vw; }
 
 .index-main {
   display: flex;
