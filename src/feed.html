@@ -6,127 +6,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/dist/main.css" />
   <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
-  <script src="/src/js/navbar.js" type="module"></script>
 
   <title>Feed</title>
 </head>
 
 <body class="feed-body">
-
-
-  <header class="header">
-    <button class="btn btn-open-search">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-
-
-    <button class="btn btn-open-settings">
-      <i class="fa-solid fa-gear"></i>
-    </button>
-  </header>
   <nav class="main-navbar">
     <ul class="main-navbar__menu">
 
       <li class="main-navbar__menu-item">
-      <a  href="#" class="btn main-navbar__menu--item--link main-msg--link" aria-label="post">
-        <i class="fa-solid fa-plus"></i>
-      </a>
+        <button class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </li>
       <li class="main-navbar__menu-item">
-        <a href="#" class="main-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
+        <a href="./feed.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
       </li>
       <li class="main-navbar__menu-item">
-        <a href="#" class="main-navbar__menu-item--link" aria-label="search"><i
-            class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
       </li>
       <li class="main-navbar__menu-item">
-        <a href="#" class="main-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
       </li>
 
       <li class="main-navbar__menu-item">
-        <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i class="fa-solid fa-user"></i></a>
+        <a href="./profile.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-user"></i></a>
       </li>
       <li class="main-navbar__menu-item">
-        <a href="#" class="main-navbar__menu-item--link" aria-label="settings">
+        <a href="#" class="main-navbar__menu-item--link">
           <i class="fa-solid fa-gear"></i>
         </a>
       </li>
 
       <li class="main-navbar__menu-item">
-        <a class="main-navbar__menu-item--link" aria-label="log out">
+        <a href="./index.html" class="main-navbar__menu-item--link" id="main-logout-btn">
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
-
-
-
         </a>
       </li>
     </ul>
   </nav>
 
   <nav class="sub-navbar">
-     <ul class="sub-navbar__menu">
+    <ul class="sub-navbar__menu">
       <li class="sub-navbar__menu-item">
-        <a class=" sub-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
+        <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
       </li>
       <li class="sub-navbar__menu-item">
-        <a class=" sub-navbar__menu-item--link" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
       </li>
       <li class="sub-navbar__menu-item">
-        <a class=" sub-navbar__menu--item--link sub-msg--link" aria-label="post">
+        <a class=" sub-navbar__menu--item--link sub-msg--link" id="sub-navbar-btn">
           <i class="fa-solid fa-plus"></i>
         </a>
       </li>
       <li class="sub-navbar__menu-item">
-        <a class="sub-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+        <a class="sub-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
       </li>
       <li class="sub-navbar__menu-item">
-        <a class="sub-navbar__menu-item--link" aria-label="profile"><i class="fa-regular fa-user"></i></a>
+        <a class="sub-navbar__menu-item--link"><i class="fa-regular fa-user"></i></a>
       </li>
 
-    </ul> 
+    </ul>
 
 
   </nav>
 
   <main class="feed-main">
+    <section class="feed-main__user">
+      <div class="list-output">
+    <img style="width:5rem; height:5rem; border-radius: 100%;" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
 
-
-<div class="feed-main__user">
-  <img  style="width:10rem; height:10rem; border-radius: 100%;"  src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
-
-
-  <form action="">
-    <label for="search posts"></label>
-    <input type="search" id="search-posts" placeholder="search posts"> 
-    <button class="btn btn-search-posts btn-standard">Search</button>
-  </form>
-  <div class="output-container">
-  <div class="list-output"></div>
-  </div>  
-
-</div>
-
-
-
-
-<div class="feed-main__observer">
-<div class="feed-main__wrapper">
-    <section class="feed-main__posts">
-
-      
+      <form action="">
+        <label for="search posts"></label>
+        <input type="search" id="search-posts" placeholder="search posts">
+        <button class="btn btn-search-posts btn-standard">Search</button>
+      </form>
+    </div>
     </section>
 
-</div> 
-  <p class="observer-trigger">Hidden</p>
-</div>
 
+    <section class="feed-main__observer">
+      <div class="feed-main__wrapper">
+        <div class="feed-main__posts">
+        </div>
+      </div>
+      <p class="observer-trigger">Hidden</p>
+    </section>
 
-
-
-
+    <section class="create-post-wrapper hidden">
+      <button class="btn btn-close__wrapper btn-standard">X</button>
+      <form action="submit" class="create-post__form">
+        <label for="create-post__title" class="label-hidden">Title*</label>
+        <input type="text" id="create-post__title" placeholder="Title*">
+        <label for="create-post__image" class="label-hidden">Image*</label>
+        <input type="text" id="create-post__image" placeholder="Image*">
+        <label for="create-post__tags" class="label-hidden">Post tags</label>
+        <input type="text" id="create-post__tags" placeholder="Post tags">
+        <label for="create-post__content" class="label-hidden">Content</label>
+        <textarea name="create-post__content" id="create-post__content" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn btn-create__post btn-standard">
+          Submit
+        </button>
+      </form>
+    </section>
   </main>
-
-     <script src="/src/js/feed.js" type="module"></script>  
+<!--   <script src="/src/js/modal-popup.js" type="module"></script>
+ -->
+  <script src="/src/js/feed.js" type="module"></script>
 </body>
 
 </html>
