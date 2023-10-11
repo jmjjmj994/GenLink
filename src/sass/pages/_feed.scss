@@ -72,21 +72,3 @@
     width: 100%;
   }
 }
-
-
-.output-container{
-  z-index: 1;
-  max-width: 80%;
-  width: 20rem;
-  height: 10rem;
-  max-height: 8rem;
-  margin: 0 auto;
-  border-radius: 10px;
-  background-color: white;
-  overflow: hidden;
-
-  .list-item{
-    border-bottom: 1px solid blue;
-    width: 100vw;
-  }
-}
