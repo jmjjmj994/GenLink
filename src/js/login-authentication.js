@@ -46,8 +46,9 @@ class Login {
         passwordRegex.test(this.passwordInput.value.trim()) &&
         emailRegex.test(this.emailInput.value.trim())
       ) {
-        this.loginBtn.style.backgroundColor = "limegreen"
-        window.location.href = "./feed.html"
+        this.loginBtn.style.backgroundColor = "limegreen";
+        this.userLogin(this.emailInput.value, this.passwordInput.value);
+        /* window.location.href = "./feed.html" */
       }
     });
   }
@@ -66,10 +67,12 @@ class Login {
       });
 
       if (res.status !== 200) {
+        console.log(res.status);
       } else {
         const data = await res.json();
+        console.log;
         localStorage.setItem("user", JSON.stringify(data));
-        const token = localStorage.setItem("token", data.accessToken);
+        localStorage.setItem("token", data.accessToken);
         window.location.href = "./feed.html";
       }
     } catch (error) {
