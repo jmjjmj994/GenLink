@@ -118,5 +118,52 @@ class Post {
 }
 
 const createTest = new Post();
-/* createTest.createPost()
- */
+/* createTest.createPost()*/
+
+//filter Search bar
+
+async function userSearchInput(id) {
+  try {
+    const response = await fetch(
+      BASE_URL + `social/posts?`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      }
+    );
+    const data = await response.json();
+    const parsedId = parseInt(id); // Parse the input id as an integer
+    const singlePost = data.find((post) => {
+/*       const { title, body, media, id, tags } = post;
+ */      return post.id === parsedId; // Compare with the parsed id
+    });
+    
+    function loadList(){
+      const output = getSingleElements(".list-output")
+      let createList = `<ul class="list-item">`;
+      data.forEach((item)=>{
+        createList += `<li class="list-item"> ${item.id}</li>`
+      });
+      createList += `</ul>`;
+      output.innerHTML = createList;
+    }
+    loadList()
+
+    console.log(singlePost);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+
+const userSearch = getSingleElements("#search-posts");
+userSearch.addEventListener("input", (e) => {
+  const userSearchValue = userSearch.value;
+  userSearchInput(userSearchValue);
+});
+
+
+
