@@ -1,0 +1,33 @@
+.profile-posts-body {
+  
+    display: flex;
+}
+.profile-posts-main {
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-posts-main__content, .profile-posts-main__image {
+height: 100%;
+}
+.profile-posts-main__image {
+    
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profile-posts-main__image--img {
+   height: 50%;
+   justify-content: center;
+   width: 50%;
+}
+   
+}
+.profile-posts-main__content {
+    background-color: orange;
+    flex: 1;
+
+}
+

@@ -1,4 +1,4 @@
-import { getSingleElements } from "./dom.js";
+import { getSingleElements, getMultipleElements } from "./dom.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const userData = JSON.parse(localStorage.getItem("user"));
 function renderProfile() {
@@ -9,7 +9,6 @@ function renderProfile() {
     email: userData.email,
     avatar: userData.avatar,
   };
-  console.log(user.avatar);
   username.textContent = user.name;
   profileImg.src = user.avatar;
   if (!userData.avatar) {
@@ -44,7 +43,6 @@ function showUserDetails(name, email, avatar) {
 // change profile picture //
 
 async function changeUserImage(imgUrl, username) {
-  console.log(imgUrl, username);
   try {
     const res = await fetch(BASE_URL + `social/profiles/${username}/media`, {
       method: "PUT",
@@ -100,9 +98,8 @@ async function changeUserInput() {
 
 // change profile picture //
 
-async function profilePosts(callback) {
+async function profilePosts() {
   const username = getCurrentUsername();
-  console.log(username);
   try {
     const res = await fetch(BASE_URL + `social/profiles/${username}/posts`, {
       method: "GET",
@@ -131,7 +128,6 @@ function processData(data) {
 }
 
 function dataDateNorwegian(data) {
-
   const options = {
     year: "numeric",
     month: "long",
@@ -143,7 +139,6 @@ function dataDateNorwegian(data) {
   };
 
   const finishedData = data.map((data) => {
-    
     const date = new Date(data.created);
     const newUpdatedDate = new Date(data.updated);
     const norwegianDate = date.toLocaleString("en-US", options);
@@ -161,33 +156,60 @@ function dataDateNorwegian(data) {
     return newData;
   });
 
-
-  renderProfilePosts(finishedData)
- 
-
-
-      
-
+  renderProfilePosts(finishedData);
+ /*  profilePostsOptions(finishedData); */
 }
 
 function renderProfilePosts(data) {
   const profilePostsContainer = getSingleElements(".profile-main-posts");
   for (const { media, id } of data) {
     const container = document.createElement("div");
-    container.className = "profile-main-posts__container"
+    container.className = "profile-main-posts__container";
     const link = document.createElement("a");
-    link.setAttribute("href", `profileposts.html?id=${id}`)
-    link.className = "profile-main-posts__container-link"
+    link.setAttribute("href", `profileposts.html?id=${id}`);
+    link.className = "profile-main-posts__container-link";
     const img = document.createElement("img");
-    img.className = "profile-main-posts__container-img"
-    img.src = media
-    img.alt = "post image"
-    container.append(img, link)
-    profilePostsContainer.appendChild(container)
+    img.className = "profile-main-posts__container-img";
+    img.src = media;
+    img.alt = "post image";
+    container.append(img, link);
+    profilePostsContainer.appendChild(container);
   }
-
 }
 
+/* function profilePostsOptions(data) {
+  const storeData = data.map((data) => {
+    return data;
+  });
+
+
+  const profilePostsContainer = getSingleElements(".profile-main-posts");
+  const currentPostContainer = getSingleElements(
+    "profile-posts-modal__current"
+  );
+  profilePostsContainer.addEventListener("click", (e) => {
+    const targetId = e.target.getAttribute("id");
+    const findData = storeData.find((data) => {
+    const { id } = data;
+      return id === Number(targetId);
+    });
+ console.log(findData.title);
+    img.src = findData.media
+     inputChangeTitle.placeholder = findData.title
+  });
+ 
+
+  const profilePostModal = getSingleElements(".profile-posts-modal__current");
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "profile-posts-modal__current-img";
+  const img = document.createElement("img");
+  img.src = ""
+  img.className = "profile-posts-modal__current-img--image";
+const inputChangeTitle = document.getElementById("change-title") 
+
+  imageContainer.append(img)
+  profilePostModal.append(imageContainer)
+} */
 
 
 
@@ -195,29 +217,44 @@ function renderProfilePosts(data) {
 
 
 
+async function editPost(id) {
 
+  console.log("hei")
+  try {
+    const res = await fetch(BASE_URL + `social/posts/${id}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        title: "string",
+        body: "string",
+        tags: ["string"],
+        media:
+          "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      }),
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "content-type": "application/json; charset=UTF-8",
+      },
+    });
+    const data = await res.json()
+    console.log(data)
+   } catch (error) {
+    
+  }
+}
 
-//params to new site//
-
-
-
-
-
-
-//params to new site//
-
-
-
+  editPost(2765);
 
 
 
 
 (() => {
+
   changeUserInput();
   renderProfile();
   getCurrentUsername();
-  profilePosts(processData);
+  profilePosts();
 })();
+
 
 // flytt til feed og search
 /* async function singleEntry(param) {

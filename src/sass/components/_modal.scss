@@ -173,8 +173,37 @@
 
 
 .profile-posts-modal {
-  height: 100%;
-  width: 100%;
-  background-color: orangered;
+
+height: 20rem;
+width: 20rem;
+   background-color:$modal--clr; 
   position: absolute;
+  display: flex;
+align-items: center;
+
+z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
+  .profile-posts-modal__options {
+position: relative;
+    width: 30rem;
+    margin: 0 auto;
+    height: 30rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,9 +16,8 @@ export function getSingleElements(selector) {
  * @param {Attribute} arg2
  * @returns returns mutiple HTMLElements with one parameter.
  */
-function getMultipleElements(selector, arg1) {
+export function getMultipleElements(selector) {
   const elements = document.querySelectorAll(selector);
-  elements.classList.add(arg1, arg2);
   return elements;
 }
 

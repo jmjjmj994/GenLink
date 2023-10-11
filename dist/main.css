@@ -304,10 +304,22 @@ h1, h2 {
   margin: 0 auto; }
 
 .profile-posts-modal {
-  height: 100%;
-  width: 100%;
-  background-color: orangered;
-  position: absolute; }
+  height: 20rem;
+  width: 20rem;
+  background-color: #2b2b43;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.profile-posts-modal__options {
+  position: relative;
+  width: 30rem;
+  margin: 0 auto;
+  height: 30rem; }
 
 .index-body,
 .sign-up-body {
@@ -316,7 +328,7 @@ h1, h2 {
   grid-template-rows: 1fr; }
 
 .feed-body,
-.profile-body {
+.profile-body, .profile-posts-body {
   display: flex; }
 
 .feed-main {
@@ -512,6 +524,33 @@ h1, h2 {
   position: relative;
   background-color: black; }
 
+.profile-posts-body {
+  display: flex; }
+
+.profile-posts-main {
+  background-color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.profile-posts-main__content, .profile-posts-main__image {
+  height: 100%; }
+
+.profile-posts-main__image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .profile-posts-main__image .profile-posts-main__image--img {
+    height: 50%;
+    justify-content: center;
+    width: 50%; }
+
+.profile-posts-main__content {
+  background-color: orange;
+  flex: 1; }
+
 .profile-main {
   flex: 1;
   display: flex;
@@ -605,19 +644,19 @@ h1, h2 {
     gap: 10px; }
 
 .profile-main-posts {
-  background-color: red;
   flex: 1;
   /* display: grid;
 grid-template-columns: repeat(2, minmax(5rem, auto));
 grid-auto-rows: 15rem  */
   display: flex;
   flex-wrap: wrap;
-  gap: 5px; }
+  gap: 5px;
+  overflow-y: scroll; }
 
 .profile-main-posts__container {
   background-color: orange;
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
   position: relative; }
 
 .profile-main-posts__container-img {
