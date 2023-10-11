@@ -4,8 +4,6 @@ const userData = JSON.parse(localStorage.getItem("user"));
 function renderProfile() {
   const username = getSingleElements(".profile-main__user--name");
   const profileImg = getSingleElements(".profile-main__user--img");
-  /*   const profileData = JSON.parse(localStorage.getItem("user")); */
-
   const user = {
     name: userData.name,
     email: userData.email,

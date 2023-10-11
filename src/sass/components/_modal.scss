@@ -1,8 +1,8 @@
-  .btn-close__wrapper {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+.btn-close__wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .create-post-wrapper {
   width: 100%;
   height: 100%;
@@ -11,8 +11,6 @@
   justify-content: center;
   align-items: center;
   background-color: #1b191969;
-
-
 }
 .create-post-wrapper {
   .create-post__form {
@@ -81,20 +79,25 @@
 }
 // ---------------------------------------------------------------- //
 
-.create-post-wrapper.active {
+.create-post-wrapper.active,
+.change-user-img-wrapper.active,
+.show-user-wrapper.active {
   visibility: visible;
   opacity: 1;
-  transition: visibility 150ms, opacity 300ms;
+  transition: visibility 150ms, opacity 300ms, z-index 500ms;
+  z-index: 2;
 }
-.create-post-wrapper.hidden {
+.create-post-wrapper.hidden,
+.change-user-img-wrapper.hidden,
+.show-user-wrapper.hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 150ms, opacity 300ms;
+  transition: visibility 150ms, opacity 300ms, z-index 500ms;
+  z-index: 0;
 }
 
 .show-user-wrapper {
-  visibility: hidden;
-  background-color: rgba(74, 13, 216, 0.842);
+  background-color: $modal--clr;
   position: absolute;
   height: 100%;
   width: 100%;
