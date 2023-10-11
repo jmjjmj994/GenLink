@@ -26,12 +26,9 @@ async function createPost(title, body, tags, media) {
 function handleNavbarClick() {
   const mainNavbarBtn = getSingleElements("#main-navbar-btn");
   const subNavbarBtn = getSingleElements("#sub-navbar-btn");
-  const mainNavbar = getSingleElements(".main-navbar");
-  console.log(mainNavbar);
   const subNavbar = getSingleElements(".sub-navbar");
   const userEditBtn = getSingleElements(".btn-edit");
   const userDetailsBtn = getSingleElements(".btn-view");
- 
   const modalFormWrapper = getSingleElements(".create-post-wrapper");
   const modalForm = getSingleElements(".create-post__form");
   const showUserContainer = getSingleElements(".show-user-information");
@@ -136,3 +133,5 @@ function handleInput() {
   handleNavbarClick();
   handleInput();
 })();
+
+

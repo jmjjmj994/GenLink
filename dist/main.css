@@ -303,6 +303,12 @@ h1, h2 {
 .btn-change-img {
   margin: 0 auto; }
 
+.profile-posts-modal {
+  height: 100%;
+  width: 100%;
+  background-color: orangered;
+  position: absolute; }
+
 .index-body,
 .sign-up-body {
   display: grid;
@@ -600,7 +606,29 @@ h1, h2 {
 
 .profile-main-posts {
   background-color: red;
-  flex: 1; }
+  flex: 1;
+  /* display: grid;
+grid-template-columns: repeat(2, minmax(5rem, auto));
+grid-auto-rows: 15rem  */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; }
+
+.profile-main-posts__container {
+  background-color: orange;
+  height: 10rem;
+  width: 10rem;
+  position: relative; }
+
+.profile-main-posts__container-img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%; }
+
+.profile-main-posts__container-link {
+  position: absolute;
+  inset: 0; }
 
 /* .profile-main {
   flex: 1;
