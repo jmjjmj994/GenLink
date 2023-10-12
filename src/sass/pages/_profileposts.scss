@@ -3,31 +3,82 @@
     display: flex;
 }
 .profile-posts-main {
-    background-color: rgb(0, 0, 0);
+   
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 1440px) { 
+        flex-direction: row;
+    }
 }
 .profile-posts-main__content, .profile-posts-main__image {
 height: 100%;
 }
 .profile-posts-main__image {
-    
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width:375px) {
+        flex: 1;
+    }
     .profile-posts-main__image--img {
-   height: 50%;
+   display: block;
    justify-content: center;
-   width: 50%;
+   max-width: 50%;
+   width: 100%;
 }
    
 }
-.profile-posts-main__content {
-    background-color: orange;
-    flex: 1;
 
+
+
+.profile-posts-main__content {
+  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+.profile-posts-main__content-header,.profile-posts-main__content-body, .profile-posts-main__content-footer {
+    color: white;
+    flex-basis: auto;
+    background-color: $modal--clr;
+    padding-block-start: 5px;
+    padding-inline-start: 5px;
+/*     @media screen and (min-width:1440px) {
+        flex: 0;} */
+}
+
+ .profile-posts-main__content-header {
+  padding-block-start: 5px;
+    padding-inline-start: 5px;
+    h1 {}
+     @media screen and (min-width:1440px) {
+      
+
+    }
+ }   
+ .profile-posts-main__content-body {
+   
+     @media screen and (min-width:1440px) {
+   
+    
+
+    
+    }
+   
+       
+ p {}
+
+ }
+ .profile-posts-main__content-footer {
+    
+        @media screen and (min-width:1440px) {
+        flex: 0;}
+    p{}
+ }
 }
 

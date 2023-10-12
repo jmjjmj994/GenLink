@@ -123,31 +123,42 @@ async function renderPost(data) {
   const norwegianDate = date.toLocaleString("en-US", options);
   const imageContainer = getSingleElements(".profile-posts-main__image");
   const contentContainer = getSingleElements(".profile-posts-main__content");
+  const contentContainerHeader = getSingleElements(
+    ".profile-posts-main__content-header"
+  );
+  const contentContainerBody = getSingleElements(
+    ".profile-posts-main__content-body"
+  );
+  const contentContainerFooter = getSingleElements(
+    ".profile-posts-main__content-footer"
+  );
   try {
     const postData = await data;
-
     const norwegianUpdateDated = date.toLocaleString("en-US", options);
 
     const image = document.createElement("img");
     image.className = "profile-posts-main__image--img";
     image.src = postData.media;
     image.alt = "Post image";
-    const header = document.createElement("h1");
-    const subheader = document.createElement("p");
-    const bodyText = document.createElement("p");
-    header.textContent = postData.title;
-    subheader.textContent = norwegianUpdateDated;
-    bodyText.textContent = postData.body;
     imageContainer.append(image);
-    contentContainer.append(header, subheader, bodyText);
+    const header = document.createElement("h1");
+    header.textContent = postData.title;
+    const subheader = document.createElement("p");
+    subheader.textContent = norwegianUpdateDated;
+    contentContainerHeader.append(header, subheader);
+    const bodyText = document.createElement("p");
+    bodyText.textContent = postData.body;
+    contentContainerBody.append(bodyText);
     const tags = postData.tags.map((tag) => {
       const postTags = document.createElement("p");
       postTags.textContent = tag;
       return postTags;
     });
     tags.forEach((tag) => {
-      contentContainer.append(tag);
+      contentContainerFooter.append(tag);
     });
+
+
   } catch (error) {}
 }
 
