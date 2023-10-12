@@ -135,25 +135,27 @@ async function userSearchInput(id) {
       }
     );
     const data = await response.json();
-    const parsedId = parseInt(id); // Parse the input id as an integer
-    const singlePost = data.find((post) => {
-    const { title, body, media, id, tags } = post;
-       return post.id === parsedId; // Compare with the parsed id
-    });
-    
-    function loadList(){
-      const output = getSingleElements(".list-output")
-      let createList = `<ul class="list-item">`;
-      data.forEach((item)=>{
-        createList += `<li class="list-item"><a href="/src/post-specific-page.html?id=${item.id}">${item.id}</a></li>`;
+    const parsedId = parseInt(id); 
 
+    const output = getSingleElements(".list-output");
+    const inputBox = getSingleElements("#search-posts");
+
+    inputBox.addEventListener("input", () => {
+      const input = inputBox.value.trim().toLowerCase();
+
+      const result = data.filter((post) => {
+        return post.id.toString().toLowerCase().includes(input);
       });
-      createList += `</ul>`;
-      output.innerHTML = createList;
-    }
-    loadList()
 
-    console.log(singlePost);
+      if (result.length > 0) {
+        const list = result.map((post) => {
+          return `<li class="list-item"><a href="/src/post-specific-page.html?id=${post.id}">${post.id}</a></li>`;
+        });
+        output.innerHTML = `<ul class="list-item">${list.join('')}</ul>`;
+      } else {
+        output.innerHTML = "No matching posts found.";
+      }
+    });
   } catch (err) {
     console.error(err);
   }

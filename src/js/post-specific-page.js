@@ -27,24 +27,13 @@ async function specificPost(id) {
       specificPostContainer.innerHTML += `
       <div>
       <img src=${data.media}>
-
       <h1>${data.title}</h1>
       <h2>${data.body}</h2>
-
-      
-      </div>
-
-      
-      
-      
-      `
+      </div>`
       console.log(data)
     
-      
     } catch (err) {
         console.error(err);
       }
     }
-    
-
 specificPost(parseInt(id))
