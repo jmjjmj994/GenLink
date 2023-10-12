@@ -51,7 +51,7 @@ async function createSidebarSuggestions(data) {
     sidebarContainer.append(sidebarWrapper);
   });
   sidebarContainer.addEventListener("click", (e) => {
-    console.log(e.target);
+    console.log(e.target); //call
   });
 
   const feedSidebarUsersAllUsers = document.createElement("div");
@@ -64,11 +64,15 @@ async function createSidebarSuggestions(data) {
         "feed-sidebar-users__allUsers-wrapper";
       const allUserImg = document.createElement("img");
       const allUsernames = document.createElement("p");
-        allUsernames.textContent = name;
-        
-     
-    allUserImg.src = avatar; 
-      feedSidebarUsersAllUsersWrapper.append(allUserImg, allUsernames);
+      allUsernames.textContent = name;
+      if (!avatar) {
+        allUserImg.src = "../blank.webp";
+        feedSidebarUsersAllUsersWrapper.append(allUserImg);
+      } else {
+        allUserImg.src = avatar;
+        feedSidebarUsersAllUsersWrapper.append(allUserImg);
+      }
+      feedSidebarUsersAllUsersWrapper.append(allUsernames);
       feedSidebarUsersAllUsers.append(feedSidebarUsersAllUsersWrapper);
       sidebarContainer.append(feedSidebarUsersAllUsers);
     });
@@ -86,7 +90,6 @@ export async function followUser() {
       },
     });
     const data = await res.json();
-    console.log(data);
   } catch (error) {}
 
   followUser();

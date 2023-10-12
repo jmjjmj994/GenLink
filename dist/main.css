@@ -482,8 +482,20 @@ h1, h2 {
           margin-block-start: 5px; } }
   .feed-sidebar-users .feed-sidebar-users__allUsers {
     flex: 1;
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     overflow-y: scroll; }
+    .feed-sidebar-users .feed-sidebar-users__allUsers .feed-sidebar-users__allUsers-wrapper:first-child {
+      margin-block-start: 5px; }
+    .feed-sidebar-users .feed-sidebar-users__allUsers .feed-sidebar-users__allUsers-wrapper {
+      display: flex;
+      align-items: center;
+      margin-inline-start: 5px;
+      margin-inline-end: 10px; }
+      @media screen and (max-width: 1551px) {
+        .feed-sidebar-users .feed-sidebar-users__allUsers .feed-sidebar-users__allUsers-wrapper {
+          flex-direction: column; } }
 
 .feed-main {
   position: relative; }
