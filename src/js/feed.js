@@ -70,8 +70,8 @@ function observe(trigger) {
           getAllPosts(limit, offset);
           offset += limit;
 
-          console.log(limit, load, offset);
-        } else {
+/*           console.log(limit, load, offset);
+ */        } else {
           console.log("done");
         }
       }
@@ -105,8 +105,8 @@ class Post {
         },
       });
       const data = await res.json();
-      console.log(data);
-    } catch (error) {}
+/*       console.log(data);
+ */    } catch (error) {}
   }
 }
 

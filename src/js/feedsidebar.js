@@ -50,8 +50,12 @@ async function createSidebarSuggestions(data) {
     );
     sidebarContainer.append(sidebarWrapper);
   });
-  sidebarContainer.addEventListener("click", (e) => {
-    console.log(e.target); //call
+    sidebarContainer.addEventListener("click", (e) => {
+        /*  followUser(); */
+        if (e.target.classList.contains("btn-follow")) {
+        console.log(e.target)
+        }
+   ; //call
   });
 
   const feedSidebarUsersAllUsers = document.createElement("div");
@@ -80,17 +84,15 @@ async function createSidebarSuggestions(data) {
   createSidebarUsers();
 }
 
-export async function followUser() {
+export async function followUser(name) {
   try {
-    const res = await fetch(BASE_URL + `/social/profiles/<name>/follow`, {
+    const res = await fetch(BASE_URL + `/social/profiles/${name}/follow`, {
       method: "PUT",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
-      },
     });
-    const data = await res.json();
+      const data = await res.json();
+      console.log(data)
   } catch (error) {}
 
-  followUser();
+
 }
+

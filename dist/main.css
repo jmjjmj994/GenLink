@@ -81,11 +81,13 @@ h1, h2 {
   .index-main__form [type="text"], .index-main__form [type="password"] {
     background-color: #f4f4f4;
     padding-inline-start: 15px;
-    color: white;
+    color: black;
     font-size: 14px;
     letter-spacing: 1px; }
   .index-main__form [type="text"], .index-main__form [type="password"], .index-main__form button {
     border-radius: 15px; }
+    .index-main__form [type="text"] placeholder, .index-main__form [type="password"] placeholder, .index-main__form button placeholder {
+      color: black; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       .index-main__form [type="text"], .index-main__form [type="password"], .index-main__form button {
         height: 2.5rem;
@@ -583,6 +585,7 @@ h1, h2 {
   display: flex; }
 
 .profile-posts-main {
+  position: relative;
   flex: 1;
   display: flex;
   justify-content: center;
