@@ -4,6 +4,7 @@
 display: flex;
 flex-direction: column;
 background-color: black;
+position: relative;
 
 }
 .profile-main__wrapper, .profile-main__stats, .profile-main__buttons {
@@ -11,9 +12,32 @@ background-color: black;
 }
 
 .profile-main__wrapper {
+  position: relative;
 color: white;
-padding-block-start: 30px;
- 
+padding-block: 30px;
+
+   @media screen and (max-width:1440px) {
+     height: 25rem;
+    }
+
+  /*   @media screen and (min-width:1440px) {
+     height: 30rem;
+    } */
+.profile-main__wrapper--banner {
+     position: absolute;
+  top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+
+    z-index: 0;
+  /*   @media screen and (min-width:1440px) {
+      display: none;
+    } */
+}
+
 
 @media screen and (max-width:1440px) {
   flex-direction: column;
@@ -23,34 +47,46 @@ padding-block-start: 30px;
   padding-block-start: 0.5rem;
   flex: 1;
  
-
+z-index: 1;
   display: flex;
  align-items:center;
   flex-direction: column;
 @media screen and (max-width:1440px) {
   gap: 15px;
+ 
 }
 
     .profile-main__user--img {
-    min-width: 5rem;
-    width: 20%;
+ 
    border-radius: 100%;
  /*   padding: 10px; */
- @media screen  and (max-width:1440px){
-  min-width: 5rem;
-  width: 10%;
+ @media screen and (min-width:300px) and (max-width:767px) {
+    width: 5.5rem;
+   height: 5.5rem;
+ }
+
+
+ @media screen and (min-width:767px)  and  (max-width:1440px){
+width: 7.5rem;
+height: 7.5rem;
+  
+ }
+  @media screen and (min-width:1440px){
+width: 9rem;
+height: 9rem;
   
  }
 
   }
-  .profile-main__user--img, .profile-main__user--name, .profile-main__user--tagname{
-     @media screen and (min-width:1440px) {
+  .profile-main__user--img , .profile-main__user--name{
+     @media screen and (min-width:1441px) {
      margin-inline-start: 15rem;
 
    }
   }
 }
 .profile-main__stats {
+  z-index: 1;
   flex: 1;
 flex-direction: column;
 padding-inline: 5px;
@@ -82,7 +118,9 @@ padding-block-start: 15px;
 flex: 1;
   display: flex;
   gap: 10px;
-.btn-follow, .btn-message {
+
+  
+.btn-edit, .btn-view {
 
 }
 }
@@ -90,10 +128,10 @@ flex: 1;
 
 
 .profile-main-posts {
-
+background-color: red;
+flex: 1;
 
 }
-
 
 
 

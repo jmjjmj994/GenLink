@@ -3,16 +3,16 @@
 @import "./sass/components/buttons";
 @import "./sass/utils/mixins";
 @import "./sass/utils/variables";
-/* @import "./sass/components/carousel"; */
 @import "./sass/forms/forms.scss";
+@import "./sass/components/modal";
 @import "./sass/layout/layout";
-@import "./sass/layout/header";
 @import "./sass/layout/navbar";
 @import "./sass/pages/feed";
 @import "./sass/pages/index";
 @import "./sass/pages/signup";
 @import "./sass/pages/profile";
-@import "./sass/utils/helpers";
+@import "./sass/utils/placeholders";
+@import "./sass/components/error";
 
 
  html, body {

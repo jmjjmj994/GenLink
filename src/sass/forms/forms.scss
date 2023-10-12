@@ -1,18 +1,18 @@
-%btn-focused{
-  background-color: black
-}
+/* @import "../utils/placeholders"; */
 
-.form {
-  @include flex-center-content;
+.index-main__form {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
   padding-block: 10px;
-  max-width: 20rem;
+  max-width: 30rem;
   width: 100%;
-  
   input{
     outline: none;
   }
+
 
   [type="text"], [type="password"]{
    background-color: $secondary--clr;
@@ -20,7 +20,7 @@
       color: white;
       font-size: 14px;
       letter-spacing: 1px;
-       color: white;}
+      ;}
 
 [type="text"], [type="password"], button {
   border-radius: 15px;
@@ -51,10 +51,16 @@
 .login-btn,
 .signup-btn {
   background-color: $accent--clr;
-  &:hover{
- @extend %btn-focused;
-  } 
+
+
 }
+
+.login-btn.danger {
+@extend %button-danger;
+}
+
+
+
 
 }
 
@@ -101,4 +107,12 @@ border-radius: 15px;
 #privacy-text,
 #newsletter-text {
   padding-left: 0.5rem;
+}
+#existing-text {
+  color: white;
+
+  a {
+     color: #6a28fd;
+  margin-inline-start: 5px;
+  }
 }

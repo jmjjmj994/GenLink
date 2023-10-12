@@ -65,21 +65,15 @@ function observe(trigger) {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-
-
-   if (entry.isIntersecting) {
+      if (entry.isIntersecting) {
         if (offset < 16) {
           getAllPosts(limit, offset);
- offset += limit;
-          
-         
-                    console.log(limit, load, offset);
+          offset += limit;
 
+          console.log(limit, load, offset);
         } else {
-        
-
           console.log("done");
-        } 
+        }
       }
     });
   });
@@ -88,7 +82,6 @@ function observe(trigger) {
 }
 
 observe(getSingleElements(".observer-trigger"));
-
 
 //create posts
 
@@ -167,6 +160,4 @@ userSearch.addEventListener("input", (e) => {
   const userSearchValue = userSearch.value;
   userSearchInput(userSearchValue);
 });
-
-
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
     <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
+
     <title>Profile</title>
 </head>
 
@@ -14,35 +15,31 @@
         <ul class="main-navbar__menu">
 
             <li class="main-navbar__menu-item">
-                <a href="#" class="btn main-navbar__menu--item--link main-msg--link" aria-label="post">
+                <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn">
                     <i class="fa-solid fa-plus"></i>
-                </a>
+                </button>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="home"><i
-                        class="fa-solid fa-house-user"></i></a>
+                <a href="./feed.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="search"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="message"><i
-                        class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="main-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
             </li>
 
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="profile"><i
-                        class="fa-solid fa-user"></i></a>
+                <a href="./profile.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-user"></i></a>
             </li>
             <li class="main-navbar__menu-item">
-                <a href="#" class="main-navbar__menu-item--link" aria-label="settings">
+                <a href="#" class="main-navbar__menu-item--link">
                     <i class="fa-solid fa-gear"></i>
                 </a>
             </li>
 
             <li class="main-navbar__menu-item">
-                <a class="main-navbar__menu-item--link" aria-label="log out">
+                <a href="./index.html" class="main-navbar__menu-item--link" id="main-logout-btn">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
 
@@ -54,22 +51,21 @@
     <nav class="sub-navbar">
         <ul class="sub-navbar__menu">
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu-item--link" aria-label="home"><i class="fa-solid fa-house-user"></i></a>
+                <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu-item--link" aria-label="search"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class=" sub-navbar__menu--item--link sub-msg--link" aria-label="post">
+                <a class=" sub-navbar__menu--item--link sub-msg--link" id="sub-navbar-btn">
                     <i class="fa-solid fa-plus"></i>
                 </a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class="sub-navbar__menu-item--link" aria-label="message"><i class="fa-solid fa-envelope"></i></a>
+                <a class="sub-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
             </li>
             <li class="sub-navbar__menu-item">
-                <a class="sub-navbar__menu-item--link" aria-label="profile"><i class="fa-regular fa-user"></i></a>
+                <a class="sub-navbar__menu-item--link"><i class="fa-regular fa-user"></i></a>
             </li>
 
         </ul>
@@ -79,86 +75,102 @@
 
     <main class="profile-main">
         <section class="profile-main__wrapper">
+            <img class="profile-main__wrapper--banner" alt="">
             <section class="profile-main__user">
-                <img class="profile-main__user--img" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
-                <h1 class="profile-main__user--name">John Doe</h1>
-<!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
- -->            </section>
+                <img class="profile-main__user--img" alt="profile-image">
+                <h1 class="profile-main__user--name"><!-- John Doe --></h1>
+                <!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
+ -->
+            </section>
 
 
 
             <section class="profile-main__stats">
                 <div class="profile-main__stats-wrapper">
-                <div class="profile-main-stats-stat">
-                    <p data-follow-stat id="subheading">120</p>
-                    <span class="count follow-count" id="subheading">Following</span>
+                    <div class="profile-main-stats-stat">
+                        <p data-follow-stat class="subheading">120</p>
+                        <span class="count follow-count" class="subheading">Following</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-followers-stat class="subheading">120</p>
+                        <span class="count followers-count" class="subheading">Followers</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-posts-stat class="subheading">120</p>
+                        <span class="count posts-count" class="subheading">Posts</span>
+                    </div>
                 </div>
-                <div class="profile-main-stats-stat">
-                    <p data-followers-stat id="subheading">120</p>
-                    <span class="count followers-count" id="subheading">Followers</span>
-                </div>
-                <div class="profile-main-stats-stat">
-                    <p data-posts-stat id="subheading">120</p>
-                    <span class="count posts-count" id="subheading">Posts</span>
-                </div>
-                </div>
-                    <section class="profile-main__buttons">
-                        <button class="btn btn-follow btn-standard" id="subheading">Follow</button>
-                        <button class="btn btn-message btn-standard" id="subheading">Send message</button>
-                    </section>
-                    </section>
+                <section class="profile-main__buttons">
+                    <button class="btn btn-edit btn-standard" class="subheading">Edit</button>
+                    <button class="btn btn-view btn-standard" class="subheading">View profile</button>
+                </section>
             </section>
+        </section>
 
-        
+
 
 
 
         <section class="profile-main-posts">
             e
         </section>
-        <!-- <section class="profile-main__profile">
 
-    <div class="profile-main__profile-user">
-   <div class="profile-main__profile-img">
-    <img src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="avatar">
-   </div>
-   <div class="profile-main__profile-details">
-   <h1 class="profile-main__profile-details--header">John Doe</h1>
-    <p class="profile-main__profile-details--subheader">@JohnDoe</p>
-   </div>
-</div>
+        <!--Modals-->
+        <section class="create-post-wrapper hidden">
+            <button class="btn btn-close__wrapper btn-standard">X</button>
+            <form action="submit" class="create-post__form">
+                <label for="create-post__title" class="label-hidden">Title*</label>
+                <input type="text" id="create-post__title" placeholder="Title*">
+                <label for="create-post__image" class="label-hidden">Image*</label>
+                <input type="text" id="create-post__image" placeholder="Image*">
+                <label for="create-post__tags" class="label-hidden">Post tags</label>
+                <input type="text" id="create-post__tags" placeholder="Post tags">
+                <label for="create-post__content" class="label-hidden">Content</label>
+                <textarea name="create-post__content" id="create-post__content" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn btn-create__post btn-standard">
+                    Submit
+                </button>
+            </form>
+        </section>
 
-<div class="profile-main__profile-stats">
-<div class="profile-main__posts-following">
-    <p>Following</p>
-    <span class="count" data-attribute-following>10</span>
-</div>
 
-<div class="profile-main__posts-followers" data-attribute-followers>
-    <p>Followers</p>
-    <span class="count">20</span>
-</div>
 
-<div class="profile-main__posts-posts" data-attribute-posts>
-    <p>Posts</p>
-    <span class="count">200</span>
-</div>
-</div>
-</section>
 
-<section class="profile-main__user-posts">
-<div class="card">1</div>
-<div class="card">2</div>
-<div class="card">3</div>
-<div class="card">4</div>
-<div class="card">5</div>
-<div class="card">6</div>
-</section> -->
+        <section class="show-user-wrapper hidden">
+                <button class="btn btn-close__wrapper btn-standard">X</button>
+            <div class="show-user-information">
+                <img class="show-user-information__image" alt="">
+                <p class="show-user-information__username"></p>
+                <p class="show-user-information__useremail"></p>
+                <p class="show-user-information__avatar"></p>
+            </div>
+        </section>
+
+
+
+
+        <section class="change-user-img-wrapper hidden">
+            <button class="btn btn-close__wrapper btn-standard">X</button>
+            <form id="change-user-img__form">
+
+                <label for="change-user-img__form--input-avatar">Change your avatar</label>
+                <input type="text" id="change-user-img__form--input-avatar"
+                    placeholder="https://www.example.com/images/pic.jpg">
+
+
+                <div class="change-user-img__form-current-img">
+                    <img class="change-user-img__form-current-img--image" alt="">
+                </div>
+                <button class="btn btn-change-img btn-standard">Submit</button>
+                </div>
+            </form>
+        </section>
+        <!--Modals-->
 
     </main>
 
-
-    <script src="/src/app.js" type="module"></script>
+    <script src="/src/js/modal-popup.js" type="module"></script>
+    <script src="js/userprofile.js" type="module"></script>
 </body>
 
 </html>

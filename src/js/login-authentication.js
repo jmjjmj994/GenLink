@@ -1,5 +1,6 @@
 import { getSingleElements } from "./dom.js";
 import { emailRegex, passwordRegex } from "./validation.js";
+import { inputState } from "./errors.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const LOGIN_URL = `social/auth/login`;
 
@@ -13,15 +14,41 @@ class Login {
       e.preventDefault();
     });
     this.loginBtn.addEventListener("click", (e) => {
-      if (
-        !emailRegex.test(this.emailInput.value.trim()) &&
+      if (this.emailInput.value === "" && this.passwordInput.value === "") {
+        inputState(
+          this.emailInput,
+          "Please enter your email address",
+          "red",
+          2000
+        );
+        inputState(
+          this.passwordInput,
+          "Please enter your password",
+          "red",
+          2000
+        );
+      } else if (
+        emailRegex.test(this.emailInput.value.trim()) &&
         !passwordRegex.test(this.passwordInput.value.trim())
       ) {
-        console.log("email"); //will be an error
-      } else {
+        inputState(
+          this.passwordInput,
+          "Please enter your password",
+          "red",
+          4000
+        );
+      } else if (
+        passwordRegex.test(this.passwordInput.value.trim()) &&
+        !emailRegex.test(this.emailInput.value.trim())
+      ) {
+        inputState(this.emailInput, "Please enter your email", "red", 4000);
+      } else if (
+        passwordRegex.test(this.passwordInput.value.trim()) &&
+        emailRegex.test(this.emailInput.value.trim())
+      ) {
+        this.loginBtn.style.backgroundColor = "limegreen";
         this.userLogin(this.emailInput.value, this.passwordInput.value);
-        this.emailInput.value = "";
-        this.passwordInput.value = "";
+        /* window.location.href = "./feed.html" */
       }
     });
   }
@@ -40,9 +67,12 @@ class Login {
       });
 
       if (res.status !== 200) {
+        console.log(res.status);
       } else {
         const data = await res.json();
-        const token = localStorage.setItem("token", data.accessToken);
+        console.log;
+        localStorage.setItem("user", JSON.stringify(data));
+        localStorage.setItem("token", data.accessToken);
         window.location.href = "./feed.html";
       }
     } catch (error) {
@@ -65,6 +95,3 @@ const user = new Login(
             email: "testbruker123@stud.noroff.no",
             password: "testbruker123123",
  */
-
-
-
