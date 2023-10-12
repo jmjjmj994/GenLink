@@ -84,3 +84,80 @@ function observe(trigger) {
 observe(getSingleElements(".observer-trigger"));
 
 //create posts
+
+class Post {
+  constructor() {}
+
+  async createPost(param) {
+    try {
+      const res = await fetch(BASE_URL + param, {
+        method: "POST",
+        body: JSON.stringify({
+          title: "test12ww3",
+          body: "test123",
+          tags: ["game", "mountain", "dancing"],
+          media:
+            "https://images.unsplash.com/photo-1696024344604-46b33ba2c753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+        }),
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {}
+  }
+}
+
+const createTest = new Post();
+/* createTest.createPost()*/
+
+//filter Search bar
+
+async function userSearchInput(id) {
+  try {
+    const response = await fetch(
+      BASE_URL + `social/posts?`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      }
+    );
+    const data = await response.json();
+    const parsedId = parseInt(id); 
+
+    const output = getSingleElements(".list-output");
+    const inputBox = getSingleElements("#search-posts");
+
+    inputBox.addEventListener("input", () => {
+      const input = inputBox.value.trim().toLowerCase();
+
+      const result = data.filter((post) => {
+        return post.id.toString().toLowerCase().includes(input);
+      });
+
+      if (result.length > 0) {
+        const list = result.map((post) => {
+          return `<li class="list-item"><a href="/src/post-specific-page.html?id=${post.id}">${post.id}</a></li>`;
+        });
+        output.innerHTML = `<ul class="list-item">${list.join('')}</ul>`;
+      } else {
+        output.innerHTML = "No matching posts found.";
+      }
+    });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+
+const userSearch = getSingleElements("#search-posts");
+userSearch.addEventListener("input", (e) => {
+  const userSearchValue = userSearch.value;
+  userSearchInput(userSearchValue);
+});
+
