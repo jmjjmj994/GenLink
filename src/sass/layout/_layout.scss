@@ -6,7 +6,7 @@
 }
 
 .feed-body,
-.profile-body {
+.profile-body, .profile-posts-body {
   display: flex;
 }
 .feed-main {
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+ 
   }
 
   .feed-main__wrapper {
@@ -45,7 +45,7 @@
   z-index: 1;
   position: fixed;
   bottom: 0;
-  height: 5rem;
+  height: 3.5rem;
   width: 100%;
 }
 /*****************/

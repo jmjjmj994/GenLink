@@ -10,6 +10,7 @@
 @import "./sass/pages/feed";
 @import "./sass/pages/index";
 @import "./sass/pages/signup";
+@import "./sass/pages/profileposts";
 @import "./sass/pages/profile";
 @import "./sass/utils/placeholders";
 @import "./sass/components/error";
@@ -23,5 +24,6 @@
 
 body {
 font-family: 'Poppins', sans-serif;
+background-color: $primary--bg;
 
 }

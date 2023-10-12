@@ -70,7 +70,6 @@ class Login {
         console.log(res.status);
       } else {
         const data = await res.json();
-        console.log;
         localStorage.setItem("user", JSON.stringify(data));
         localStorage.setItem("token", data.accessToken);
         window.location.href = "./feed.html";
