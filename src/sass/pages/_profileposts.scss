@@ -55,7 +55,7 @@ height: 100%;
  .profile-posts-main__content-header {
   padding-block-start: 5px;
     padding-inline-start: 5px;
-    h1 {}
+   /*  h1 {} */
      @media screen and (min-width:1440px) {
       
 
@@ -71,14 +71,66 @@ height: 100%;
     }
    
        
- p {}
+/*  p {} */
 
  }
  .profile-posts-main__content-footer {
     
         @media screen and (min-width:1440px) {
         flex: 0;}
-    p{}
+/*     p{} */
  }
 }
 
+//edit post 
+
+.edit-post-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .edit-postBtn{
+    width: 5rem;
+    height: 3rem;
+    border: solid 1px black;
+  }
+
+  .modal-content-changes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #post-title, #post-tags, #post-content {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  #saveChanges {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

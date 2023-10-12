@@ -102,6 +102,7 @@ async function getPost() {
     });
     const data = await res.json();
     renderPost(data);
+    editPost(data)
   } catch (error) {}
 }
 
@@ -162,4 +163,96 @@ async function renderPost(data) {
   } catch (error) {}
 }
 
+async function editPost(data) {
+  try {
+    const currentData = await data;
+    const editPostBtn = document.querySelector("#edit-postBtn");
+    const editModal = document.querySelector("#editModal");
+    const closeModal = document.querySelector(".close");
+    const saveChangesBtn = document.querySelector("#saveChanges");
+    const postTitleInput = document.querySelector("#post-title");
+    const postContentTextarea = document.querySelector("#post-content");
+    const newPostTags = document.querySelector("#post-tags");
+    const header = document.createElement("h1");
+    const bodyText = document.createElement("p");
+    const contentContainerFooter = getSingleElements(".profile-posts-main__content-footer");
+
+    closeModal.addEventListener("click", () =>{
+      editModal.style.display = "none";
+    })
+
+    editPostBtn.addEventListener("click", () => {
+      editModal.style.display = "block";
+
+      // Populate input fields with current post data for editing
+      postTitleInput.value = currentData.title;
+      postContentTextarea.value = currentData.body;
+      newPostTags.value = currentData.tags.join(",");
+    });
+
+    saveChangesBtn.addEventListener("click", async () => {
+      const newTitle = postTitleInput.value;
+      const newContent = postContentTextarea.value;
+      const newTags = newPostTags.value.split(",");
+
+      // Update the post data with the new values
+      currentData.title = newTitle;
+      currentData.body = newContent;
+      currentData.tags = newTags;
+
+      // You can now update the post content on the page
+      header.textContent = newTitle;
+      bodyText.textContent = newContent;
+      contentContainerFooter.innerHTML = "";
+
+      // Create and append new tag elements
+      newTags.forEach((tag) => {
+        const editedPostTags = document.createElement("p");
+        editedPostTags.textContent = tag;
+        contentContainerFooter.append(editedPostTags);
+      });
+
+
+      // Send the updated data to the server
+      const updateData = {
+        title: newTitle,
+        body: newContent,
+        tags: newTags,
+      };
+
+      try {
+        const response = await fetch(BASE_URL + `social/posts/${parseInt(id)}`, {
+          method: "PUT", // Use 'PUT' or 'POST' based on your server implementation
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            "content-type": "application/json; charset=UTF-8",
+          },
+          body: JSON.stringify(updateData),
+        });
+        
+
+        if (response.ok) {
+          console.log("post updated")
+        } else {
+          console.log("post didnt get the update")
+          console.log(response)
+
+        }
+      } catch (error) {
+        console.error(error);
+      }
+
+      // Close the modal
+      editModal.style.display = "none";
+    });
+  } catch (error) {}
+}
+
+
+
 //single post
+
+
+
+
+
