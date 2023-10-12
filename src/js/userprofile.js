@@ -4,10 +4,12 @@ const userData = JSON.parse(localStorage.getItem("user"));
 function renderProfile() {
   const username = getSingleElements(".profile-main__user--name");
   const profileImg = getSingleElements(".profile-main__user--img");
+  const bannerImg = getSingleElements(".profile-main__wrapper--banner");
   const user = {
     name: userData.name,
     email: userData.email,
     avatar: userData.avatar,
+    banner: userData.banner
   };
   username.textContent = user.name;
   profileImg.src = user.avatar;
@@ -17,6 +19,15 @@ function renderProfile() {
   } else {
     profileImg.src = user.avatar;
   }
+
+  if (!userData.banner) {
+    bannerImg.src =
+      "https://images.unsplash.com/photo-1580610447943-1bfbef5efe07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
+    
+  } else {
+    bannerImg.src = user.banner
+  }
+  console.log()
 
   showUserDetails(user.name, user.email, user.avatar);
 }
