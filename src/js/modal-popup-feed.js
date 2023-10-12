@@ -27,31 +27,18 @@ function handleNavbarClick() {
   const mainNavbarBtn = getSingleElements("#main-navbar-btn");
   const subNavbarBtn = getSingleElements("#sub-navbar-btn");
   const subNavbar = getSingleElements(".sub-navbar");
-  const userEditBtn = getSingleElements(".btn-edit");
-  const userDetailsBtn = getSingleElements(".btn-view");
+  
   const modalFormWrapper = getSingleElements(".create-post-wrapper");
   const modalForm = getSingleElements(".create-post__form");
-  const showUserContainer = getSingleElements(".show-user-information");
-  const changeImgWrapper = getSingleElements(".change-user-img-wrapper");
-  const changeImgWrapperForm = getSingleElements("#change-user-img__form");
-  const showUserWrapper = getSingleElements(".show-user-wrapper");
+
   mainNavbarBtn.onclick = () => showPostModal();
   subNavbarBtn.onclick = () => showPostModal();
-  userEditBtn.onclick = () => showUserEdit();
-  userDetailsBtn.onclick = () => showUserDetails();
+
   function showPostModal() {
     modalFormWrapper.classList.add("active");
     modalFormWrapper.classList.remove("hidden");
   }
-  function showUserEdit() {
-    changeImgWrapper.classList.add("active");
-    changeImgWrapper.classList.remove("hidden");
-  }
 
-  function showUserDetails() {
-    showUserWrapper.classList.add("active");
-    showUserWrapper.classList.remove("hidden");
-  }
 
   function hideModals() {
     modalFormWrapper.addEventListener("click", (e) => {
@@ -66,35 +53,7 @@ function handleNavbarClick() {
       }
     });
 
-    changeImgWrapper.addEventListener("click", (e) => {
-      if (
-        e.currentTarget === changeImgWrapperForm ||
-        changeImgWrapperForm.contains(e.target)
-      ) {
-        console.log("ok");
-      } else if (
-        e.currentTarget !== changeImgWrapperForm ||
-        !changeImgWrapperForm.contains(e.target)
-      ) {
-        changeImgWrapper.classList.remove("active");
-        changeImgWrapper.classList.add("hidden");
-      }
-    });
 
-    showUserWrapper.addEventListener("click", (e) => {
-      if (
-        e.currentTarget === showUserContainer ||
-        showUserContainer.contains(e.target)
-      ) {
-        console.log("ok");
-      } else if (
-        e.currentTarget !== showUserContainer ||
-        !showUserContainer.contains(e.target)
-      ) {
-        showUserWrapper.classList.remove("active");
-        showUserWrapper.classList.add("hidden");
-      }
-    });
   }
   hideModals();
 }
