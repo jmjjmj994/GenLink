@@ -32,7 +32,26 @@ async function createSidebarSuggestions(data) {
     }
   });
 
-  filterData.forEach((user) => {
+  for (const { name, avatar } of filterData) {
+    const sidebarWrapper = document.createElement("div");
+    sidebarWrapper.className = "feed-sidebar-users__container-wrapper";
+    const sidebarWrapperImage = document.createElement("img");
+    sidebarWrapperImage.src = avatar;
+    const sidebarWrapperButton = document.createElement("button");
+    sidebarWrapperButton.className = "btn-follow";
+    sidebarWrapperButton.textContent = "Follow";
+    const sidebarWrapperText = document.createElement("p");
+    sidebarWrapperText.className = "p";
+    sidebarWrapperText.textContent = name;
+    sidebarWrapper.append(
+      sidebarWrapperImage,
+      sidebarWrapperText,
+      sidebarWrapperButton
+    );
+    sidebarContainer.append(sidebarWrapper);
+  }
+
+  /*   filterData.forEach((user) => {
     const { name, avatar } = user;
     const sidebarWrapper = document.createElement("div");
     sidebarWrapper.className = "feed-sidebar-users__container-wrapper";
@@ -42,17 +61,26 @@ async function createSidebarSuggestions(data) {
     sidebarWrapperButton.className = "btn-follow";
     sidebarWrapperButton.textContent = "Follow";
     const sidebarWrapperText = document.createElement("p");
+    sidebarWrapperText.className = "p";
     sidebarWrapperText.textContent = name;
     sidebarWrapper.append(
       sidebarWrapperImage,
       sidebarWrapperText,
       sidebarWrapperButton
     );
-    sidebarContainer.append(sidebarWrapper);
-  });
-  sidebarContainer.addEventListener("click", (e) => {
-    console.log(e.target); //call
-  });
+    sidebarContainer.append(sidebarWrapper); */
+  /*
+    sidebarWrapper.addEventListener("click", (e) => {
+      if (e.target.classList.contains("btn-follow")) {
+        const paragraph = e.target
+          .closest(".feed-sidebar-users__container-wrapper")
+          .querySelector(".p");
+
+        if (paragraph) {
+          followUser(paragraph.textContent);
+        }
+      }
+    }); */
 
   const feedSidebarUsersAllUsers = document.createElement("div");
   async function createSidebarUsers() {
@@ -80,17 +108,16 @@ async function createSidebarSuggestions(data) {
   createSidebarUsers();
 }
 
-export async function followUser() {
+export async function followUser(name) {
   try {
-    const res = await fetch(BASE_URL + `/social/profiles/<name>/follow`, {
+    const res = await fetch(BASE_URL + `social/profiles/${name}/follow`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
       },
     });
     const data = await res.json();
-  } catch (error) {}
 
-  followUser();
+    console.log(data);
+  } catch (error) {}
 }
