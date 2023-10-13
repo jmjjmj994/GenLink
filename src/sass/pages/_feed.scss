@@ -119,6 +119,7 @@
   display: flex;
   flex-direction: column;
   outline: 1px solid red;
+ 
 }
 .feed-main__posts-card__header {
   background: radial-gradient(circle, #4f46e4 10%, transparent 11%);
@@ -154,7 +155,9 @@
   background-color: lightgreen;
   display: flex;
   align-items: flex-end;
+  gap: 50px;
   flex: 5%;
+  a { background-color: #4f46e4; }
   .feed-main__posts-card--body--tags {
     height: 100%;
     width: 100%;

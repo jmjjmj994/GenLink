@@ -34,6 +34,16 @@ function createHTML(title, body, media, id, tags) {
   const cardBody = document.createElement("div");
   cardBody.className = "feed-main__posts-card__body";
   const cardFooter = document.createElement("div");
+  const profileLink = document.createElement("a")
+  const postLink = document.createElement("a")
+  profileLink.textContent = "Profile"
+  postLink.textContent = "Post"
+  profileLink.setAttribute("href", `otherprofile.html?id=${id}`)
+  postLink.setAttribute("href", `post-specific-page.html?id=${id}`)
+  
+
+
+
   cardFooter.className = "feed-main__posts-card__footer";
   if (media) {
     const feedHeaderImage = document.createElement("img");
@@ -53,7 +63,7 @@ function createHTML(title, body, media, id, tags) {
   feedTagsContent.className = "feed-main__posts-card--body--tags";
   feedTagsContent.textContent = tags;
   cardBody.append(feedBodyTitle, feedBodyContent);
-  cardFooter.append(feedTagsContent);
+  cardFooter.append(profileLink, postLink, feedTagsContent);
   card.append(cardHeader, cardBody, cardFooter);
   return card;
 }

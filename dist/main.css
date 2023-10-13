@@ -640,7 +640,10 @@ h1, h2 {
   background-color: lightgreen;
   display: flex;
   align-items: flex-end;
+  gap: 50px;
   flex: 5%; }
+  .feed-main__posts-card__footer a {
+    background-color: #4f46e4; }
   .feed-main__posts-card__footer .feed-main__posts-card--body--tags {
     height: 100%;
     width: 100%; }
