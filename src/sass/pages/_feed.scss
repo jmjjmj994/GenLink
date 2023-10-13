@@ -114,18 +114,18 @@
   }
 }
 .feed-main__posts-card {
-  background-color: rgb(0, 239, 136);
+ background-color: $secondary--clr;
   box-shadow: 0 0 5px white;
   display: flex;
   flex-direction: column;
-  outline: 1px solid red;
+
 }
 .feed-main__posts-card__header {
   background: radial-gradient(circle, #4f46e4 10%, transparent 11%);
   background-size: 3em 3em;
   background-color: #000000;
   opacity: 1;
-  flex: 70%;
+  flex: 40%;
   position: relative;
   .feed-main__posts-card--header--img {
     position: absolute;
@@ -138,27 +138,62 @@
 }
 
 .feed-main__posts-card__body {
-  flex: 20%;
-  background-color: lightcoral;
-  .feed-main__posts-card--body--title {
-    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  flex: 40%;
+  padding: 10px;
+ 
+
+  p {
+    margin-block:0.5rem ;
+  }
+  .feed-main__posts-card--body-author {
+    font-size: clamp(1.4rem, 2.5vw, 1.5rem);
+  }
+  .feed-main__posts-card--body-title {
+    font-size: clamp(1.2rem, 2.2vw, 1.3rem);
   }
 
-  .feed-main__posts-card--body--text {
+  .feed-main__posts-card--body-text {
     color: royalblue;
     overflow: hidden;
   }
 }
 
 .feed-main__posts-card__footer {
-  background-color: lightgreen;
+ 
   display: flex;
   align-items: flex-end;
+  
   flex: 5%;
-  .feed-main__posts-card--body--tags {
-    height: 100%;
-    width: 100%;
+.feed-main__posts-card-footer-links{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  a {
+    background-color: $accent--clr;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: 100ms;
+    &:hover {
+      transform: scale(1.05);
+      transition: 100ms;
+    }
+
+    &:focus {
+       transform: scale(1.05);
+      transition: 100ms;
+    }
   }
+height: 100%;}
+.feed-main__posts-card-footer-tags {
+height: 100%;
+display: flex;
+align-items: center;
+padding: 10px;
+gap: 10px;}
 }
 
 .feed-main__user-popup {

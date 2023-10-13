@@ -1,89 +1,53 @@
 import { getSingleElements } from "./dom.js";
+import { GET } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
-const POST_PARAM = `social/posts?`;
+const POST_PARAM = `social/posts`;
 const container = getSingleElements(".feed-main__posts");
-async function getAllPosts(limit, offset) {
-  console.log(offset);
-  try {
-    const response = await fetch(
-      BASE_URL + `social/posts?limit=${limit}&offset=${offset}`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          "content-type": "application/json; charset=UTF-8",
-        },
-      }
-    );
-    const data = await response.json();
-    console.log(data);
-    data.forEach(({ title, body, media, id, tags }) => {
-      container.append(createHTML(title, body, media, id, tags));
-    });
-  } catch (err) {
-    console.error(err);
-  }
-}
 
-function createHTML(title, body, media, id, tags) {
-  const card = document.createElement("div");
-  card.className = "feed-main__posts-card";
-  card.setAttribute("id", id);
-  const cardHeader = document.createElement("div");
-  cardHeader.className = "feed-main__posts-card__header";
-  const cardBody = document.createElement("div");
-  cardBody.className = "feed-main__posts-card__body";
-  const cardFooter = document.createElement("div");
-  cardFooter.className = "feed-main__posts-card__footer";
-  if (media) {
-    const feedHeaderImage = document.createElement("img");
-    feedHeaderImage.className = "feed-main__posts-card--header--img";
-    feedHeaderImage.src = media;
-    feedHeaderImage.alt = "image";
-    cardHeader.appendChild(feedHeaderImage);
-  }
+const allPosts = await GET("social/posts?_author=true");
+function createHTML() {
+  const filterPosts = allPosts.filter((post) => {
+    const postAuthor = post;
 
-  const feedBodyTitle = document.createElement("p");
-  feedBodyTitle.className = "feed-main__posts-card--body--title";
-  feedBodyTitle.textContent = title;
-  const feedBodyContent = document.createElement("p");
-  feedBodyContent.className = "feed-main__posts-card--body--text";
-  feedBodyContent.textContent = body;
-  const feedTagsContent = document.createElement("p");
-  feedTagsContent.className = "feed-main__posts-card--body--tags";
-  feedTagsContent.textContent = tags;
-  cardBody.append(feedBodyTitle, feedBodyContent);
-  cardFooter.append(feedTagsContent);
-  card.append(cardHeader, cardBody, cardFooter);
-  return card;
-}
-
-function observe(trigger) {
-  let limit = 4;
-  let offset = 0;
-  const load = 4;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (offset < 16) {
-          getAllPosts(limit, offset);
-          offset += limit;
-
-/*           console.log(limit, load, offset);
- */        } else {
-          console.log("done");
-        }
-      }
-    });
+    if (postAuthor) return post.title.length > 4;
   });
 
-  observer.observe(trigger);
+  container.innerHTML = filterPosts
+    .map((post) => {
+      const { id, title, body, tags, media, created, updated, author } = post;
+      const authorName = author.name;
+      let authorAvatar = author.avatar;
+
+      if (media) {
+        return `
+<div class="feed-main__posts-card">
+<div class="feed-main__posts-card__header">
+<img  class="feed-main__posts-card--header--img" src="${media}" />
+</div>
+<div class="feed-main__posts-card__body">
+<p class="feed-main__posts-card--body-author"> Author: ${authorName} </p>
+<p class="feed-main__posts-card--body-title" >${title} </p>
+<p class="feed-main__posts-card--body-text"> ${body}</p>
+</div>
+<div class="feed-main__posts-card__footer">
+<div class="feed-main__posts-card-footer-links">
+<a  href="${authorName}"> View Profile </a>
+<a href="${id}">View Post</a>
+</div>
+<div class="feed-main__posts-card-footer-tags">
+
+<p> ${tags}</p>
+
+</div>
+</div>
+    </div> 
+    `;
+      }
+    })
+    .join("");
 }
 
-observe(getSingleElements(".observer-trigger"));
-
-//create posts
+createHTML();
 
 class Post {
   constructor() {}
@@ -105,8 +69,9 @@ class Post {
         },
       });
       const data = await res.json();
-/*       console.log(data);
- */    } catch (error) {}
+      /*       console.log(data);
+       */
+    } catch (error) {}
   }
 }
 
@@ -117,18 +82,15 @@ const createTest = new Post();
 
 async function userSearchInput(id) {
   try {
-    const response = await fetch(
-      BASE_URL + `social/posts?`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          "content-type": "application/json; charset=UTF-8",
-        },
-      }
-    );
+    const response = await fetch(BASE_URL + `social/posts?`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "content-type": "application/json; charset=UTF-8",
+      },
+    });
     const data = await response.json();
-    const parsedId = parseInt(id); 
+    const parsedId = parseInt(id);
 
     const output = getSingleElements(".list-output");
     const inputBox = getSingleElements("#search-posts");
@@ -144,7 +106,7 @@ async function userSearchInput(id) {
         const list = result.map((post) => {
           return `<li class="list-item"><a href="/src/post-specific-page.html?id=${post.id}">${post.id}</a></li>`;
         });
-        output.innerHTML = `<ul class="list-item">${list.join('')}</ul>`;
+        output.innerHTML = `<ul class="list-item">${list.join("")}</ul>`;
       } else {
         output.innerHTML = "No matching posts found.";
       }
@@ -154,12 +116,8 @@ async function userSearchInput(id) {
   }
 }
 
-
 const userSearch = getSingleElements("#search-posts");
 userSearch.addEventListener("input", (e) => {
   const userSearchValue = userSearch.value;
   userSearchInput(userSearchValue);
 });
-
-
-

@@ -141,7 +141,9 @@ padding: 10px;
 
 
 #feed-search-form {
-
+@media screen and (max-width:1035px) {
+  display: none;
+}
 width: auto;
 height: auto;
 display: flex;
