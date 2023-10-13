@@ -74,17 +74,8 @@
     </nav>
 
     <main class="profile-posts-main">
-        <button class="edit-postBtn" id="edit-postBtn">Edit post</button>
-        <div id="editModal" class="edit-post-modal">
-            <div class="modal-content-changes">
-              <button class="close">&times;</button>
-              <h2>Edit Post</h2>
-              <input type="text" id="post-title" placeholder="Post Title">
-              <input type="text" id="post-tags" placeholder="Post Tags">
-              <textarea id="post-content" placeholder="Post Content"></textarea>
-              <button id="saveChanges">Save Changes</button>
-            </div>
-          </div>
+
+  
 
 
 
@@ -99,7 +90,29 @@
 <div class="profile-posts-main__content-body">
 </div>
 
-<div class="profile-posts-main__content-footer"></div>
+<div class="profile-posts-main__content-footer">
+    <button class="edit-postBtn" id="edit-postBtn">Edit post</button>
+    <div id="edit-modal" class="edit-post-modal">
+        <div class="modal-content-changes">
+          <button class="close">&times;</button>
+          <h2>Edit Post</h2>
+          <input type="text" id="post-title" placeholder="Post Title">
+          <input type="text" id="post-tags" placeholder="Post Tags">
+          <textarea id="post-content" placeholder="Post Content"></textarea>
+          <button id="saveChanges">Save Changes</button>
+        </div>
+      </div>
+
+
+      <button class="delete-postBtn" id="delete-postBtn">Delete post</button>
+      <div id="delete-modal" class="delete-post-modal">
+          <div class="modal-content-changes">
+            <button class="close-delete-modal">&times;</button>
+            <h2>Delete Post</h2>
+            <button id="deletePost">Are you sure? </button>
+          </div>
+        </div>
+</div>
 </section>
 
 

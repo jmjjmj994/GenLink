@@ -24,6 +24,35 @@ async function getAllPosts(limit, offset) {
     console.error(err);
   }
 }
+async function getPostProfiles() {
+  try {
+    const res = await fetch(BASE_URL + `social/profiles`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "content-type": "application/json; charset=UTF-8",
+      },
+    });
+
+    if (res.status === 404) {
+      throw new Error(res.status);
+    } else {
+      const data = await res.json();
+      specificProfilePage(data)
+    }
+  } catch (error) {
+    console.log("response error");
+  }
+}
+
+getPostProfiles();
+
+async function specificProfilePage (data){
+  const profilePostData = await data;
+  console.log(profilePostData)
+
+}
+
 
 function createHTML(title, body, media, id, tags) {
   const card = document.createElement("div");
