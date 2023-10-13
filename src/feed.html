@@ -72,9 +72,9 @@
   </nav>
 
   <section class="feed-sidebar-users">
-   <div class="feed-sidebar-users__container">
+    <div class="feed-sidebar-users__container">
 
-   </div>
+    </div>
   </section>
 
   <main class="feed-main">
@@ -88,11 +88,23 @@
         <button class="btn btn-search-posts btn-standard">Search</button>
       </form> -->
 
-    <img style="width:5rem; height:5rem; border-radius: 100%;" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+      <!--     <img style="width:5rem; height:5rem; border-radius: 100%;" src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+ -->
 
-      <form action="">
-        <label for="search posts"></label>
-        <input type="search" id="search-posts" placeholder="search posts" autocomplete="off">
+
+     
+
+     
+
+
+      <form action="" id="feed-search-form">
+
+        <div class="feed-search-form__container">
+          <label for="search posts" class="label-hidden">search posts</label>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="search-posts" placeholder="Search..." autocomplete="off">
+
+        </div>
 
         <div class="output-container">
           <div class="list-output"></div>
@@ -114,7 +126,7 @@
       <p class="observer-trigger">Hidden</p>
     </section>
 
-    <section class="create-post-wrapper hidden">
+    <section class="create-post-wrapper ">
       <button class="btn btn-close__wrapper btn-standard">X</button>
       <form action="submit" class="create-post__form">
         <label for="create-post__title" class="label-hidden">Title*</label>
@@ -132,7 +144,7 @@
     </section>
   </main>
   <script src="/src/js/feedsidebar.js" type="module"></script>
- <script src="/src/js/modal-popup-feed.js" type="module"></script>
+  <script src="/src/js/modal-popup-feed.js" type="module"></script>
   <script src="/src/js/feed.js" type="module"></script>
 </body>
 

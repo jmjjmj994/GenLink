@@ -87,8 +87,24 @@ function handleInput() {
   });
 }
 
+
+
+
+
+
+
+
+
+
 (() => {
   /*   logOut() */
   handleNavbarClick();
   handleInput();
 })();
+
+
+
+
+
+
+

@@ -188,39 +188,6 @@ function renderProfilePosts(data) {
   }
 }
 
-/* function profilePostsOptions(data) {
-  const storeData = data.map((data) => {
-    return data;
-  });
-
-
-  const profilePostsContainer = getSingleElements(".profile-main-posts");
-  const currentPostContainer = getSingleElements(
-    "profile-posts-modal__current"
-  );
-  profilePostsContainer.addEventListener("click", (e) => {
-    const targetId = e.target.getAttribute("id");
-    const findData = storeData.find((data) => {
-    const { id } = data;
-      return id === Number(targetId);
-    });
- console.log(findData.title);
-    img.src = findData.media
-     inputChangeTitle.placeholder = findData.title
-  });
- 
-
-  const profilePostModal = getSingleElements(".profile-posts-modal__current");
-  const imageContainer = document.createElement("div");
-  imageContainer.className = "profile-posts-modal__current-img";
-  const img = document.createElement("img");
-  img.src = ""
-  img.className = "profile-posts-modal__current-img--image";
-const inputChangeTitle = document.getElementById("change-title") 
-
-  imageContainer.append(img)
-  profilePostModal.append(imageContainer)
-} */
 
 
 

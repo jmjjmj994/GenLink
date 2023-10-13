@@ -39,8 +39,8 @@
     p {
       font-size: 10px;
     }
-    button {
-      background-color: #416af1;
+      span {
+     background-color: limegreen;
       color: white;
       padding: 5px;
 
@@ -50,7 +50,9 @@
         margin: 0 auto;
         margin-block-start: 5px;
       }
+  
     }
+ 
   }
 
   .feed-sidebar-users__allUsers {
@@ -92,7 +94,7 @@
     visibility: hidden;
     position: absolute;
     padding: 10px;
-    bottom: 200px;
+    bottom: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -161,4 +163,16 @@
     height: 100%;
     width: 100%;
   }
+}
+
+.feed-main__user-popup {
+  background-color: blue;
+  position: absolute;
+  height: 9rem;
+  width: 0rem;
+  margin-left: 31px;
+}
+.feed-main__user-popup.show {
+  width: 50rem;
+  z-index: 1;
 }

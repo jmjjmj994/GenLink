@@ -5,22 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/dist/main.css" />
-
+<script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
 <script src="/src/js/login-authentication.js" type="module"></script>
   <title>Login</title>
 </head>
 
 <body class="index-body">
   <main class="index-main">
-    <span class="index-main__error">
-      Error
-    </span>
+  
 
 
     <form class="index-main__form" id="index-form">
+<div class="index-main__form-container">
       <input placeholder="@stud.noroff.no" class="email-input" id="current-email" name="current-email" type="text" />
+      <i class="fa-solid fa-exclamation error-sign hide"></i>
+      <i class="fa-solid fa-check  success-sign hide"></i>
+</div>
+
+<div class="index-main__form-container">
+
+
       <input placeholder="Password..." class="password-input" id="current-password" name="current-password"
         type="password" />
+  <i class="fa-solid fa-exclamation error-sign hide"></i>
+  <i class="fa-solid fa-check success-sign hide"></i>
+
+        </div>
       <button class="btn login-btn" id="login-btn">Log in</button>
       <p class="form__sign-up">Dont have an account?  <a href="./signup.html" >Sign up</a></p>
     </form>

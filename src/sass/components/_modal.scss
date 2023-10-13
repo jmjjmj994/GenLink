@@ -22,9 +22,22 @@
     border-radius: 10px;
     padding-block: 10px;
     padding-inline: 10px;
-    background-color: $modal--clr;
+    background-color: $secondary--clr;
     height: auto;
     width: auto;
+
+
+    #create-post__title,
+    #create-post__image,
+    #create-post__tags,
+    #create-post__content{
+      &::placeholder {
+        color: black;
+      }
+    }
+
+
+
 
     #create-post__title,
     #create-post__image,
@@ -35,10 +48,9 @@
       width: 100%;
       padding: 10px;
       background-color: #3030302c;
-      border: 1px solid black;
-      border-radius: 10px;
+      border-radius: 5px;
       outline: none;
-
+      color: black;
       @media screen and (min-width: 340px) and (max-width: 767px) {
         width: 20rem;
       }
@@ -53,6 +65,8 @@
     #create-post__content {
       resize: none;
       columns: 1;
+      border: none;
+      color: black;
     }
     .btn-create__post {
       margin-block-start: 5px;
