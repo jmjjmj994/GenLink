@@ -17,9 +17,17 @@
   [type="text"], [type="password"]{
    background-color: $secondary--clr;
       padding-inline-start: 15px;
-      color: white;
       font-size: 14px;
       letter-spacing: 1px;
+      transition: 100ms;
+      
+      &::placeholder {
+        color: black
+      }
+      &:focus {
+       outline: 0.5px solid blue;
+       transition: 100ms
+      }
       ;}
 
 [type="text"], [type="password"], button {
@@ -115,4 +123,97 @@ border-radius: 15px;
      color: #6a28fd;
   margin-inline-start: 5px;
   }
+}
+
+
+.feed-main__user {
+ background-color:$secondary--clr;
+  gap: 10px;
+height: auto;
+padding: 10px;
+  position: relative;
+
+}
+
+
+#feed-search-form {
+
+width: auto;
+height: auto;
+display: flex;
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+
+.feed-search-form__container {
+   position: relative;
+   width: 50rem;
+   background-color: red;
+  
+   input[type="search"] {
+  padding: 10px;
+ width: 50rem;
+padding-left: 30px;
+outline: none;
+
+&::placeholder {
+color: black;
+font-weight: 400;
+  padding-left:20px;
+}
+}
+i {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+}
+}
+
+
+}
+
+
+
+
+
+
+
+.index-main__form-container {
+  position: relative;
+  background-color: orange;
+ border-radius: 15px;
+}
+
+.success-sign, .error-sign {
+  position: absolute;
+}
+
+.success-sign, .error-sign {
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+.success-sign.show, .error-sign.show {
+  display: block;
+}
+.success-sign.hide, .error-sign.hide {
+  display: none;
+}
+
+.success-sign{
+color: green;
+}
+.error-sign {
+color: red;
 }

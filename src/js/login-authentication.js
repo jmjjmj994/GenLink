@@ -1,6 +1,6 @@
 import { getSingleElements } from "./dom.js";
 import { emailRegex, passwordRegex } from "./validation.js";
-import { inputState } from "./errors.js";
+import { inputError, inputValid, errorSign, successSign } from "./errors.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const LOGIN_URL = `social/auth/login`;
 
@@ -15,40 +15,52 @@ class Login {
     });
     this.loginBtn.addEventListener("click", (e) => {
       if (this.emailInput.value === "" && this.passwordInput.value === "") {
-        inputState(
+        inputError(
           this.emailInput,
-          "Please enter your email address",
-          "red",
+          "This field cannot be blank",
+          "@stud.noroff.no",
+          errorSign[0],
           2000
         );
-        inputState(
+        inputError(
           this.passwordInput,
-          "Please enter your password",
-          "red",
+          "This field cannot be blank",
+          "Password...",
+          errorSign[1],
           2000
         );
       } else if (
         emailRegex.test(this.emailInput.value.trim()) &&
         !passwordRegex.test(this.passwordInput.value.trim())
       ) {
-        inputState(
+        inputValid(successSign[0], 4000);
+        inputError(
           this.passwordInput,
+          "Your password is wrong",
           "Please enter your password",
-          "red",
+          errorSign[1],
           4000
         );
       } else if (
         passwordRegex.test(this.passwordInput.value.trim()) &&
         !emailRegex.test(this.emailInput.value.trim())
       ) {
-        inputState(this.emailInput, "Please enter your email", "red", 4000);
+        inputError(
+          this.emailInput,
+          "Your email is wrong",
+          "Please enter your email",
+          errorSign[0],
+          4000
+        );
+        inputValid(successSign[1], 4000);
       } else if (
         passwordRegex.test(this.passwordInput.value.trim()) &&
         emailRegex.test(this.emailInput.value.trim())
       ) {
+        inputValid(successSign[0]);
+        inputValid(successSign[1]);
         this.loginBtn.style.backgroundColor = "limegreen";
         this.userLogin(this.emailInput.value, this.passwordInput.value);
-        /* window.location.href = "./feed.html" */
       }
     });
   }

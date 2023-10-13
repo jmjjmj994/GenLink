@@ -1,5 +1,6 @@
-import { getSingleElements } from "./dom.js";
+import { getMultipleElements, getSingleElements } from "./dom.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
+  const sidebarContainer = getSingleElements(".feed-sidebar-users__container");
 
 async function getProfiles() {
   try {
@@ -23,67 +24,78 @@ async function getProfiles() {
 }
 
 getProfiles();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 async function createSidebarSuggestions(data) {
-  const sidebarContainer = getSingleElements(".feed-sidebar-users__container");
   const sidebarData = await data;
+
+  const sidebarImg = getMultipleElements(".feed-sidebar-users__container-wrapper img")
+ 
   const filterData = sidebarData.filter((data) => {
     if (data.avatar && data.name) {
       return data.avatar + data.name;
     }
   });
 
-  for (const { name, avatar } of filterData) {
-    const sidebarWrapper = document.createElement("div");
-    sidebarWrapper.className = "feed-sidebar-users__container-wrapper";
-    const sidebarWrapperImage = document.createElement("img");
-    sidebarWrapperImage.src = avatar;
-    const sidebarWrapperButton = document.createElement("button");
-    sidebarWrapperButton.className = "btn-follow";
-    sidebarWrapperButton.textContent = "Follow";
-    const sidebarWrapperText = document.createElement("p");
-    sidebarWrapperText.className = "p";
-    sidebarWrapperText.textContent = name;
-    sidebarWrapper.append(
-      sidebarWrapperImage,
-      sidebarWrapperText,
-      sidebarWrapperButton
-    );
-    sidebarContainer.append(sidebarWrapper);
+
+
+
+ 
+  for (const { name, avatar, id } of filterData) {
+    const container = document.createElement("div");
+    container.className = "feed-sidebar-users__container-wrapper";
+    const image = document.createElement("img");
+    image.src = avatar;
+    image.alt = "user-avatar";
+    const nameElement = document.createElement("p");
+    nameElement.textContent = name;
+    nameElement.className = "closest";
+    const span = document.createElement("span");
+    span.className = "sidebar-circle"
+
+    container.appendChild(image);
+    container.appendChild(nameElement);
+    container.appendChild(span);
+    sidebarContainer.appendChild(container);
+    const closest = sidebarContainer.querySelector(".closest");
+       
+
+
+
+
+
+    
   }
 
-  /*   filterData.forEach((user) => {
-    const { name, avatar } = user;
-    const sidebarWrapper = document.createElement("div");
-    sidebarWrapper.className = "feed-sidebar-users__container-wrapper";
-    const sidebarWrapperImage = document.createElement("img");
-    sidebarWrapperImage.src = avatar;
-    const sidebarWrapperButton = document.createElement("button");
-    sidebarWrapperButton.className = "btn-follow";
-    sidebarWrapperButton.textContent = "Follow";
-    const sidebarWrapperText = document.createElement("p");
-    sidebarWrapperText.className = "p";
-    sidebarWrapperText.textContent = name;
-    sidebarWrapper.append(
-      sidebarWrapperImage,
-      sidebarWrapperText,
-      sidebarWrapperButton
-    );
-    sidebarContainer.append(sidebarWrapper); */
-  /*
-    sidebarWrapper.addEventListener("click", (e) => {
-      if (e.target.classList.contains("btn-follow")) {
-        const paragraph = e.target
-          .closest(".feed-sidebar-users__container-wrapper")
-          .querySelector(".p");
 
-        if (paragraph) {
-          followUser(paragraph.textContent);
-        }
-      }
-    }); */
 
-  const feedSidebarUsersAllUsers = document.createElement("div");
+  
+
+
+
+
+
+    
+
+  
+
   async function createSidebarUsers() {
+    const feedSidebarUsersAllUsers = document.createElement("div");
+
     await data.forEach((user) => {
       const { avatar, name } = user;
       feedSidebarUsersAllUsers.className = "feed-sidebar-users__allUsers";
@@ -108,7 +120,22 @@ async function createSidebarSuggestions(data) {
   createSidebarUsers();
 }
 
-export async function followUser(name) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* export async function followUser(name) {
+  console.log(name)
   try {
     const res = await fetch(BASE_URL + `social/profiles/${name}/follow`, {
       method: "PUT",
@@ -116,8 +143,26 @@ export async function followUser(name) {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     });
-    const data = await res.json();
 
-    console.log(data);
+    const data = await res.json()
+    console.log(data)
+
   } catch (error) {}
 }
+
+
+ 
+export async function unFollowUser(name) {
+  try {
+    const res = await fetch(BASE_URL + `social/profiles/${name}/unfollow`, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
+    });
+
+    const data = await res.json();
+ console.log(data)
+  } catch (error) {}
+}
+ */
