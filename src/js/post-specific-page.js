@@ -37,3 +37,4 @@ async function specificPost(id) {
       }
     }
 specificPost(parseInt(id))
+
