@@ -84,7 +84,7 @@ height: 100%;
 
 //edit post 
 
-.edit-post-modal {
+.edit-post-modal, .delete-post-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -94,7 +94,7 @@ height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
   
-  .edit-postBtn{
+  .edit-postBtn, .delete-postBtn{
     width: 5rem;
     height: 3rem;
     border: solid 1px black;
@@ -112,7 +112,7 @@ height: 100%;
     text-align: center;
   }
   
-  .close {
+  .close, .close-delete-modal {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -128,6 +128,15 @@ height: 100%;
   
   #saveChanges {
     background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #deletePost{
+    background-color: red;
     color: #fff;
     border: none;
     padding: 10px 20px;

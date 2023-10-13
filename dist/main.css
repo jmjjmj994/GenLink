@@ -645,7 +645,9 @@ h1, h2 {
 .feed-main__posts-card__footer {
   display: flex;
   align-items: flex-end;
+  gap: 50px;
   flex: 5%; }
+<<<<<<< HEAD
   .feed-main__posts-card__footer .feed-main__posts-card-footer-links {
     display: flex;
     align-items: center;
@@ -667,6 +669,11 @@ h1, h2 {
         transform: scale(1.05);
         transition: 100ms; }
   .feed-main__posts-card__footer .feed-main__posts-card-footer-tags {
+=======
+  .feed-main__posts-card__footer a {
+    background-color: #4f46e4; }
+  .feed-main__posts-card__footer .feed-main__posts-card--body--tags {
+>>>>>>> 783e24561e01e7c60155b7296992c253cdec07f2
     height: 100%;
     display: flex;
     align-items: center;
@@ -747,7 +754,7 @@ h1, h2 {
       .profile-posts-main__content .profile-posts-main__content-footer {
         flex: 0; } }
 
-.edit-post-modal {
+.edit-post-modal, .delete-post-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -756,7 +763,7 @@ h1, h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); }
 
-.edit-postBtn {
+.edit-postBtn, .delete-postBtn {
   width: 5rem;
   height: 3rem;
   border: solid 1px black; }
@@ -772,7 +779,7 @@ h1, h2 {
   border-radius: 5px;
   text-align: center; }
 
-.close {
+.close, .close-delete-modal {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -786,6 +793,14 @@ h1, h2 {
 
 #saveChanges {
   background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+#deletePost {
+  background-color: red;
   color: #fff;
   border: none;
   padding: 10px 20px;

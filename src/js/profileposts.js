@@ -166,13 +166,13 @@ async function renderPost(data) {
 async function editPost(data) {
   try {
     const currentData = await data;
-    const editPostBtn = document.querySelector("#edit-postBtn");
-    const editModal = document.querySelector("#editModal");
-    const closeModal = document.querySelector(".close");
-    const saveChangesBtn = document.querySelector("#saveChanges");
-    const postTitleInput = document.querySelector("#post-title");
-    const postContentTextarea = document.querySelector("#post-content");
-    const newPostTags = document.querySelector("#post-tags");
+    const editPostBtn = getSingleElements("#edit-postBtn");
+    const editModal = getSingleElements("#edit-modal");
+    const closeModal = getSingleElements(".close");
+    const saveChangesBtn = getSingleElements("#saveChanges");
+    const postTitleInput = getSingleElements("#post-title");
+    const postContentTextarea = getSingleElements("#post-content");
+    const newPostTags = getSingleElements("#post-tags");
     const header = document.createElement("h1");
     const bodyText = document.createElement("p");
     const contentContainerFooter = getSingleElements(".profile-posts-main__content-footer");
@@ -184,7 +184,6 @@ async function editPost(data) {
     editPostBtn.addEventListener("click", () => {
       editModal.style.display = "block";
 
-      // Populate input fields with current post data for editing
       postTitleInput.value = currentData.title;
       postContentTextarea.value = currentData.body;
       newPostTags.value = currentData.tags.join(",");
@@ -195,25 +194,20 @@ async function editPost(data) {
       const newContent = postContentTextarea.value;
       const newTags = newPostTags.value.split(",");
 
-      // Update the post data with the new values
       currentData.title = newTitle;
       currentData.body = newContent;
       currentData.tags = newTags;
 
-      // You can now update the post content on the page
       header.textContent = newTitle;
       bodyText.textContent = newContent;
       contentContainerFooter.innerHTML = "";
 
-      // Create and append new tag elements
       newTags.forEach((tag) => {
         const editedPostTags = document.createElement("p");
         editedPostTags.textContent = tag;
         contentContainerFooter.append(editedPostTags);
       });
 
-
-      // Send the updated data to the server
       const updateData = {
         title: newTitle,
         body: newContent,
@@ -222,7 +216,7 @@ async function editPost(data) {
 
       try {
         const response = await fetch(BASE_URL + `social/posts/${parseInt(id)}`, {
-          method: "PUT", // Use 'PUT' or 'POST' based on your server implementation
+          method: "PUT", 
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
             "content-type": "application/json; charset=UTF-8",
@@ -241,18 +235,50 @@ async function editPost(data) {
       } catch (error) {
         console.error(error);
       }
-
-      // Close the modal
       editModal.style.display = "none";
     });
   } catch (error) {}
 }
 
+//delete post 
 
+ function displayDeleteModal() {
 
-//single post
+    const deletePostBtn = getSingleElements("#delete-postBtn");
+    const deleteModal = getSingleElements(".delete-post-modal");
+    const closeDeleteModal = getSingleElements(".close-delete-modal");
+    const confirmDelete = getSingleElements("#deletePost")
 
+    closeDeleteModal.addEventListener("click", () =>{
+      deleteModal.style.display = "none";
+    })
+    deletePostBtn.addEventListener("click", () => {
+      deleteModal.style.display = "block";
+  })
 
+  confirmDelete.addEventListener("click",() =>{
+    deletePost(id)
+  } )
+  deleteModal.style.display = "none";
+}
 
+displayDeleteModal()
 
+async function deletePost(id) {
+  try {
+  const response = await fetch(BASE_URL + `social/posts/${id}`, {
+    method: "DELETE", 
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+      "content-type": "application/json; charset=UTF-8",
+    },
+  });
+  if(response.status === 404){
+    window.location.href = "profile.html"
+  }
 
+  }
+  catch (error) {}
+}
+
+deletePost()
