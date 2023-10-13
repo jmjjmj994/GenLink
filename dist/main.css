@@ -645,9 +645,7 @@ h1, h2 {
 .feed-main__posts-card__footer {
   display: flex;
   align-items: flex-end;
-  gap: 50px;
   flex: 5%; }
-<<<<<<< HEAD
   .feed-main__posts-card__footer .feed-main__posts-card-footer-links {
     display: flex;
     align-items: center;
@@ -669,11 +667,6 @@ h1, h2 {
         transform: scale(1.05);
         transition: 100ms; }
   .feed-main__posts-card__footer .feed-main__posts-card-footer-tags {
-=======
-  .feed-main__posts-card__footer a {
-    background-color: #4f46e4; }
-  .feed-main__posts-card__footer .feed-main__posts-card--body--tags {
->>>>>>> 783e24561e01e7c60155b7296992c253cdec07f2
     height: 100%;
     display: flex;
     align-items: center;
