@@ -98,11 +98,3 @@ const user = new Login(
   getSingleElements("#current-email"),
   getSingleElements("#current-password")
 );
-
-//"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzY5LCJuYW1lIjoiQ2FwbGl4IiwiZW1haWwiOiJDYXBsaXhAc3R1ZC5ub3JvZmYubm8iLCJhdmF0YXIiOm51bGwsImJhbm5lciI6bnVsbCwiaWF0IjoxNjk1OTAxMTk0fQ.gvLH-UPuQlBHNAPxGSgit8imy6KoalV7G-D8Bs5Plyw"
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzcwLCJuYW1lIjoicmlza2FrZSIsImVtYWlsIjoicmlza2FrZUBzdHVkLm5vcm9mZi5ubyIsImF2YXRhciI6bnVsbCwiYmFubmVyIjpudWxsLCJpYXQiOjE2OTU5MDEyODd9.DAJbapXD2y8sv4nJ5qekcGlAX_r0IxmWxHL6IrX14iE"
-/*
-      name: "testbruker123",
-            email: "testbruker123@stud.noroff.no",
-            password: "testbruker123123",
- */

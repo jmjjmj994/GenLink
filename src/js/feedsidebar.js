@@ -51,7 +51,6 @@ async function createSidebarSuggestions(data) {
     }
   });
 
-<<<<<<< HEAD
   filterData.forEach((user) => {
     const { name, avatar } = user;
     const sidebarWrapper = document.createElement("div");
@@ -77,8 +76,6 @@ async function createSidebarSuggestions(data) {
         }
    ; //call
   });
-=======
->>>>>>> sidebarfunctionality
 
 
 
@@ -148,7 +145,6 @@ async function createSidebarSuggestions(data) {
   createSidebarUsers();
 }
 
-<<<<<<< HEAD
 export async function followUser(name) {
   try {
     const res = await fetch(BASE_URL + `/social/profiles/${name}/follow`, {
@@ -156,56 +152,9 @@ export async function followUser(name) {
     });
       const data = await res.json();
       console.log(data)
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* export async function followUser(name) {
-  console.log(name)
-  try {
-    const res = await fetch(BASE_URL + `social/profiles/${name}/follow`, {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    });
-
-    const data = await res.json()
-    console.log(data)
-
->>>>>>> sidebarfunctionality
   } catch (error) {}
 }
 
 
-<<<<<<< HEAD
-}
 
-=======
- 
-export async function unFollowUser(name) {
-  try {
-    const res = await fetch(BASE_URL + `social/profiles/${name}/unfollow`, {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    });
 
-    const data = await res.json();
- console.log(data)
-  } catch (error) {}
-}
- */
->>>>>>> sidebarfunctionality
