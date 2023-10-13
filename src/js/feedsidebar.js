@@ -1,6 +1,6 @@
 import { getMultipleElements, getSingleElements } from "./dom.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
-  const sidebarContainer = getSingleElements(".feed-sidebar-users__container");
+const sidebarContainer = getSingleElements(".feed-sidebar-users__container");
 
 async function getProfiles() {
   try {
@@ -25,61 +25,19 @@ async function getProfiles() {
 
 getProfiles();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 async function createSidebarSuggestions(data) {
   const sidebarData = await data;
 
-  const sidebarImg = getMultipleElements(".feed-sidebar-users__container-wrapper img")
- 
+  const sidebarImg = getMultipleElements(
+    ".feed-sidebar-users__container-wrapper img"
+  );
+
   const filterData = sidebarData.filter((data) => {
     if (data.avatar && data.name) {
       return data.avatar + data.name;
     }
   });
 
-  filterData.forEach((user) => {
-    const { name, avatar } = user;
-    const sidebarWrapper = document.createElement("div");
-    sidebarWrapper.className = "feed-sidebar-users__container-wrapper";
-    const sidebarWrapperImage = document.createElement("img");
-    sidebarWrapperImage.src = avatar;
-    const sidebarWrapperButton = document.createElement("button");
-    sidebarWrapperButton.className = "btn-follow";
-    sidebarWrapperButton.textContent = "Follow";
-    const sidebarWrapperText = document.createElement("p");
-    sidebarWrapperText.textContent = name;
-    sidebarWrapper.append(
-      sidebarWrapperImage,
-      sidebarWrapperText,
-      sidebarWrapperButton
-    );
-    sidebarContainer.append(sidebarWrapper);
-  });
-    sidebarContainer.addEventListener("click", (e) => {
-        /*  followUser(); */
-        if (e.target.classList.contains("btn-follow")) {
-        console.log(e.target)
-        }
-   ; //call
-  });
-
-
-
- 
   for (const { name, avatar, id } of filterData) {
     const container = document.createElement("div");
     container.className = "feed-sidebar-users__container-wrapper";
@@ -90,33 +48,14 @@ async function createSidebarSuggestions(data) {
     nameElement.textContent = name;
     nameElement.className = "closest";
     const span = document.createElement("span");
-    span.className = "sidebar-circle"
+    span.className = "sidebar-circle";
 
     container.appendChild(image);
     container.appendChild(nameElement);
     container.appendChild(span);
     sidebarContainer.appendChild(container);
     const closest = sidebarContainer.querySelector(".closest");
-       
-
-
-
-
-
-    
   }
-
-
-
-  
-
-
-
-
-
-    
-
-  
 
   async function createSidebarUsers() {
     const feedSidebarUsersAllUsers = document.createElement("div");
@@ -150,11 +89,7 @@ export async function followUser(name) {
     const res = await fetch(BASE_URL + `/social/profiles/${name}/follow`, {
       method: "PUT",
     });
-      const data = await res.json();
-      console.log(data)
+    const data = await res.json();
+    console.log(data);
   } catch (error) {}
 }
-
-
-
-

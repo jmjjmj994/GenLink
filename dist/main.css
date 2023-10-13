@@ -81,10 +81,7 @@ h1, h2 {
   .index-main__form [type="text"], .index-main__form [type="password"] {
     background-color: #f4f4f4;
     padding-inline-start: 15px;
-<<<<<<< HEAD
     color: black;
-=======
->>>>>>> sidebarfunctionality
     font-size: 14px;
     letter-spacing: 1px;
     transition: 100ms; }
@@ -550,6 +547,7 @@ h1, h2 {
       background-color: limegreen;
       color: white;
       padding: 5px;
+      display: block;
       border-radius: 5px;
       margin-inline-start: auto; }
       @media screen and (max-width: 1551px) {
@@ -909,7 +907,8 @@ body {
   grid-auto-rows: auto;
   place-content: center; }
   .error-main .error-main__image {
-    background-color: blue; }
+    background-color: blue;
+    background-color: orange; }
     .error-main .error-main__image img {
       display: block;
       max-width: 100%; }
