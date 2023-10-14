@@ -31,8 +31,8 @@ function createHTML() {
 </div>
 <div class="feed-main__posts-card__footer">
 <div class="feed-main__posts-card-footer-links">
-<a  href="${authorName}"> View Profile </a>
-<a href="${id}">View Post</a>
+<a   href="otherprofile.html?name=${authorName},"> View Profile </a>
+<a href="post-specific-page.html?${id}">View Post</a>
 </div>
 <div class="feed-main__posts-card-footer-tags">
 
