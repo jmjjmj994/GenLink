@@ -614,6 +614,21 @@ h1, h2 {
   display: flex;
   flex-direction: column; }
 
+.feed-main__posts-card__avatar {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 5px;
+  gap: 5px;
+  background-color: pink; }
+  .feed-main__posts-card__avatar a {
+    /*   p {
+      display: block;
+    } */ }
+    .feed-main__posts-card__avatar a img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 100%; }
+
 .feed-main__posts-card__header {
   background: radial-gradient(circle, #4f46e4 10%, transparent 11%);
   background-size: 3em 3em;
@@ -631,16 +646,20 @@ h1, h2 {
 
 .feed-main__posts-card__body {
   flex: 40%;
-  padding: 10px; }
-  .feed-main__posts-card__body p {
-    margin-block: 0.5rem; }
-  .feed-main__posts-card__body .feed-main__posts-card--body-author {
-    font-size: clamp(1.4rem, 2.5vw, 1.5rem); }
-  .feed-main__posts-card__body .feed-main__posts-card--body-title {
-    font-size: clamp(1.2rem, 2.2vw, 1.3rem); }
-  .feed-main__posts-card__body .feed-main__posts-card--body-text {
-    color: royalblue;
-    overflow: hidden; }
+  display: flex;
+  flex-direction: column; }
+  .feed-main__posts-card__body .feed-main__posts-card__body-content {
+    background-color: black;
+    flex-grow: 1; }
+    .feed-main__posts-card__body .feed-main__posts-card__body-content .feed-main__posts-card--body-content--title {
+      font-size: clamp(1.2rem, 2.2vw, 1.3rem); }
+    .feed-main__posts-card__body .feed-main__posts-card__body-content .feed-main__posts-card--body-text {
+      color: royalblue;
+      overflow: hidden; }
+  .feed-main__posts-card__body .feed-main__posts-card__body-reactions {
+    background-color: lightcoral; }
+    .feed-main__posts-card__body .feed-main__posts-card__body-reactions .reactions {
+      color: orange; }
 
 .feed-main__posts-card__footer {
   display: flex;
@@ -652,7 +671,7 @@ h1, h2 {
     padding: 20px;
     gap: 15px;
     height: 100%; }
-    .feed-main__posts-card__footer .feed-main__posts-card-footer-links a {
+    .feed-main__posts-card__footer .feed-main__posts-card-footer-links .feed-main__posts-card-footer-links--href {
       background-color: #FB8500;
       padding: 5px;
       width: auto;
@@ -660,10 +679,10 @@ h1, h2 {
       font-size: 13px;
       letter-spacing: 0.5px;
       transition: 100ms; }
-      .feed-main__posts-card__footer .feed-main__posts-card-footer-links a:hover {
+      .feed-main__posts-card__footer .feed-main__posts-card-footer-links .feed-main__posts-card-footer-links--href:hover {
         transform: scale(1.05);
         transition: 100ms; }
-      .feed-main__posts-card__footer .feed-main__posts-card-footer-links a:focus {
+      .feed-main__posts-card__footer .feed-main__posts-card-footer-links .feed-main__posts-card-footer-links--href:focus {
         transform: scale(1.05);
         transition: 100ms; }
   .feed-main__posts-card__footer .feed-main__posts-card-footer-tags {
@@ -674,7 +693,6 @@ h1, h2 {
     gap: 10px; }
 
 .feed-main__user-popup {
-  background-color: blue;
   position: absolute;
   height: 9rem;
   width: 0rem;

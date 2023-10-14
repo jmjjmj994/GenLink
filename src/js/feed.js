@@ -14,30 +14,40 @@ function createHTML() {
 
   container.innerHTML = filterPosts
     .map((post) => {
-      const { id, title, body, tags, media, created, updated, author } = post;
+      const { id, title, body, tags, media, created, updated, author, _count } = post;
       const authorName = author.name;
+      const reactions = _count.reactions;
+      console.log(reactions)
       let authorAvatar = author.avatar;
 
       if (media) {
         return `
 <div class="feed-main__posts-card">
+<div class="feed-main__posts-card__avatar">
+<a  href="otherprofile.html?name=${authorName},"> <img src="${media}" /> 
+</a>
+<p> ${authorName}</p>
+</div>
 <div class="feed-main__posts-card__header">
 <img  class="feed-main__posts-card--header--img" src="${media}" />
 </div>
 <div class="feed-main__posts-card__body">
-<p class="feed-main__posts-card--body-author"> Author: ${authorName} </p>
-<p class="feed-main__posts-card--body-title" >${title} </p>
-<p class="feed-main__posts-card--body-text"> ${body}</p>
+<div class="feed-main__posts-card__body-content">
+<p class="feed-main__posts-card--body-content--title" >${title} </p>
+<p class="feed-main__posts-card--body-content--text"> ${body}</p>
+
+</div>
+<div class="feed-main__posts-card--body-reactions">
+<button class="btn btn-react">👍</button><span class="reactions">${reactions} </span>
+<button class="btn btn-comment"><i class="fa-regular fa-comment"></i> </button> 
+</div>
 </div>
 <div class="feed-main__posts-card__footer">
 <div class="feed-main__posts-card-footer-links">
-<a   href="otherprofile.html?name=${authorName},"> View Profile </a>
-<a href="post-specific-page.html?${id}">View Post</a>
+<a class="feed-main__posts-card-footer-links--href" href="post-specific-page.html?${id}">View Post</a>
 </div>
 <div class="feed-main__posts-card-footer-tags">
-
 <p> ${tags}</p>
-
 </div>
 </div>
     </div> 
@@ -49,34 +59,18 @@ function createHTML() {
 
 createHTML();
 
-class Post {
-  constructor() {}
 
-  async createPost(param) {
-    try {
-      const res = await fetch(BASE_URL + param, {
-        method: "POST",
-        body: JSON.stringify({
-          title: "test12ww3",
-          body: "test123",
-          tags: ["game", "mountain", "dancing"],
-          media:
-            "https://images.unsplash.com/photo-1696024344604-46b33ba2c753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-        }),
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          "content-type": "application/json; charset=UTF-8",
-        },
-      });
-      const data = await res.json();
-      /*       console.log(data);
-       */
-    } catch (error) {}
-  }
-}
 
-const createTest = new Post();
-/* createTest.createPost()*/
+
+
+
+
+
+
+
+
+
+
 
 //filter Search bar
 
