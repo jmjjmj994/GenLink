@@ -90,13 +90,14 @@ async function createHTML() {
         console.log(button);
         button.disabled = true;
         localStorage.setItem(`btn-disabled-${cardId}`, "true");
+     
       }
     } else {
       console.log("not found");
     }
   });
 }
-document.addEventListener("DOMContentLoaded", createHTML());
+createHTML()
 
 
 //check state of btn
