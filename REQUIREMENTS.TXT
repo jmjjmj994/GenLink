@@ -1,16 +1,9 @@
 Required features
 
 The following user stories are required for a passing submission:
-
     User with @noroff.no or @stud.noroff.no email can register profile - CHECK
     Registered user can login - CHECK
-
-
-    
     User can view a post content feed ?
-
-
-
     User can filter the post content feed ?
     User can search the post content feed ?
     User can view a post content item by ID ? // PARAM

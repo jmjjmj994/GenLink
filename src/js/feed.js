@@ -1,30 +1,43 @@
 import { getSingleElements } from "./dom.js";
-import { GET } from "./api/api.js";
+import { GET, PUT_BODY, PUT_NO_BODY } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const POST_PARAM = `social/posts`;
 const container = getSingleElements(".feed-main__posts");
 
 const allPosts = await GET("social/posts?_author=true");
-function createHTML() {
-  const filterPosts = allPosts.filter((post) => {
-    const postAuthor = post;
+const likePosts = await PUT_NO_BODY;
 
-    if (postAuthor) return post.title.length > 4;
-  });
 
-  container.innerHTML = filterPosts
-    .map((post) => {
-      const { id, title, body, tags, media, created, updated, author, _count } = post;
-      const authorName = author.name;
-      const reactions = _count.reactions;
-      console.log(reactions)
-      let authorAvatar = author.avatar;
+async function createHTML() {
+  try {
+    const filterPosts = allPosts.filter((post) => {
+      const postAuthor = post;
+      if (postAuthor) return post.title.length > 4;
+    });
 
-      if (media) {
-        return `
+    container.innerHTML = filterPosts
+      .map((post) => {
+        const {
+          id,
+          title,
+          body,
+          tags,
+          media,
+          created,
+          updated,
+          author,
+          _count,
+        } = post;
+        const authorName = author.name;
+        const reactions = _count.reactions;
+
+        let authorAvatar = author.avatar;
+
+        if (media) {
+          return `
 <div class="feed-main__posts-card">
 <div class="feed-main__posts-card__avatar">
-<a  href="otherprofile.html?name=${authorName},"> <img src="${media}" /> 
+<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
 </a>
 <p> ${authorName}</p>
 </div>
@@ -38,7 +51,7 @@ function createHTML() {
 
 </div>
 <div class="feed-main__posts-card--body-reactions">
-<button class="btn btn-react">👍</button><span class="reactions">${reactions} </span>
+<button class="btn btn-react" post-id="${id}">👍</button><span class="reactions">${reactions} </span>
 <button class="btn btn-comment"><i class="fa-regular fa-comment"></i> </button> 
 </div>
 </div>
@@ -52,20 +65,63 @@ function createHTML() {
 </div>
     </div> 
     `;
+        }
+      })
+      .join("");
+        const buttons = document.querySelectorAll(".btn-react");
+        buttons.forEach((button) => {
+          const cardId = button.getAttribute("post-id");
+          const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
+          if (isDisabled === "true") {
+            button.disabled = true;
+          }
+        });
+  } catch (error) { }
+
+
+
+  container.addEventListener("click", async (e) => {
+    if (e.target.classList.contains("btn-react")) {
+      const cardId = e.target.getAttribute("post-id");
+      const button = e.target;
+      if (!button.disabled) {
+        console.log(parseInt(cardId));
+        likePosts(`social/posts/${parseInt(cardId)}/react/👍`);
+        console.log(button);
+        button.disabled = true;
+        localStorage.setItem(`btn-disabled-${cardId}`, "true");
       }
-    })
-    .join("");
+    } else {
+      console.log("not found");
+    }
+  });
 }
-
-createHTML();
-
+document.addEventListener("DOMContentLoaded", createHTML());
 
 
-
+//check state of btn
 
 
 
 
+
+//
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".btn-react");
+    buttons.forEach((button) => {
+      const cardId = button.getAttribute("post-id");
+      const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
+
+      if (isDisabled === "true") {
+        button.disabled = true;
+      }
+    });
+  });
 
 
 
