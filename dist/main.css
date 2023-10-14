@@ -702,6 +702,16 @@ h1, h2 {
   width: 50rem;
   z-index: 1; }
 
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.search-bar-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 25px; }
+
 .index-main {
   display: flex;
   justify-content: center;

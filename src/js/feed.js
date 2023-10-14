@@ -129,10 +129,9 @@ document.addEventListener("DOMContentLoaded", createHTML());
 
 
 //filter Search bar
-
-async function userSearchInput(id) {
+async function userSearchInput(name, avatar) {
   try {
-    const response = await fetch(BASE_URL + `social/posts?`, {
+    const response = await fetch(BASE_URL + `social/profiles?`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -140,7 +139,7 @@ async function userSearchInput(id) {
       },
     });
     const data = await response.json();
-    const parsedId = parseInt(id);
+    
 
     const output = getSingleElements(".list-output");
     const inputBox = getSingleElements("#search-posts");
@@ -149,17 +148,25 @@ async function userSearchInput(id) {
       const input = inputBox.value.trim().toLowerCase();
 
       const result = data.filter((post) => {
-        return post.id.toString().toLowerCase().includes(input);
+        return post.name.toLowerCase().includes(input);
+        
       });
 
       if (result.length > 0) {
         const list = result.map((post) => {
-          return `<li class="list-item"><a href="/src/post-specific-page.html?id=${post.id}">${post.id}</a></li>`;
+          if (post.avatar){
+            return `<li class="list-item"><div class="search-bar-container"><a href="otherprofile.html?name=${post.name}"><img class="search-bar-img" src ="${post.avatar}">${post.name}</a></div></li>`;
+          } else {
+           return `<li class="list-item"><div class="search-bar-container"><a href="otherprofile.html?name=${post.name}"><img class="search-bar-img" src ="../blank.webp">${post.name}</a></div></li>`;
+
+          }
         });
         output.innerHTML = `<ul class="list-item">${list.join("")}</ul>`;
       } else {
         output.innerHTML = "No matching posts found.";
       }
+
+      
     });
   } catch (err) {
     console.error(err);
@@ -171,3 +178,4 @@ userSearch.addEventListener("input", (e) => {
   const userSearchValue = userSearch.value;
   userSearchInput(userSearchValue);
 });
+

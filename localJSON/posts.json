@@ -1,0 +1,2592 @@
+[
+    {
+        "title": "Yes",
+        "body": "yesyes",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1695904976252-3b62030131e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+        "comments": [
+            {
+                "body": "cool",
+                "replyToId": null,
+                "id": 522,
+                "postId": 3905,
+                "owner": "korny",
+                "created": "2023-10-10T12:46:02.361Z",
+                "author": {
+                    "name": "korny",
+                    "email": "korny@noroff.no",
+                    "avatar": "https://cdn.pixabay.com/photo/2015/10/23/22/31/dad-1003819_1280.jpg",
+                    "banner": "https://cdn.pixabay.com/photo/2019/03/06/14/25/aurora-borealis-4038299_1280.jpg"
+                }
+            }
+        ],
+        "created": "2023-10-10T12:24:00.853Z",
+        "updated": "2023-10-10T12:24:00.853Z",
+        "id": 3905,
+        "author": {
+            "name": "krake",
+            "email": "krakrakk@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test update",
+        "body": "this is a test again",
+        "tags": [
+            "food",
+            "test"
+        ],
+        "media": "http://yen-nguyen.no/wp-content/uploads/2023/09/IMG_2742-min-scaled.jpg",
+        "comments": [],
+        "created": "2023-10-10T12:22:04.522Z",
+        "updated": "2023-10-10T12:47:39.073Z",
+        "id": 3904,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Happy Halloween",
+        "body": "...boo",
+        "tags": [],
+        "media": "https://nypost.com/wp-content/uploads/sites/2/2019/10/squirrel-pumpkin-head-02.jpg?quality=75&strip=all&w=878",
+        "comments": [],
+        "created": "2023-10-10T12:21:12.835Z",
+        "updated": "2023-10-10T12:21:37.633Z",
+        "id": 3903,
+        "author": {
+            "name": "Daddel",
+            "email": "daddel@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "good day",
+        "body": "hello",
+        "tags": [
+            ""
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-10T12:18:49.757Z",
+        "updated": "2023-10-10T12:18:49.757Z",
+        "id": 3901,
+        "author": {
+            "name": "karenjo",
+            "email": "karenjo@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Test",
+        "body": "Når Adrian får til noe:",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80",
+        "comments": [],
+        "created": "2023-10-10T12:15:54.758Z",
+        "updated": "2023-10-10T12:15:54.758Z",
+        "id": 3899,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test title by abi",
+        "body": "test body",
+        "tags": [
+            "tags"
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-10T12:12:56.180Z",
+        "updated": "2023-10-10T12:12:56.180Z",
+        "id": 3897,
+        "author": {
+            "name": "abi",
+            "email": "abiodun.abudu@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "my POST",
+        "body": "Hello people today",
+        "tags": [],
+        "media": "https://source.unsplash.com/random/9",
+        "comments": [],
+        "created": "2023-10-10T10:50:41.297Z",
+        "updated": "2023-10-10T10:50:41.297Z",
+        "id": 3886,
+        "author": {
+            "name": "klay",
+            "email": "klay@noroff.no",
+            "avatar": "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/302219098_10159706965767798_5074832581185012703_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=DEW1p-z8mdQAX_k9UsN&_nc_ht=scontent.fosl1-1.fna&oh=00_AfBvGLhPAag33YXWYq1qkZhpxWNqvClVxT00LwSqrBos6g&oe=652428E5",
+            "banner": "https://source.unsplash.com/random/99"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Soft",
+        "body": "Kittey",
+        "tags": [
+            "warm",
+            "kitty"
+        ],
+        "media": "https://res.cloudinary.com/dktx1oojk/image/upload/f_auto,dpr_auto,q_60,fl_progressive/w_0.8888392857142857142857142857,h_1.0,c_fill,g_auto/w_1411,h_1058,c_scale/www2022/powerinit/15660/kitten-on-desk.jpg",
+        "comments": [],
+        "created": "2023-10-10T10:48:07.076Z",
+        "updated": "2023-10-10T10:48:07.076Z",
+        "id": 3884,
+        "author": {
+            "name": "stine137",
+            "email": "user@noroff.no",
+            "avatar": "https://images.ctfassets.net/sfnkq8lmu5d7/1NaIFGyBn0qwXYlNaCJSEl/ad59ce5eefa3c2322b696778185cc749/2021_0825_Kitten_Health.jpg?w=1000&h=750&fl=progressive&q=70&fm=jpg",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Hobbits",
+        "body": "Hobbits love cozy homes, lush gardens, and grand feasts, embracing simple joys, friendship, and adventurous hearts.",
+        "tags": [
+            "#hobbits",
+            " #middle-earth",
+            " #frodo"
+        ],
+        "media": "https://images.unsplash.com/photo-1535666669445-e8c15cd2e7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        "comments": [
+            {
+                "body": "hobbits!",
+                "replyToId": null,
+                "id": 518,
+                "postId": 3882,
+                "owner": "bulba",
+                "created": "2023-10-10T10:35:56.108Z",
+                "author": {
+                    "name": "bulba",
+                    "email": "bulba@noroff.no",
+                    "avatar": "https://play-lh.googleusercontent.com/JZLQjEK7vKSzJ9PX1kVqgWOT0-FrUiWSQmsQl9XtmShNyxDDLtOHCInWtnXLDA19T1c",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-10T09:49:59.085Z",
+        "updated": "2023-10-10T09:49:59.085Z",
+        "id": 3882,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 3
+        }
+    },
+    {
+        "title": "Testing post by Abi",
+        "body": "The body of the testing post",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-10T09:39:48.082Z",
+        "updated": "2023-10-10T09:39:48.082Z",
+        "id": 3881,
+        "author": {
+            "name": "abi",
+            "email": "abiodun.abudu@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Eliminate Distractions:",
+        "body": "In our chaotic and fast-paced world, the pursuit of inner peace and tranquility has become more important than ever. Zen, a philosophy rooted in mindfulness and simplicity, offers a path to find that elusive harmony within ourselves.",
+        "tags": [
+            "#focus #zen #forwards"
+        ],
+        "media": "https://images.unsplash.com/photo-1556010656-e60700d4c0d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+        "comments": [],
+        "created": "2023-10-10T09:39:23.434Z",
+        "updated": "2023-10-10T09:39:23.434Z",
+        "id": 3880,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Hello!",
+        "body": "This is my newest post",
+        "tags": [
+            "tagone tagtwo"
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-10T09:37:44.262Z",
+        "updated": "2023-10-10T09:37:44.262Z",
+        "id": 3879,
+        "author": {
+            "name": "tina",
+            "email": "tina.testuser@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Samsung",
+        "body": "Samsung has offices in 74 countries",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T08:50:46.799Z",
+        "updated": "2023-10-10T08:50:56.817Z",
+        "id": 3876,
+        "author": {
+            "name": "JS2TEST2",
+            "email": "test12345@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test with long word",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T08:48:26.079Z",
+        "updated": "2023-10-10T08:48:26.079Z",
+        "id": 3875,
+        "author": {
+            "name": "pineapple",
+            "email": "pineapple@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "new form",
+        "body": "testing a new form",
+        "tags": [
+            "tags test"
+        ],
+        "media": "https://thumbs.dreamstime.com/b/colorful-balloons-7643802.jpg",
+        "comments": [],
+        "created": "2023-10-10T08:10:45.562Z",
+        "updated": "2023-10-10T08:10:45.562Z",
+        "id": 3868,
+        "author": {
+            "name": "cha",
+            "email": "cha@noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "new post",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T07:37:05.351Z",
+        "updated": "2023-10-10T07:37:05.351Z",
+        "id": 3860,
+        "author": {
+            "name": "pineapple",
+            "email": "pineapple@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Dette er en tittel",
+        "body": "Jeg skriver og dette er innhold.",
+        "tags": [
+            "mandag",
+            "tirsdag",
+            "onsdag",
+            "torsdag",
+            "fredag",
+            "lørdag søndag"
+        ],
+        "media": "",
+        "comments": [
+            {
+                "body": "Jeg kommenterer på mitt eget innlegg",
+                "replyToId": null,
+                "id": 514,
+                "postId": 3859,
+                "owner": "user88",
+                "created": "2023-10-10T07:37:01.198Z",
+                "author": {
+                    "name": "user88",
+                    "email": "user88@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            },
+            {
+                "body": "Kommenterer igjen??",
+                "replyToId": 514,
+                "id": 515,
+                "postId": 3859,
+                "owner": "user88",
+                "created": "2023-10-10T07:37:11.536Z",
+                "author": {
+                    "name": "user88",
+                    "email": "user88@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            },
+            {
+                "body": "test",
+                "replyToId": null,
+                "id": 516,
+                "postId": 3859,
+                "owner": "sindbert",
+                "created": "2023-10-10T09:10:15.862Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            },
+            {
+                "body": "yo",
+                "replyToId": 514,
+                "id": 517,
+                "postId": 3859,
+                "owner": "sindbert",
+                "created": "2023-10-10T09:17:48.627Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-10T07:36:32.274Z",
+        "updated": "2023-10-10T07:36:32.274Z",
+        "id": 3859,
+        "author": {
+            "name": "user88",
+            "email": "user88@stud.noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 4,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Dizmiss Post",
+        "body": "Posted OK!",
+        "tags": [
+            "#test"
+        ],
+        "media": "https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg",
+        "comments": [],
+        "created": "2023-10-10T07:29:45.347Z",
+        "updated": "2023-10-10T10:26:40.832Z",
+        "id": 3858,
+        "author": {
+            "name": "Max",
+            "email": "max1@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "lkljlkjkl",
+        "body": "lkljljlk",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-10T04:22:16.888Z",
+        "updated": "2023-10-10T04:22:16.888Z",
+        "id": 3855,
+        "author": {
+            "name": "KarenB",
+            "email": "KarBon42602@stud.noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Test",
+        "body": "Not much",
+        "tags": [],
+        "media": "",
+        "comments": [
+            {
+                "body": "Hello",
+                "replyToId": null,
+                "id": 510,
+                "postId": 3854,
+                "owner": "PiyushSharma",
+                "created": "2023-10-10T00:28:40.653Z",
+                "author": {
+                    "name": "PiyushSharma",
+                    "email": "piysha@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            },
+            {
+                "body": "",
+                "replyToId": null,
+                "id": 511,
+                "postId": 3854,
+                "owner": "PiyushSharma",
+                "created": "2023-10-10T01:00:15.212Z",
+                "author": {
+                    "name": "PiyushSharma",
+                    "email": "piysha@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            }
+        ],
+        "created": "2023-10-10T00:23:23.498Z",
+        "updated": "2023-10-10T00:23:23.498Z",
+        "id": 3854,
+        "author": {
+            "name": "PiyushSharma",
+            "email": "piysha@stud.noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 2,
+            "reactions": 2
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "Why don't scientists trust atoms?\nBecause they make up everything!",
+        "tags": [
+            "joke"
+        ],
+        "media": null,
+        "comments": [
+            {
+                "body": "Wow!",
+                "replyToId": null,
+                "id": 512,
+                "postId": 3853,
+                "owner": "PiyushSharma",
+                "created": "2023-10-10T01:00:40.033Z",
+                "author": {
+                    "name": "PiyushSharma",
+                    "email": "piysha@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            }
+        ],
+        "created": "2023-10-10T00:21:28.374Z",
+        "updated": "2023-10-10T00:21:28.374Z",
+        "id": 3853,
+        "author": {
+            "name": "TwisterTestUser",
+            "email": "Twister@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/8fd67a795ea6666959449f22b8556477?s=400&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "Roses are red,\nViolets are blue,\nSugar is sweet,\nAnd so are you!",
+        "tags": [
+            "Other"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:20:42.407Z",
+        "updated": "2023-10-10T00:20:42.407Z",
+        "id": 3852,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
+        "tags": [
+            "riddle"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:19:11.802Z",
+        "updated": "2023-10-10T00:19:11.802Z",
+        "id": 3851,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "\"Imagination is more important than knowledge.\" - Albert Einstein",
+        "tags": [
+            "quote"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:18:15.338Z",
+        "updated": "2023-10-10T00:18:15.338Z",
+        "id": 3850,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "I'm so good at sleeping I can do it with my eyes closed!",
+        "tags": [
+            "joke"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:17:13.427Z",
+        "updated": "2023-10-10T00:17:13.427Z",
+        "id": 3849,
+        "author": {
+            "name": "TwisterTestUser",
+            "email": "Twister@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/8fd67a795ea6666959449f22b8556477?s=400&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "I was going to tell you a joke about boxing, but I forgot the punch line.",
+        "tags": [
+            "joke"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:16:38.984Z",
+        "updated": "2023-10-10T00:16:38.984Z",
+        "id": 3848,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "Three fun facts:\n1. Honey never spoils: Archaeologists found edible honey in 3,000-year-old tombs!\n2. Bananas are berries; strawberries aren't true berries.\n3. Cleopatra lived closer to the moon landing than the construction of the pyramids.",
+        "tags": [
+            "Other"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:16:18.950Z",
+        "updated": "2023-10-10T00:16:18.950Z",
+        "id": 3847,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 3
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "“A society grows great when old men plant trees in whose shade they shall never sit.”",
+        "tags": [
+            "quote"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:13:10.382Z",
+        "updated": "2023-10-10T00:13:10.382Z",
+        "id": 3846,
+        "author": {
+            "name": "Murots",
+            "email": "AleSto95654@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/554ebdb7ea27478cc1cb0af5760d2e28?s=800&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "There’s a one-story house in which everything is yellow. Yellow walls, yellow doors, yellow furniture. What color are the stairs?",
+        "tags": [
+            "riddle"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:12:31.706Z",
+        "updated": "2023-10-10T00:12:31.706Z",
+        "id": 3845,
+        "author": {
+            "name": "TwisterTestUser",
+            "email": "Twister@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/8fd67a795ea6666959449f22b8556477?s=400&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "zzzzzzzzzzTwisterApp",
+        "body": "Chuck Norris doesn't read books. He stares them down until he gets the information he wants.",
+        "tags": [
+            "joke"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-10T00:12:14.557Z",
+        "updated": "2023-10-10T00:12:14.557Z",
+        "id": 3844,
+        "author": {
+            "name": "TwisterTestUser",
+            "email": "Twister@stud.noroff.no",
+            "avatar": "https://gravatar.com/avatar/8fd67a795ea6666959449f22b8556477?s=400&d=robohash&r=x",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "A new post",
+        "body": "post post post",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T22:26:17.328Z",
+        "updated": "2023-10-09T22:26:17.328Z",
+        "id": 3842,
+        "author": {
+            "name": "test_profile_1231231",
+            "email": "testepost_01@noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Heihei",
+        "body": "funker dette? :O",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T21:37:54.956Z",
+        "updated": "2023-10-09T21:37:54.956Z",
+        "id": 3831,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "ehwehr",
+        "body": "",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T21:05:31.316Z",
+        "updated": "2023-10-09T21:05:31.316Z",
+        "id": 3828,
+        "author": {
+            "name": "tryfsdf",
+            "email": "tryfsdf@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test",
+        "body": "",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T20:21:46.672Z",
+        "updated": "2023-10-09T20:21:46.672Z",
+        "id": 3827,
+        "author": {
+            "name": "tryfsdf",
+            "email": "tryfsdf@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "sssssssssssssssssssssssssssssssssssssssss",
+        "body": "",
+        "tags": [
+            ""
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T20:17:10.058Z",
+        "updated": "2023-10-09T20:17:10.058Z",
+        "id": 3826,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "zzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "body": "",
+        "tags": [
+            ""
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T20:15:11.760Z",
+        "updated": "2023-10-09T20:15:11.760Z",
+        "id": 3825,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "",
+        "body": "Testing if the comment-thingy works :)",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1696610358567-0a75265c73b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
+        "comments": [
+            {
+                "body": "here is a comment",
+                "replyToId": null,
+                "id": 505,
+                "postId": 3824,
+                "owner": "christoffer",
+                "created": "2023-10-09T20:00:29.473Z",
+                "author": {
+                    "name": "christoffer",
+                    "email": "jeadah78334@stud.noroff.no",
+                    "avatar": "https://b1694534.smushcdn.com/1694534/wp-content/uploads/2021/06/variable.jpeg?lossy=1&strip=1&webp=1",
+                    "banner": "https://b1694534.smushcdn.com/1694534/wp-content/uploads/2021/06/variable.jpeg?lossy=1&strip=1&webp=1"
+                }
+            },
+            {
+                "body": "a reply to the comment",
+                "replyToId": 505,
+                "id": 506,
+                "postId": 3824,
+                "owner": "sindbert",
+                "created": "2023-10-09T20:38:28.817Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            },
+            {
+                "body": "test",
+                "replyToId": 505,
+                "id": 508,
+                "postId": 3824,
+                "owner": "sindbert",
+                "created": "2023-10-09T21:24:31.368Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            },
+            {
+                "body": "",
+                "replyToId": null,
+                "id": 509,
+                "postId": 3824,
+                "owner": "sindbert",
+                "created": "2023-10-09T21:28:01.424Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-09T19:56:04.795Z",
+        "updated": "2023-10-09T19:56:04.795Z",
+        "id": 3824,
+        "author": {
+            "name": "nina",
+            "email": "ninamd@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/89078328?s=400&u=d5bdea052fa0f781f59eea187b9f8277c1768012&v=4",
+            "banner": "https://images.unsplash.com/photo-1582794543462-0d7922e50cf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80"
+        },
+        "_count": {
+            "comments": 4,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test comments",
+        "body": "Can you see the comments of this post using Firefox?",
+        "tags": [],
+        "media": "",
+        "comments": [
+            {
+                "body": "the first comment",
+                "replyToId": null,
+                "id": 502,
+                "postId": 3822,
+                "owner": "kyrregjerstad",
+                "created": "2023-10-09T19:28:53.157Z",
+                "author": {
+                    "name": "kyrregjerstad",
+                    "email": "kyrgje24554@stud.noroff.no",
+                    "avatar": "https://www.kyrre.dev/images/profile-img.webp",
+                    "banner": "https://images.unsplash.com/photo-1652267125724-1aa00ef462b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80"
+                }
+            },
+            {
+                "body": "The second comment",
+                "replyToId": null,
+                "id": 503,
+                "postId": 3822,
+                "owner": "kyrregjerstad",
+                "created": "2023-10-09T19:28:59.176Z",
+                "author": {
+                    "name": "kyrregjerstad",
+                    "email": "kyrgje24554@stud.noroff.no",
+                    "avatar": "https://www.kyrre.dev/images/profile-img.webp",
+                    "banner": "https://images.unsplash.com/photo-1652267125724-1aa00ef462b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80"
+                }
+            }
+        ],
+        "created": "2023-10-09T19:28:39.614Z",
+        "updated": "2023-10-09T19:28:39.614Z",
+        "id": 3822,
+        "author": {
+            "name": "kyrregjerstad",
+            "email": "kyrgje24554@stud.noroff.no",
+            "avatar": "https://www.kyrre.dev/images/profile-img.webp",
+            "banner": "https://images.unsplash.com/photo-1652267125724-1aa00ef462b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80"
+        },
+        "_count": {
+            "comments": 2,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test again",
+        "body": "this is a test again",
+        "tags": [
+            "test"
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T19:23:54.613Z",
+        "updated": "2023-10-09T19:23:54.613Z",
+        "id": 3820,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "last test",
+        "body": "last test created 21:17",
+        "tags": [
+            ""
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T19:17:40.267Z",
+        "updated": "2023-10-09T19:17:40.267Z",
+        "id": 3819,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test again",
+        "body": "this is a test again",
+        "tags": [],
+        "media": "http://yen-nguyen.no/wp-content/uploads/2023/09/IMG_4383-min-min.jpg",
+        "comments": [],
+        "created": "2023-10-09T19:16:02.276Z",
+        "updated": "2023-10-09T19:16:02.276Z",
+        "id": 3818,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "wqe",
+        "body": "",
+        "tags": [
+            ""
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T19:13:30.838Z",
+        "updated": "2023-10-09T19:13:30.838Z",
+        "id": 3817,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "testing again...",
+        "body": "",
+        "tags": [
+            ""
+        ],
+        "media": "https://images.unsplash.com/photo-1684795710872-64f77897feed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "comments": [],
+        "created": "2023-10-09T19:03:54.291Z",
+        "updated": "2023-10-09T19:03:54.291Z",
+        "id": 3816,
+        "author": {
+            "name": "norofftest123",
+            "email": "norofftest123@stud.noroff.no",
+            "avatar": "https://images.unsplash.com/photo-1528535661949-5dac90a11fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "banner": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8emVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Pablo & Kyrre Test",
+        "body": "hai, gj",
+        "tags": [],
+        "media": "",
+        "comments": [
+            {
+                "body": "test",
+                "replyToId": null,
+                "id": 497,
+                "postId": 3815,
+                "owner": "testnoroffusername",
+                "created": "2023-10-09T18:28:34.086Z",
+                "author": {
+                    "name": "testnoroffusername",
+                    "email": "emailtestnoroff@noroff.no",
+                    "avatar": null,
+                    "banner": null
+                }
+            },
+            {
+                "body": "test2",
+                "replyToId": null,
+                "id": 498,
+                "postId": 3815,
+                "owner": "testnoroffusername",
+                "created": "2023-10-09T18:28:42.221Z",
+                "author": {
+                    "name": "testnoroffusername",
+                    "email": "emailtestnoroff@noroff.no",
+                    "avatar": null,
+                    "banner": null
+                }
+            },
+            {
+                "body": "test3",
+                "replyToId": null,
+                "id": 499,
+                "postId": 3815,
+                "owner": "testnoroffusername",
+                "created": "2023-10-09T18:28:48.372Z",
+                "author": {
+                    "name": "testnoroffusername",
+                    "email": "emailtestnoroff@noroff.no",
+                    "avatar": null,
+                    "banner": null
+                }
+            },
+            {
+                "body": "@testnoroffusername test4",
+                "replyToId": null,
+                "id": 500,
+                "postId": 3815,
+                "owner": "testnoroffusername",
+                "created": "2023-10-09T18:30:08.198Z",
+                "author": {
+                    "name": "testnoroffusername",
+                    "email": "emailtestnoroff@noroff.no",
+                    "avatar": null,
+                    "banner": null
+                }
+            },
+            {
+                "body": "Thanks @adrian_mikkelsen!",
+                "replyToId": null,
+                "id": 501,
+                "postId": 3815,
+                "owner": "kyrregjerstad",
+                "created": "2023-10-09T19:24:17.788Z",
+                "author": {
+                    "name": "kyrregjerstad",
+                    "email": "kyrgje24554@stud.noroff.no",
+                    "avatar": "https://www.kyrre.dev/images/profile-img.webp",
+                    "banner": "https://images.unsplash.com/photo-1652267125724-1aa00ef462b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80"
+                }
+            },
+            {
+                "body": "Stop the spam plz",
+                "replyToId": null,
+                "id": 521,
+                "postId": 3815,
+                "owner": "bulba",
+                "created": "2023-10-10T11:14:45.530Z",
+                "author": {
+                    "name": "bulba",
+                    "email": "bulba@noroff.no",
+                    "avatar": "https://play-lh.googleusercontent.com/JZLQjEK7vKSzJ9PX1kVqgWOT0-FrUiWSQmsQl9XtmShNyxDDLtOHCInWtnXLDA19T1c",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-09T17:20:28.588Z",
+        "updated": "2023-10-09T17:20:28.588Z",
+        "id": 3815,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 6,
+            "reactions": 5
+        }
+    },
+    {
+        "title": "asds",
+        "body": "",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T17:12:03.476Z",
+        "updated": "2023-10-09T17:12:03.476Z",
+        "id": 3814,
+        "author": {
+            "name": "tryfsdf",
+            "email": "tryfsdf@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Old Fashioned",
+        "body": "1 teaspoon sugar 3 dashes Angostura bitters 1 teaspoon water 2 ounces bourbon or rye whiskey.",
+        "tags": [
+            ""
+        ],
+        "media": "https://images.unsplash.com/photo-1628642551066-11f79288a424?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE9sZCUyMGZhc2hpb25lZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "comments": [
+            {
+                "body": "Yum!",
+                "replyToId": null,
+                "id": 495,
+                "postId": 3811,
+                "owner": "Hans",
+                "created": "2023-10-09T18:02:36.150Z",
+                "author": {
+                    "name": "Hans",
+                    "email": "hanand55935@stud.noroff.no",
+                    "avatar": "https://spookyrumble-portfolio.netlify.app/images/avatar_sefie.png",
+                    "banner": "https://images.unsplash.com/photo-1473429174434-a8a8d5e0dc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                }
+            },
+            {
+                "body": "@Hans agrees",
+                "replyToId": null,
+                "id": 496,
+                "postId": 3811,
+                "owner": "Hans",
+                "created": "2023-10-09T18:02:53.749Z",
+                "author": {
+                    "name": "Hans",
+                    "email": "hanand55935@stud.noroff.no",
+                    "avatar": "https://spookyrumble-portfolio.netlify.app/images/avatar_sefie.png",
+                    "banner": "https://images.unsplash.com/photo-1473429174434-a8a8d5e0dc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                }
+            },
+            {
+                "body": "me3",
+                "replyToId": null,
+                "id": 504,
+                "postId": 3811,
+                "owner": "christoffer",
+                "created": "2023-10-09T19:49:26.738Z",
+                "author": {
+                    "name": "christoffer",
+                    "email": "jeadah78334@stud.noroff.no",
+                    "avatar": "https://b1694534.smushcdn.com/1694534/wp-content/uploads/2021/06/variable.jpeg?lossy=1&strip=1&webp=1",
+                    "banner": "https://b1694534.smushcdn.com/1694534/wp-content/uploads/2021/06/variable.jpeg?lossy=1&strip=1&webp=1"
+                }
+            }
+        ],
+        "created": "2023-10-09T16:41:00.291Z",
+        "updated": "2023-10-09T16:41:00.291Z",
+        "id": 3811,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 3,
+            "reactions": 3
+        }
+    },
+    {
+        "title": "Martini",
+        "body": "60ml gin or vodka 1 tbsp dry vermouth olive or lemon peel, to garnish",
+        "tags": [
+            ""
+        ],
+        "media": "https://images.unsplash.com/photo-1575023782549-62ca0d244b39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWFydGluaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "comments": [],
+        "created": "2023-10-09T16:40:10.235Z",
+        "updated": "2023-10-09T16:40:10.235Z",
+        "id": 3810,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Whiskey Sour",
+        "body": "2 ounces bourbon 3/4 ounce lemon juice, freshly squeezed 1/2 ounce simple syrup 1/2 ounce egg white",
+        "tags": [
+            ""
+        ],
+        "media": "https://images.unsplash.com/photo-1624528199921-838223305357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2hpc2tleSUyMHNvdXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "comments": [],
+        "created": "2023-10-09T16:39:14.522Z",
+        "updated": "2023-10-09T16:39:14.522Z",
+        "id": 3809,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Mojito",
+        "body": "5 mint leaves, 2 ounces white rum 1 ounce fresh lime juice ½ ounce simple syrup",
+        "tags": [
+            ""
+        ],
+        "media": "https://images.unsplash.com/photo-1608981618938-d8a334ae9e93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vaml0b3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "comments": [
+            {
+                "body": "okokoo",
+                "replyToId": null,
+                "id": 513,
+                "postId": 3808,
+                "owner": "user88",
+                "created": "2023-10-10T07:34:37.788Z",
+                "author": {
+                    "name": "user88",
+                    "email": "user88@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            }
+        ],
+        "created": "2023-10-09T16:37:50.719Z",
+        "updated": "2023-10-09T16:37:50.719Z",
+        "id": 3808,
+        "author": {
+            "name": "adrian_mikkelsen",
+            "email": "adrmik99436@stud.noroff.no",
+            "avatar": "https://avatars.githubusercontent.com/u/113434165?v=4",
+            "banner": null
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Sitting panda",
+        "body": "",
+        "tags": [
+            "hyseh",
+            "panda"
+        ],
+        "media": "https://images.unsplash.com/photo-1625859043880-56acbcb6a6ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [
+            {
+                "body": "NANI???? GOOOON!!!!",
+                "replyToId": null,
+                "id": 494,
+                "postId": 3807,
+                "owner": "Player",
+                "created": "2023-10-09T16:29:29.300Z",
+                "author": {
+                    "name": "Player",
+                    "email": "darki@stud.noroff.no",
+                    "avatar": "",
+                    "banner": ""
+                }
+            }
+        ],
+        "created": "2023-10-09T16:22:42.059Z",
+        "updated": "2023-10-09T16:22:42.059Z",
+        "id": 3807,
+        "author": {
+            "name": "killua",
+            "email": "killua@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Larry the cat",
+        "body": "",
+        "tags": [
+            "hyseh",
+            "cat"
+        ],
+        "media": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:22:25.102Z",
+        "updated": "2023-10-09T16:22:25.102Z",
+        "id": 3806,
+        "author": {
+            "name": "killua",
+            "email": "killua@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Tired dog wearing a blue shirt",
+        "body": "",
+        "tags": [
+            "hyseh",
+            "dog",
+            "blue",
+            "shirt"
+        ],
+        "media": "https://images.unsplash.com/photo-1694594594401-82aa8102535b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:22:07.550Z",
+        "updated": "2023-10-09T16:22:07.550Z",
+        "id": 3805,
+        "author": {
+            "name": "killua",
+            "email": "killua@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Cow on lush green field",
+        "body": "",
+        "tags": [
+            "hyseh",
+            "cow",
+            "lush",
+            "green",
+            "field"
+        ],
+        "media": "https://images.unsplash.com/photo-1695765586912-39758d5de97d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:21:29.414Z",
+        "updated": "2023-10-09T16:21:29.414Z",
+        "id": 3804,
+        "author": {
+            "name": "killua",
+            "email": "killua@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Dog sticking out car window",
+        "body": "",
+        "tags": [
+            "hyseh",
+            "dog",
+            "car"
+        ],
+        "media": "https://images.unsplash.com/photo-1689871431224-f6764b046bbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:21:06.066Z",
+        "updated": "2023-10-09T16:21:06.066Z",
+        "id": 3803,
+        "author": {
+            "name": "killua",
+            "email": "killua@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Shoreline at night",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque totam quam cum dolores tenetur! Molestias sapiente praesentium a animi provident.",
+        "tags": [
+            "hyseh",
+            "shoreline",
+            "night"
+        ],
+        "media": "https://images.unsplash.com/photo-1590418606746-018840f9cd0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:18:51.327Z",
+        "updated": "2023-10-09T16:18:51.327Z",
+        "id": 3802,
+        "author": {
+            "name": "hyseh",
+            "email": "hyseh@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Lake at night",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, repellat.",
+        "tags": [
+            "hyseh",
+            "lake",
+            "night"
+        ],
+        "media": "https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:18:22.457Z",
+        "updated": "2023-10-09T16:18:22.457Z",
+        "id": 3801,
+        "author": {
+            "name": "hyseh",
+            "email": "hyseh@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Rock formation in the desert",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam quibusdam distinctio ea placeat voluptate repellendus impedit, dolorum reprehenderit! Iure.",
+        "tags": [
+            "hyseh",
+            "rock",
+            "formation",
+            "desert"
+        ],
+        "media": "https://images.unsplash.com/photo-1696346716872-dc36a8c9d34c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:17:43.247Z",
+        "updated": "2023-10-09T16:17:43.247Z",
+        "id": 3800,
+        "author": {
+            "name": "hyseh",
+            "email": "hyseh@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Foggy mountain",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, aliquid officia pariatur enim sunt odio.",
+        "tags": [
+            "hyseh",
+            "foggy",
+            "mountain"
+        ],
+        "media": "https://images.unsplash.com/photo-1695821449523-6929f4e61b6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:14:16.353Z",
+        "updated": "2023-10-09T16:14:16.353Z",
+        "id": 3799,
+        "author": {
+            "name": "hyseh",
+            "email": "hyseh@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Rocky mountain range",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.",
+        "tags": [
+            "hyseh",
+            "rocky",
+            "mountain"
+        ],
+        "media": "https://images.unsplash.com/photo-1696789738783-0f972304597e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&fm=webp&fit=crop&w=1600&q=80",
+        "comments": [],
+        "created": "2023-10-09T16:11:47.872Z",
+        "updated": "2023-10-09T16:11:47.872Z",
+        "id": 3798,
+        "author": {
+            "name": "hyseh",
+            "email": "hyseh@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Testing Kyrre & Pablos things (edit)",
+        "body": "Testing my editing form",
+        "tags": [],
+        "media": "",
+        "comments": [
+            {
+                "body": "LOOK!\n\nI can comment on posts and stuff! <3",
+                "replyToId": null,
+                "id": 520,
+                "postId": 3795,
+                "owner": "bulba",
+                "created": "2023-10-10T10:41:32.468Z",
+                "author": {
+                    "name": "bulba",
+                    "email": "bulba@noroff.no",
+                    "avatar": "https://play-lh.googleusercontent.com/JZLQjEK7vKSzJ9PX1kVqgWOT0-FrUiWSQmsQl9XtmShNyxDDLtOHCInWtnXLDA19T1c",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-09T15:43:44.409Z",
+        "updated": "2023-10-10T11:43:30.992Z",
+        "id": 3795,
+        "author": {
+            "name": "Hans",
+            "email": "hanand55935@stud.noroff.no",
+            "avatar": "https://spookyrumble-portfolio.netlify.app/images/avatar_sefie.png",
+            "banner": "https://images.unsplash.com/photo-1473429174434-a8a8d5e0dc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Hello2",
+        "body": "Again 3",
+        "tags": [
+            ""
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T14:07:02.779Z",
+        "updated": "2023-10-09T14:07:17.601Z",
+        "id": 3788,
+        "author": {
+            "name": "jkm2",
+            "email": "jeanett.kestner@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "",
+        "body": "",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T14:03:41.472Z",
+        "updated": "2023-10-09T14:03:41.472Z",
+        "id": 3785,
+        "author": {
+            "name": "jkm2",
+            "email": "jeanett.kestner@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "coding is hard",
+        "body": "it´s hard but interesting",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:51:41.423Z",
+        "updated": "2023-10-09T13:51:41.423Z",
+        "id": 3784,
+        "author": {
+            "name": "pineapple",
+            "email": "pineapple@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "weird",
+        "body": "123456",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:50:02.945Z",
+        "updated": "2023-10-09T13:50:02.945Z",
+        "id": 3783,
+        "author": {
+            "name": "pineapple",
+            "email": "pineapple@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "ddddddd",
+        "body": "",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:43:29.057Z",
+        "updated": "2023-10-09T13:43:29.057Z",
+        "id": 3773,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test1",
+        "body": "test body",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:41:12.035Z",
+        "updated": "2023-10-09T13:41:12.035Z",
+        "id": 3772,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Create inactive",
+        "body": "create inactive description",
+        "tags": [
+            "hello",
+            " world"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:37:04.798Z",
+        "updated": "2023-10-09T13:37:04.798Z",
+        "id": 3771,
+        "author": {
+            "name": "JeanArcenal",
+            "email": "JeaArc11568@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test",
+        "body": "hei",
+        "tags": [
+            "tag"
+        ],
+        "media": "",
+        "comments": [
+            {
+                "body": "test",
+                "replyToId": null,
+                "id": 491,
+                "postId": 3770,
+                "owner": "sindbert",
+                "created": "2023-10-09T13:40:34.898Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            },
+            {
+                "body": "lol",
+                "replyToId": 491,
+                "id": 492,
+                "postId": 3770,
+                "owner": "sindbert",
+                "created": "2023-10-09T13:40:44.312Z",
+                "author": {
+                    "name": "sindbert",
+                    "email": "sindbert99@stud.noroff.no",
+                    "avatar": "",
+                    "banner": null
+                }
+            }
+        ],
+        "created": "2023-10-09T13:34:38.224Z",
+        "updated": "2023-10-09T13:34:38.224Z",
+        "id": 3770,
+        "author": {
+            "name": "sindbert",
+            "email": "sindbert99@stud.noroff.no",
+            "avatar": "",
+            "banner": null
+        },
+        "_count": {
+            "comments": 2,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "ddd",
+        "body": "HAAAAAAaaaa",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:33:00.171Z",
+        "updated": "2023-10-09T13:33:00.171Z",
+        "id": 3769,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "",
+        "body": "",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:29:47.391Z",
+        "updated": "2023-10-09T13:29:47.391Z",
+        "id": 3768,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test more",
+        "body": "testing more",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:29:04.802Z",
+        "updated": "2023-10-09T13:29:04.802Z",
+        "id": 3767,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Min Dag",
+        "body": "Halla dere ...",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:28:11.699Z",
+        "updated": "2023-10-09T13:28:11.699Z",
+        "id": 3766,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "dd",
+        "body": "dd",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T13:27:12.651Z",
+        "updated": "2023-10-09T13:27:12.651Z",
+        "id": 3764,
+        "author": {
+            "name": "Ezkil",
+            "email": "eskil.torset1999@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "picture",
+        "body": "a picture says too many words",
+        "tags": [
+            "#tired"
+        ],
+        "media": "https://images.pexels.com/photos/18452664/pexels-photo-18452664/free-photo-of-kjaeledyr-katt-teppe-sove.jpeg",
+        "comments": [
+            {
+                "body": "Cute",
+                "replyToId": null,
+                "id": 493,
+                "postId": 3763,
+                "owner": "Elli",
+                "created": "2023-10-09T16:02:20.492Z",
+                "author": {
+                    "name": "Elli",
+                    "email": "user-elli-test@noroff.no",
+                    "avatar": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+                    "banner": "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                }
+            }
+        ],
+        "created": "2023-10-09T13:26:28.599Z",
+        "updated": "2023-10-09T13:26:28.599Z",
+        "id": 3763,
+        "author": {
+            "name": "fireworks",
+            "email": "fireworks@noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test again",
+        "body": "this is a test again",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:26:15.383Z",
+        "updated": "2023-10-09T13:26:15.383Z",
+        "id": 3762,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "update post again",
+        "body": "does it work?",
+        "tags": [
+            "amazing "
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:24:14.680Z",
+        "updated": "2023-10-10T08:05:48.672Z",
+        "id": 3761,
+        "author": {
+            "name": "cha",
+            "email": "cha@noroff.no",
+            "avatar": "",
+            "banner": ""
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "updating post",
+        "body": "yehay",
+        "tags": [],
+        "media": "https://source.unsplash.com/random/11",
+        "comments": [],
+        "created": "2023-10-09T13:17:55.607Z",
+        "updated": "2023-10-09T13:19:34.633Z",
+        "id": 3760,
+        "author": {
+            "name": "klay",
+            "email": "klay@noroff.no",
+            "avatar": "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/302219098_10159706965767798_5074832581185012703_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=DEW1p-z8mdQAX_k9UsN&_nc_ht=scontent.fosl1-1.fna&oh=00_AfBvGLhPAag33YXWYq1qkZhpxWNqvClVxT00LwSqrBos6g&oe=652428E5",
+            "banner": "https://source.unsplash.com/random/99"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "test123",
+        "body": "why not working",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:12:21.118Z",
+        "updated": "2023-10-09T13:12:21.118Z",
+        "id": 3758,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Post working now?",
+        "body": "Just checking again",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:06:33.800Z",
+        "updated": "2023-10-09T13:06:41.867Z",
+        "id": 3757,
+        "author": {
+            "name": "tina",
+            "email": "tina.testuser@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "Hello monday!",
+        "body": "Goodbye weekend oh noo",
+        "tags": [
+            "weekend"
+        ],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T13:05:07.351Z",
+        "updated": "2023-10-09T16:56:56.144Z",
+        "id": 3756,
+        "author": {
+            "name": "UrS_Admin",
+            "email": "UrS_Admin@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Update new post from nyol",
+        "body": "hello me",
+        "tags": [],
+        "media": "https://source.unsplash.com/random/6",
+        "comments": [],
+        "created": "2023-10-09T13:03:13.569Z",
+        "updated": "2023-10-09T13:04:50.760Z",
+        "id": 3755,
+        "author": {
+            "name": "klay",
+            "email": "klay@noroff.no",
+            "avatar": "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/302219098_10159706965767798_5074832581185012703_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=DEW1p-z8mdQAX_k9UsN&_nc_ht=scontent.fosl1-1.fna&oh=00_AfBvGLhPAag33YXWYq1qkZhpxWNqvClVxT00LwSqrBos6g&oe=652428E5",
+            "banner": "https://source.unsplash.com/random/99"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "ny post",
+        "body": "denne er ny",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1682687982185-531d09ec56fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "comments": [],
+        "created": "2023-10-09T12:49:21.870Z",
+        "updated": "2023-10-09T12:49:21.870Z",
+        "id": 3751,
+        "author": {
+            "name": "minus",
+            "email": "minus@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "jelly cake",
+        "body": "I love this cake",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T12:41:12.822Z",
+        "updated": "2023-10-09T12:41:12.822Z",
+        "id": 3749,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Test",
+        "body": "Hello, this is a test",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T12:32:36.505Z",
+        "updated": "2023-10-09T12:32:36.505Z",
+        "id": 3747,
+        "author": {
+            "name": "testipepe",
+            "email": "testipepe@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Monday is good",
+        "body": "hope this week goes well",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T12:25:50.191Z",
+        "updated": "2023-10-09T12:25:50.191Z",
+        "id": 3744,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "New post",
+        "body": "this",
+        "tags": [
+            "tag"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T12:25:36.997Z",
+        "updated": "2023-10-09T12:25:36.997Z",
+        "id": 3743,
+        "author": {
+            "name": "JeanArcenal",
+            "email": "JeaArc11568@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Veggie Burger",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus tempus purus, ut molestie ligula rhoncus non. Etiam mattis magna at nibh consectetur cursus.",
+        "tags": [
+            "vegetarian, burger"
+        ],
+        "media": "https://i.postimg.cc/DZBYC5rF/burger-3746476-1280.jpg",
+        "comments": [],
+        "created": "2023-10-09T12:18:58.555Z",
+        "updated": "2023-10-09T12:18:58.555Z",
+        "id": 3742,
+        "author": {
+            "name": "js2ca2023",
+            "email": "js2ca2023@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "How to cook a perfect steak",
+        "body": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut suscipit mollis ex, et vulputate lorem facilisis eu.",
+        "tags": [
+            "beef"
+        ],
+        "media": "https://i.postimg.cc/8zzc9CgS/steak-3640560-1280.jpg",
+        "comments": [],
+        "created": "2023-10-09T11:57:33.340Z",
+        "updated": "2023-10-09T11:57:33.340Z",
+        "id": 3737,
+        "author": {
+            "name": "js2ca2023",
+            "email": "js2ca2023@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Monday test",
+        "body": "It is getting cold today",
+        "tags": [],
+        "media": "",
+        "comments": [],
+        "created": "2023-10-09T11:56:13.743Z",
+        "updated": "2023-10-09T11:56:13.743Z",
+        "id": 3736,
+        "author": {
+            "name": "ntkyen",
+            "email": "ntkyen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Just playing (edit)",
+        "body": "You are currently reading a post on purpose! Edited.",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1505444832382-8ae9fc20b274?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRyaW5rcyUyMG9uJTIwdGhlJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "comments": [],
+        "created": "2023-10-09T11:51:35.941Z",
+        "updated": "2023-10-10T11:37:23.301Z",
+        "id": 3735,
+        "author": {
+            "name": "Hans",
+            "email": "hanand55935@stud.noroff.no",
+            "avatar": "https://spookyrumble-portfolio.netlify.app/images/avatar_sefie.png",
+            "banner": "https://images.unsplash.com/photo-1473429174434-a8a8d5e0dc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 3
+        }
+    },
+    {
+        "title": "Shrimps",
+        "body": "Shrimps",
+        "tags": [
+            "seafood"
+        ],
+        "media": "https://i.postimg.cc/yYBzprC4/dinner-4722342-1280.jpg",
+        "comments": [],
+        "created": "2023-10-09T11:51:18.116Z",
+        "updated": "2023-10-09T19:43:47.024Z",
+        "id": 3734,
+        "author": {
+            "name": "js2ca2023",
+            "email": "js2ca2023@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "TI edit",
+        "body": "Tis edet",
+        "tags": [
+            "t",
+            "s",
+            "a"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T11:50:46.059Z",
+        "updated": "2023-10-09T12:38:28.720Z",
+        "id": 3733,
+        "author": {
+            "name": "JeanArcenal",
+            "email": "JeaArc11568@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Hi Title",
+        "body": "This is title",
+        "tags": [
+            "hi",
+            " title"
+        ],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T11:49:19.809Z",
+        "updated": "2023-10-09T11:49:19.809Z",
+        "id": 3731,
+        "author": {
+            "name": "JeanArcenal",
+            "email": "JeaArc11568@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "Christmas Apples",
+        "body": "Pellentesque urna elit, blandit vitae sollicitudin vitae, laoreet at nibh. Nulla id nunc lectus. Proin ac vulputate ante, eget elementum nisl. Vestibulum sagittis quam tempus, interdum libero quis, semper mauris. Suspendisse molestie est nec auctor consequat. Edit.",
+        "tags": [
+            "christmas, apple"
+        ],
+        "media": "https://i.postimg.cc/tR35kBzx/apple-1883934-1280.jpg",
+        "comments": [],
+        "created": "2023-10-09T11:48:41.119Z",
+        "updated": "2023-10-09T19:48:01.868Z",
+        "id": 3730,
+        "author": {
+            "name": "js2ca2023",
+            "email": "js2ca2023@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 2
+        }
+    },
+    {
+        "title": "This is my seventh post",
+        "body": "Sevent post comment",
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T11:38:58.797Z",
+        "updated": "2023-10-09T11:38:58.797Z",
+        "id": 3727,
+        "author": {
+            "name": "bjornar_heian",
+            "email": "bjornar.heian@noroff.no",
+            "avatar": "https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3MTU5ODE0NzEzODQ1MDU1/morgan-freeman-copy.jpg",
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "fgdh\ndfgh\nfgdh",
+        "body": null,
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T11:30:20.002Z",
+        "updated": "2023-10-09T11:30:20.002Z",
+        "id": 3726,
+        "author": {
+            "name": "norlife",
+            "email": "kristian.nilsen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "tghfghfgh",
+        "body": null,
+        "tags": [],
+        "media": null,
+        "comments": [
+            {
+                "body": "Nicce",
+                "replyToId": null,
+                "id": 488,
+                "postId": 3725,
+                "owner": "Karatechop",
+                "created": "2023-10-09T12:57:53.616Z",
+                "author": {
+                    "name": "Karatechop",
+                    "email": "oyvYnd89739@stud.noroff.no",
+                    "avatar": "https://i.imgur.com/FelBLPQ.jpeg",
+                    "banner": "https://i.imgur.com/aW6d3yq.jpeg"
+                }
+            }
+        ],
+        "created": "2023-10-09T11:30:16.067Z",
+        "updated": "2023-10-09T11:30:16.067Z",
+        "id": 3725,
+        "author": {
+            "name": "norlife",
+            "email": "kristian.nilsen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 1,
+            "reactions": 1
+        }
+    },
+    {
+        "title": "dddfsfsd",
+        "body": "dsadf",
+        "tags": [],
+        "media": "https://images.unsplash.com/photo-1682687982185-531d09ec56fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "comments": [],
+        "created": "2023-10-09T11:28:06.026Z",
+        "updated": "2023-10-09T11:28:06.026Z",
+        "id": 3724,
+        "author": {
+            "name": "Lars",
+            "email": "larsi@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "lalala",
+        "body": "dwdwd",
+        "tags": [],
+        "media": "https://unsplash.com/photos/a-bald-eagle-with-a-white-head-and-yellow-beak-4qLHUf4DSAI",
+        "comments": [],
+        "created": "2023-10-09T11:27:20.653Z",
+        "updated": "2023-10-09T11:27:20.653Z",
+        "id": 3723,
+        "author": {
+            "name": "Lars",
+            "email": "larsi@noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    },
+    {
+        "title": "SAFSDF\nASDASD\nASD\nASD\nASD",
+        "body": null,
+        "tags": [],
+        "media": null,
+        "comments": [],
+        "created": "2023-10-09T11:26:52.321Z",
+        "updated": "2023-10-09T11:26:52.321Z",
+        "id": 3722,
+        "author": {
+            "name": "norlife",
+            "email": "kristian.nilsen@stud.noroff.no",
+            "avatar": null,
+            "banner": null
+        },
+        "_count": {
+            "comments": 0,
+            "reactions": 0
+        }
+    }
+]

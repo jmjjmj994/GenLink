@@ -1,0 +1,2062 @@
+[
+    {
+        "name": "Irene",
+        "email": "irene987@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "zzz",
+        "email": "Pa@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Zorro",
+        "email": "zorrosword@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "yrdy_yrdy",
+        "email": "yrdy.yrdy@stud.noroff.no",
+        "banner": null,
+        "avatar": "",
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "Yoyo",
+        "email": "yoyo@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "youok",
+        "email": "yuouok@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "young_joo",
+        "email": "fff@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            },
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 2,
+            "following": 0
+        }
+    },
+    {
+        "name": "Yigfh",
+        "email": "wergvd@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            }
+        ],
+        "following": [],
+        "posts": [
+            {
+                "id": 807,
+                "owner": "Yigfh",
+                "created": "2023-09-10T11:41:23.393Z",
+                "updated": "2023-09-10T11:41:23.393Z",
+                "title": "hello",
+                "body": "jeg er her i dag",
+                "tags": [],
+                "media": null
+            },
+            {
+                "id": 808,
+                "owner": "Yigfh",
+                "created": "2023-09-10T11:45:02.735Z",
+                "updated": "2023-09-10T11:45:02.735Z",
+                "title": "hello",
+                "body": "jeg er her i dag",
+                "tags": [
+                    "winnie99"
+                ],
+                "media": null
+            },
+            {
+                "id": 809,
+                "owner": "Yigfh",
+                "created": "2023-09-10T11:49:46.247Z",
+                "updated": "2023-09-10T11:49:46.247Z",
+                "title": "hello",
+                "body": "jeg er her i dag",
+                "tags": [],
+                "media": null
+            }
+        ],
+        "_count": {
+            "posts": 3,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "yeywywy",
+        "email": "yeyueyueyuew@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "yennguyen",
+        "email": "yen@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "y",
+        "email": "y@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            },
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 2,
+            "following": 0
+        }
+    },
+    {
+        "name": "xyxy",
+        "email": "xyxy@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "Charlotte",
+                "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80"
+            },
+            {
+                "name": "Karatechop",
+                "avatar": "https://i.imgur.com/FelBLPQ.jpeg"
+            }
+        ],
+        "following": [],
+        "posts": [
+            {
+                "id": 260,
+                "owner": "xyxy",
+                "created": "2023-08-25T20:49:27.304Z",
+                "updated": "2023-08-25T20:50:02.265Z",
+                "title": "By the lake",
+                "body": "woman by the lake",
+                "tags": [
+                    "Lake",
+                    " water",
+                    " woman"
+                ],
+                "media": "https://img.freepik.com/premium-photo/woman-enters-lake-swim-generative-ai_538159-9911.jpg"
+            }
+        ],
+        "_count": {
+            "posts": 1,
+            "followers": 2,
+            "following": 0
+        }
+    },
+    {
+        "name": "xxx",
+        "email": "P@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "fina",
+                "avatar": null
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "x",
+        "email": "x@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "ww",
+        "email": "ww@noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "wqweewqnkwlk",
+        "email": "ndslkndaslkdsa@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Wootinguser",
+        "email": "Km@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [
+            {
+                "id": 2356,
+                "owner": "Wootinguser",
+                "created": "2023-10-04T08:05:18.368Z",
+                "updated": "2023-10-04T08:05:18.368Z",
+                "title": "string",
+                "body": null,
+                "tags": [],
+                "media": null
+            },
+            {
+                "id": 2790,
+                "owner": "Wootinguser",
+                "created": "2023-10-04T19:57:31.823Z",
+                "updated": "2023-10-04T19:57:31.823Z",
+                "title": "string",
+                "body": null,
+                "tags": [],
+                "media": null
+            },
+            {
+                "id": 2791,
+                "owner": "Wootinguser",
+                "created": "2023-10-04T19:58:34.990Z",
+                "updated": "2023-10-04T19:58:34.990Z",
+                "title": "string",
+                "body": null,
+                "tags": [],
+                "media": null
+            }
+        ],
+        "_count": {
+            "posts": 3,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "wiwiwi",
+        "email": "wiwi@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Winnie",
+        "email": "tullball@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "we",
+        "email": "we@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Ward6g6",
+        "email": "rania123456@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [
+            {
+                "name": "Charlotte",
+                "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "ward",
+        "email": "ward12345@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "WaldoIsHere",
+        "email": "WaldoIsHere@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "wait",
+        "email": "wait@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "vvvvv",
+        "email": "vvvv@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "vniveirb",
+        "email": "vniveirb@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Vladimira",
+        "email": "vladmi49062@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "vanja",
+        "email": "vanja@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "v",
+        "email": "v@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "uuhdskjdf",
+        "email": "uidfdiuhfd@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "ustest4321",
+        "email": "ustest_4321@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "ustest_432",
+        "email": "ustest_432@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "Charlotte",
+                "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80"
+            },
+            {
+                "name": "Jarle",
+                "avatar": ""
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 2,
+            "following": 0
+        }
+    },
+    {
+        "name": "ustest_234",
+        "email": "ustest_234@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [
+            {
+                "name": "Jarle",
+                "avatar": ""
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_lgflfi",
+        "email": "test.lgflfi@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_hslark",
+        "email": "hslark@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holas6734",
+        "email": "holas6734@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holas1294",
+        "email": "holas1294@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holap99",
+        "email": "holap99@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holap1294",
+        "email": "holap1294@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holap1288",
+        "email": "holap1288@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test_holap1287",
+        "email": "holap1287@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "UserTest654",
+        "email": "afdaff23@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "userTEST_23",
+        "email": "il@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "userTEST123",
+        "email": "mail@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "UserTest",
+        "email": "ikekengren123@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "userTEST",
+        "email": "ail@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_test",
+        "email": "user_test@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "username",
+        "email": "email@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_lorel_slug",
+        "email": "lorel.slug@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_klor_12",
+        "email": "klor12@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user_klo44",
+        "email": "klo44@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user88",
+        "email": "user88@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [
+            {
+                "id": 3859,
+                "owner": "user88",
+                "created": "2023-10-10T07:36:32.274Z",
+                "updated": "2023-10-10T07:36:32.274Z",
+                "title": "Dette er en tittel",
+                "body": "Jeg skriver og dette er innhold.",
+                "tags": [
+                    "mandag",
+                    "tirsdag",
+                    "onsdag",
+                    "torsdag",
+                    "fredag",
+                    "lørdag søndag"
+                ],
+                "media": ""
+            }
+        ],
+        "_count": {
+            "posts": 1,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "user75643344",
+        "email": "fdjkdfjksf@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "urururur",
+        "email": "urururur@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "UrS_Admin2",
+        "email": "UrS_Admin2@noroff.no",
+        "banner": null,
+        "avatar": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80",
+        "followers": [
+            {
+                "name": "nina",
+                "avatar": "https://avatars.githubusercontent.com/u/89078328?s=400&u=d5bdea052fa0f781f59eea187b9f8277c1768012&v=4"
+            },
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 2,
+            "following": 0
+        }
+    },
+    {
+        "name": "UrS_Admin",
+        "email": "UrS_Admin@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "runeunhjem",
+                "avatar": "https://portfolio1-ca.netlify.app/images/rune-profile-pic-medium.png"
+            },
+            {
+                "name": "test_profile_1231231",
+                "avatar": ""
+            },
+            {
+                "name": "nina",
+                "avatar": "https://avatars.githubusercontent.com/u/89078328?s=400&u=d5bdea052fa0f781f59eea187b9f8277c1768012&v=4"
+            }
+        ],
+        "following": [
+            {
+                "name": "Elli",
+                "avatar": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            },
+            {
+                "name": "anothertest",
+                "avatar": null
+            },
+            {
+                "name": "sindbert",
+                "avatar": ""
+            },
+            {
+                "name": "jasi",
+                "avatar": null
+            },
+            {
+                "name": "SoSpace",
+                "avatar": null
+            }
+        ],
+        "posts": [
+            {
+                "id": 1778,
+                "owner": "UrS_Admin",
+                "created": "2023-09-26T17:48:31.900Z",
+                "updated": "2023-10-03T12:00:05.893Z",
+                "title": "Hello again",
+                "body": "Added text",
+                "tags": [
+                    ""
+                ],
+                "media": "https://images.unsplash.com/photo-1682686581556-a3f0ee0ed556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+            },
+            {
+                "id": 3756,
+                "owner": "UrS_Admin",
+                "created": "2023-10-09T13:05:07.351Z",
+                "updated": "2023-10-09T16:56:56.144Z",
+                "title": "Hello monday!",
+                "body": "Goodbye weekend oh noo",
+                "tags": [
+                    "weekend"
+                ],
+                "media": ""
+            },
+            {
+                "id": 1758,
+                "owner": "UrS_Admin",
+                "created": "2023-09-26T12:57:26.851Z",
+                "updated": "2023-09-26T12:57:26.851Z",
+                "title": "Dog",
+                "body": "",
+                "tags": [],
+                "media": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2043&q=80"
+            },
+            {
+                "id": 1760,
+                "owner": "UrS_Admin",
+                "created": "2023-09-26T12:59:00.654Z",
+                "updated": "2023-09-26T12:59:00.654Z",
+                "title": "Oops",
+                "body": "That's no dog, this is dog",
+                "tags": [],
+                "media": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            },
+            {
+                "id": 2511,
+                "owner": "UrS_Admin",
+                "created": "2023-10-04T09:38:09.437Z",
+                "updated": "2023-10-04T13:16:45.554Z",
+                "title": "Hello",
+                "body": "wrroldld",
+                "tags": [
+                    "tag 1",
+                    "tag 2",
+                    "tag 3",
+                    "tag 4",
+                    "tag 5",
+                    "tag 6"
+                ],
+                "media": ""
+            },
+            {
+                "id": 2521,
+                "owner": "UrS_Admin",
+                "created": "2023-10-04T09:52:20.732Z",
+                "updated": "2023-10-09T12:05:02.528Z",
+                "title": "Vänn",
+                "body": "Added body text",
+                "tags": [
+                    "tag 1",
+                    "tag 2",
+                    "tag 3",
+                    "tag 4",
+                    "tag 5"
+                ],
+                "media": "https://images.unsplash.com/photo-1696325905035-74fdaebbb68d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80"
+            }
+        ],
+        "_count": {
+            "posts": 6,
+            "followers": 3,
+            "following": 5
+        }
+    },
+    {
+        "name": "ull",
+        "email": "ull@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "uiwioeoie",
+        "email": "ioweioe@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "twittercloneuser",
+        "email": "twittercloneuser@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "TwisterTestUser",
+        "email": "Twister@stud.noroff.no",
+        "banner": "",
+        "avatar": "https://gravatar.com/avatar/8fd67a795ea6666959449f22b8556477?s=400&d=robohash&r=x",
+        "followers": [],
+        "following": [],
+        "posts": [
+            {
+                "id": 3844,
+                "owner": "TwisterTestUser",
+                "created": "2023-10-10T00:12:14.557Z",
+                "updated": "2023-10-10T00:12:14.557Z",
+                "title": "zzzzzzzzzzTwisterApp",
+                "body": "Chuck Norris doesn't read books. He stares them down until he gets the information he wants.",
+                "tags": [
+                    "joke"
+                ],
+                "media": null
+            },
+            {
+                "id": 3845,
+                "owner": "TwisterTestUser",
+                "created": "2023-10-10T00:12:31.706Z",
+                "updated": "2023-10-10T00:12:31.706Z",
+                "title": "zzzzzzzzzzTwisterApp",
+                "body": "There’s a one-story house in which everything is yellow. Yellow walls, yellow doors, yellow furniture. What color are the stairs?",
+                "tags": [
+                    "riddle"
+                ],
+                "media": null
+            },
+            {
+                "id": 3849,
+                "owner": "TwisterTestUser",
+                "created": "2023-10-10T00:17:13.427Z",
+                "updated": "2023-10-10T00:17:13.427Z",
+                "title": "zzzzzzzzzzTwisterApp",
+                "body": "I'm so good at sleeping I can do it with my eyes closed!",
+                "tags": [
+                    "joke"
+                ],
+                "media": null
+            },
+            {
+                "id": 3853,
+                "owner": "TwisterTestUser",
+                "created": "2023-10-10T00:21:28.374Z",
+                "updated": "2023-10-10T00:21:28.374Z",
+                "title": "zzzzzzzzzzTwisterApp",
+                "body": "Why don't scientists trust atoms?\nBecause they make up everything!",
+                "tags": [
+                    "joke"
+                ],
+                "media": null
+            }
+        ],
+        "_count": {
+            "posts": 4,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "turtleboy",
+        "email": "turtleboy@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tullerullene",
+        "email": "tullerullene@noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tullerullen",
+        "email": "tullerullen@noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tullerull",
+        "email": "tullerull@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "runeunhjem",
+                "avatar": "https://portfolio1-ca.netlify.app/images/rune-profile-pic-medium.png"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "tt_ser",
+        "email": "ser@stud.noroff.no",
+        "banner": null,
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tststs",
+        "email": "tststs@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tsdfds",
+        "email": "test-acc45ount-a@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "trygve",
+        "email": "trygvehansemann@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tryfsdf",
+        "email": "tryfsdf@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [
+            {
+                "id": 3827,
+                "owner": "tryfsdf",
+                "created": "2023-10-09T20:21:46.672Z",
+                "updated": "2023-10-09T20:21:46.672Z",
+                "title": "test",
+                "body": "",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3814,
+                "owner": "tryfsdf",
+                "created": "2023-10-09T17:12:03.476Z",
+                "updated": "2023-10-09T17:12:03.476Z",
+                "title": "asds",
+                "body": "",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3828,
+                "owner": "tryfsdf",
+                "created": "2023-10-09T21:05:31.316Z",
+                "updated": "2023-10-09T21:05:31.316Z",
+                "title": "ehwehr",
+                "body": "",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3646,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:48:15.658Z",
+                "updated": "2023-10-08T21:48:15.658Z",
+                "title": "Corgi nummer 5",
+                "body": "må bare ta einda ein test",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3647,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:55:23.745Z",
+                "updated": "2023-10-08T21:55:23.745Z",
+                "title": "asdg",
+                "body": "adsgadfg",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3639,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:33:03.608Z",
+                "updated": "2023-10-08T21:33:03.608Z",
+                "title": "Tester",
+                "body": "",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3640,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:33:24.496Z",
+                "updated": "2023-10-08T21:33:24.496Z",
+                "title": "Tester",
+                "body": "tester om ditta funka",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3641,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:36:38.409Z",
+                "updated": "2023-10-08T21:36:38.409Z",
+                "title": "Tester",
+                "body": "tester om ditta funka",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3642,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:37:35.091Z",
+                "updated": "2023-10-08T21:37:35.091Z",
+                "title": "Tester",
+                "body": "tester om ditta funka",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3643,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:41:32.726Z",
+                "updated": "2023-10-08T21:41:32.726Z",
+                "title": "tester igjen",
+                "body": "må bare ta einda ein test",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3644,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:42:02.085Z",
+                "updated": "2023-10-08T21:42:02.085Z",
+                "title": "tester igjen",
+                "body": "må bare ta einda ein test",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3648,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T21:56:56.906Z",
+                "updated": "2023-10-08T21:56:56.906Z",
+                "title": "dsgadsg",
+                "body": "adfgadfg",
+                "tags": [],
+                "media": "https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg"
+            },
+            {
+                "id": 3649,
+                "owner": "tryfsdf",
+                "created": "2023-10-08T22:01:19.217Z",
+                "updated": "2023-10-08T22:01:19.217Z",
+                "title": "234243",
+                "body": "dfbdgbg",
+                "tags": [],
+                "media": ""
+            }
+        ],
+        "_count": {
+            "posts": 13,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "trultemor",
+        "email": "trultemor@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Trulsbanan",
+        "email": "trulsbanan@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "truls",
+        "email": "trulse@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "troikabar",
+        "email": "troikabar@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "troika",
+        "email": "troika@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tralte",
+        "email": "tralte@noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "trallallala",
+        "email": "trallallala@noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "toto",
+        "email": "toto@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Tonje",
+        "email": "TonSte14813@stud.noroff.no",
+        "banner": "https://picsum.photos/id/57/367/267",
+        "avatar": "https://picsum.photos/id/237/200/300",
+        "followers": [
+            {
+                "name": "Charlotte",
+                "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80"
+            },
+            {
+                "name": "Karatechop",
+                "avatar": "https://i.imgur.com/FelBLPQ.jpeg"
+            },
+            {
+                "name": "fina",
+                "avatar": null
+            },
+            {
+                "name": "Emel_Hassen",
+                "avatar": "https://picsum.photos/id/606/300/300"
+            },
+            {
+                "name": "nina",
+                "avatar": "https://avatars.githubusercontent.com/u/89078328?s=400&u=d5bdea052fa0f781f59eea187b9f8277c1768012&v=4"
+            },
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [
+            {
+                "id": 279,
+                "owner": "Tonje",
+                "created": "2023-08-28T21:18:42.849Z",
+                "updated": "2023-08-28T21:18:42.849Z",
+                "title": "hi",
+                "body": "hi",
+                "tags": [
+                    ""
+                ],
+                "media": null
+            },
+            {
+                "id": 162,
+                "owner": "Tonje",
+                "created": "2023-08-18T20:08:11.919Z",
+                "updated": "2023-08-18T20:08:11.919Z",
+                "title": "my first post",
+                "body": "myfirst post",
+                "tags": [
+                    ""
+                ],
+                "media": null
+            },
+            {
+                "id": 1449,
+                "owner": "Tonje",
+                "created": "2023-09-17T16:42:25.925Z",
+                "updated": "2023-09-17T16:46:27.303Z",
+                "title": "new title",
+                "body": "new post",
+                "tags": [],
+                "media": "https://picsum.photos/id/237/200/300"
+            },
+            {
+                "id": 883,
+                "owner": "Tonje",
+                "created": "2023-09-11T20:43:56.031Z",
+                "updated": "2023-09-14T19:01:11.621Z",
+                "title": "sottp",
+                "body": "hi",
+                "tags": [
+                    "what"
+                ],
+                "media": "https://picsum.photos/seed/picsum/200/300"
+            }
+        ],
+        "_count": {
+            "posts": 4,
+            "followers": 6,
+            "following": 0
+        }
+    },
+    {
+        "name": "Tomas",
+        "email": "tomas@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "toklus",
+        "email": "toklus@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tokle",
+        "email": "tokle@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "dfd",
+                "avatar": "https://fanciful-custard-bdf010.netlify.app/images/profile-photo.jpeg"
+            },
+            {
+                "name": "nina",
+                "avatar": "https://avatars.githubusercontent.com/u/89078328?s=400&u=d5bdea052fa0f781f59eea187b9f8277c1768012&v=4"
+            },
+            {
+                "name": "sola",
+                "avatar": "https://source.unsplash.com/random/61"
+            }
+        ],
+        "following": [],
+        "posts": [
+            {
+                "id": 2097,
+                "owner": "tokle",
+                "created": "2023-10-01T08:23:17.223Z",
+                "updated": "2023-10-09T17:22:14.046Z",
+                "title": "turtlewax",
+                "body": "It's illegal to own just one guinea pig in Switzerland. It's considered animal abuse because they're social beings and get lonely.\nedit works",
+                "tags": [],
+                "media": "https://i.insider.com/5dcec61c79d757061255bdad?width=1000&format=jpeg&auto=webp"
+            }
+        ],
+        "_count": {
+            "posts": 1,
+            "followers": 3,
+            "following": 0
+        }
+    },
+    {
+        "name": "Tn",
+        "email": "F@stud.noroff.no",
+        "banner": "",
+        "avatar": "",
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tittieffwfef",
+        "email": "tittefefe4ri@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tittieffw",
+        "email": "tittefei@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "titti",
+        "email": "titti@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tiril",
+        "email": "tiril@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "Tina",
+        "email": "newmail@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "tina",
+        "email": "tina.testuser@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [
+            {
+                "name": "Elli",
+                "avatar": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [
+            {
+                "id": 2159,
+                "owner": "tina",
+                "created": "2023-10-02T15:17:39.770Z",
+                "updated": "2023-10-02T15:17:39.770Z",
+                "title": "hei",
+                "body": "på deg",
+                "tags": [],
+                "media": null
+            },
+            {
+                "id": 2161,
+                "owner": "tina",
+                "created": "2023-10-02T15:20:53.200Z",
+                "updated": "2023-10-02T15:20:53.200Z",
+                "title": "hei",
+                "body": "hei hei",
+                "tags": [],
+                "media": null
+            },
+            {
+                "id": 2469,
+                "owner": "tina",
+                "created": "2023-10-04T09:22:30.764Z",
+                "updated": "2023-10-09T12:30:04.139Z",
+                "title": "Try posting",
+                "body": "New test UPDATE new",
+                "tags": [],
+                "media": ""
+            },
+            {
+                "id": 3879,
+                "owner": "tina",
+                "created": "2023-10-10T09:37:44.262Z",
+                "updated": "2023-10-10T09:37:44.262Z",
+                "title": "Hello!",
+                "body": "This is my newest post",
+                "tags": [
+                    "tagone tagtwo"
+                ],
+                "media": ""
+            },
+            {
+                "id": 3757,
+                "owner": "tina",
+                "created": "2023-10-09T13:06:33.800Z",
+                "updated": "2023-10-09T13:06:41.867Z",
+                "title": "Post working now?",
+                "body": "Just checking again",
+                "tags": [],
+                "media": ""
+            }
+        ],
+        "_count": {
+            "posts": 5,
+            "followers": 1,
+            "following": 0
+        }
+    },
+    {
+        "name": "tiinakaizer",
+        "email": "TinBek61236@stud.noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "ThoJen84480",
+        "email": "ThoJen84480@stud.noroff.no",
+        "banner": "",
+        "avatar": "http://www.gravatar.com/avatar/34bf7beba6a1cd62123ffe496779fb18.jpg",
+        "followers": [
+            {
+                "name": "Charlotte",
+                "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80"
+            },
+            {
+                "name": "fina",
+                "avatar": null
+            },
+            {
+                "name": "Emel_Hassen",
+                "avatar": "https://picsum.photos/id/606/300/300"
+            },
+            {
+                "name": "KariNordmann",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            }
+        ],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 4,
+            "following": 0
+        }
+    },
+    {
+        "name": "this_new_user_reg",
+        "email": "fed-testaccount-re@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount9",
+        "email": "thisisatestaccount9@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount8",
+        "email": "thisisatestaccount8@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount7",
+        "email": "thisisatestaccount7@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount6",
+        "email": "thisisatestaccount6@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount5",
+        "email": "thisisatestaccount5@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount4",
+        "email": "thisisatestaccount4@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount3",
+        "email": "thisisatestaccount3@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount22",
+        "email": "thisisatestaccount22@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    },
+    {
+        "name": "thisisatestaccount21",
+        "email": "thisisatestaccount21@noroff.no",
+        "banner": null,
+        "avatar": null,
+        "followers": [],
+        "following": [],
+        "posts": [],
+        "_count": {
+            "posts": 0,
+            "followers": 0,
+            "following": 0
+        }
+    }
+]
