@@ -2,6 +2,9 @@ const followButton = document.querySelector('.btn-follow');
 const followerCountElement = document.querySelector('[data-followers-stat]');
 
 
+
+
+
 let followerCount = parseInt(localStorage.getItem('followerCount')) || parseInt(followerCountElement.textContent);
 let isFollowing = localStorage.getItem('isFollowing') === 'true' || false;
 
