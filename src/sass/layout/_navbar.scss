@@ -15,10 +15,12 @@ color: white;
   width: 2rem;
   border-radius: 10px;
   height: 2rem;
-  background-color: rgba(26, 26, 62, 0.406);
+  background-color: rgba(89, 89, 89, 0.406);
+  color: black;
   position: relative;
   .main-navbar__menu-item--link {
  border-radius: inherit;
+ font-size: 13px;
   }
   .main-navbar__menu-item--link::before {
     content: "";
@@ -50,7 +52,7 @@ color: white;
 
 .sub-navbar {
   display: flex;
- background-color: rgb(15, 29, 224);
+ background-color: $secondary--clr;
   color: white;
   @media screen and (min-width: 748px) {
     display: none;

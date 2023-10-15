@@ -455,10 +455,12 @@ h1, h2 {
       width: 2rem;
       border-radius: 10px;
       height: 2rem;
-      background-color: rgba(26, 26, 62, 0.406);
+      background-color: rgba(89, 89, 89, 0.406);
+      color: black;
       position: relative; }
       .main-navbar .main-navbar__menu .main-navbar__menu-item .main-navbar__menu-item--link {
-        border-radius: inherit; }
+        border-radius: inherit;
+        font-size: 13px; }
       .main-navbar .main-navbar__menu .main-navbar__menu-item .main-navbar__menu-item--link::before {
         content: "";
         border-radius: inherit;
@@ -474,7 +476,7 @@ h1, h2 {
 
 .sub-navbar {
   display: flex;
-  background-color: #0f1de0;
+  background-color: #f4f4f4;
   color: white; }
   @media screen and (min-width: 748px) {
     .sub-navbar {
@@ -597,15 +599,20 @@ h1, h2 {
   display: grid;
   position: relative;
   gap: 10px;
-  background-color: orange; }
+  background-color: #afafaf; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     .feed-main__posts {
       grid-template-columns: 100%;
       grid-auto-rows: 80dvh; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     .feed-main__posts {
       grid-template-columns: 25rem;
       grid-auto-rows: 65dvh;
+      justify-content: center; } }
+  @media screen and (min-width: 1440px) {
+    .feed-main__posts {
+      grid-template-columns: 27rem;
+      grid-auto-rows: 70dvh;
       justify-content: center; } }
 
 .feed-main__posts-card {
@@ -617,17 +624,15 @@ h1, h2 {
 .feed-main__posts-card__avatar {
   display: flex;
   align-items: center;
-  padding-inline-start: 5px;
-  gap: 5px;
-  background-color: pink; }
-  .feed-main__posts-card__avatar a {
-    /*   p {
-      display: block;
-    } */ }
-    .feed-main__posts-card__avatar a img {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 100%; }
+  padding-block: 10px;
+  padding-inline: 10px;
+  gap: 5px; }
+  .feed-main__posts-card__avatar a img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%; }
+  .feed-main__posts-card__avatar a span {
+    display: block; }
 
 .feed-main__posts-card__header {
   background: radial-gradient(circle, #4f46e4 10%, transparent 11%);
@@ -649,26 +654,29 @@ h1, h2 {
   display: flex;
   flex-direction: column; }
   .feed-main__posts-card__body .feed-main__posts-card__body-content {
-    background-color: black;
+    padding-block: 10px;
+    padding-inline: 10px;
     flex-grow: 1; }
     .feed-main__posts-card__body .feed-main__posts-card__body-content .feed-main__posts-card--body-content--title {
       font-size: clamp(1.2rem, 2.2vw, 1.3rem); }
     .feed-main__posts-card__body .feed-main__posts-card__body-content .feed-main__posts-card--body-text {
       color: royalblue;
       overflow: hidden; }
-  .feed-main__posts-card__body .feed-main__posts-card__body-reactions {
-    background-color: lightcoral; }
-    .feed-main__posts-card__body .feed-main__posts-card__body-reactions .reactions {
+  .feed-main__posts-card__body .feed-main__posts-card--body-reactions {
+    padding-block: 10px;
+    padding-inline: 10px; }
+    .feed-main__posts-card__body .feed-main__posts-card--body-reactions .reactions {
       color: orange; }
 
 .feed-main__posts-card__footer {
   display: flex;
   align-items: flex-end;
+  padding-block: 10px;
+  padding-inline: 10px;
   flex: 5%; }
   .feed-main__posts-card__footer .feed-main__posts-card-footer-links {
     display: flex;
     align-items: center;
-    padding: 20px;
     gap: 15px;
     height: 100%; }
     .feed-main__posts-card__footer .feed-main__posts-card-footer-links .feed-main__posts-card-footer-links--href {
@@ -758,14 +766,15 @@ h1, h2 {
   .profile-posts-main__content .profile-posts-main__content-header, .profile-posts-main__content .profile-posts-main__content-body, .profile-posts-main__content .profile-posts-main__content-footer {
     color: white;
     flex-basis: auto;
+    outline: 1px solid red;
     /*   background-color: $modal--clr; */
     padding-block-start: 5px;
     padding-inline-start: 5px;
     /*     @media screen and (min-width:1440px) {
         flex: 0;} */ }
   .profile-posts-main__content .profile-posts-main__content-header {
-    padding-block-start: 5px;
-    padding-inline-start: 5px;
+    padding-inline: 10px;
+    padding-block: 10px;
     /*  h1 {} */ }
   .profile-posts-main__content .profile-posts-main__content-body {
     /*  p {} */ }
@@ -846,7 +855,7 @@ h1, h2 {
     } */ }
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
-      height: 25rem; } }
+      height: auto; } }
   .profile-main__wrapper .btn-change-banner {
     z-index: 2;
     right: 10px;
@@ -863,6 +872,7 @@ h1, h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    backdrop-filter: brightness;
     z-index: 0;
     /*   @media screen and (min-width:1440px) {
       display: none;

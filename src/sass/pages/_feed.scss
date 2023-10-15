@@ -101,15 +101,21 @@
   display: grid;
   position: relative;
   gap: 10px;
-  background-color: orange;
-
+background-color: $primary--bg;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     grid-template-columns: 100%;
     grid-auto-rows: 80dvh;
+ 
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px ) and(max-width:1200px) {
     grid-template-columns: 25rem;
     grid-auto-rows: 65dvh;
+    justify-content: center;
+  }
+  
+    @media screen and (min-width: 1440px )  {
+    grid-template-columns: 27rem;
+    grid-auto-rows: 70dvh;
     justify-content: center;
   }
 }
@@ -124,20 +130,21 @@
 .feed-main__posts-card__avatar {
   display: flex;
   align-items: center;
-  padding-inline-start: 5px;
+  padding-block: 10px;
+  padding-inline: 10px;
   gap: 5px;
-  
-  background-color: pink;
+
   a {
+  
 
     img {
       width: 2rem;
       height: 2rem;
       border-radius: 100%;
     }
-  /*   p {
+  span {
       display: block;
-    } */
+    } 
   }
 }
 .feed-main__posts-card__header {
@@ -165,7 +172,8 @@
 
 
   .feed-main__posts-card__body-content {
-    background-color: black;
+    padding-block: 10px;
+ padding-inline: 10px;
     flex-grow: 1;
     
     
@@ -179,8 +187,10 @@
   }
   }
 
-  .feed-main__posts-card__body-reactions {
-    background-color: lightcoral;
+  .feed-main__posts-card--body-reactions {
+        padding-block: 10px;
+ padding-inline: 10px;
+   
 
 
     .btn-react {}
@@ -196,12 +206,14 @@
 
   display: flex;
   align-items: flex-end;
+  padding-block: 10px;
+  padding-inline: 10px;
   
   flex: 5%;
 .feed-main__posts-card-footer-links{
   display: flex;
   align-items: center;
-  padding: 20px;
+ 
   gap: 15px;
 
   .feed-main__posts-card-footer-links--href {

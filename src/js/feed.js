@@ -39,7 +39,7 @@ async function createHTML() {
 <div class="feed-main__posts-card__avatar">
 <a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
 </a>
-<p> ${authorName}</p>
+<span> ${authorName}</span>
 </div>
 <div class="feed-main__posts-card__header">
 <img  class="feed-main__posts-card--header--img" src="${media}" />

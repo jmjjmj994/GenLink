@@ -63,7 +63,7 @@ function handleInput() {
   const bodyInput = getSingleElements("#create-post__content");
   const submitBtn = getSingleElements(".btn-create__post");
 
-  submitBtn.addEventListener("click", (e) => {
+  submitBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     const titleInputVal = titleInput.value.trim();
     const mediaInputVal = mediaInput.value.trim();
@@ -78,6 +78,8 @@ function handleInput() {
       bodyInput.value = "";
       modalFormWrapper.classList.remove("active");
       modalFormWrapper.classList.add("hidden");
+   
+     
     } else {
       console.log("please fill in title");
     }
