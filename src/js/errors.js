@@ -46,27 +46,3 @@ export function inputValid(sign, milliseconds) {
 }
 
 
-
-
- let count = 30;
- let limit = 0;
-  const redirectCount = document.querySelector(".redirect-count");
-console.log(redirectCount)
-function redirectUser() {
- 
-  
-  if (count === limit) {
-    console.log(count, limit)
-    clearInterval(interval)
-    window.location.href ="index.html"
-  } else {
-    count--;
-    redirectCount.textContent = count;
-    
-  }
-
-
-
-
-}
-/* const interval = setInterval(redirectUser, 1000) */

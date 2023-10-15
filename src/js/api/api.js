@@ -31,15 +31,12 @@ console.log(data)
 }
 
 
-export async function PUT_BODY(param) {
+export async function PUT_BODY(param,bodyData) {
   /* const BASE_URL = `https://api.noroff.dev/api/v1/`; */
   try {
     const res = await fetch("https://api.noroff.dev/api/v1/" + param, {
       method: "PUT",
-      body: JSON.stringify({
-        body: "string value",
-        replyToId:0,
-      }),
+      body: JSON.stringify(bodyData),
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
         "content-type": "application/json; charset=UTF-8",
