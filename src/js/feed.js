@@ -57,7 +57,7 @@ async function createHTML() {
 </div>
 <div class="feed-main__posts-card__footer">
 <div class="feed-main__posts-card-footer-links">
-<a class="feed-main__posts-card-footer-links--href" href="post-specific-page.html?${id}">View Post</a>
+<a class="feed-main__posts-card-footer-links--href" href="post-specific-page.html?id=${id}">View Post</a>
 </div>
 <div class="feed-main__posts-card-footer-tags">
 <p> ${tags}</p>
@@ -75,10 +75,9 @@ async function createHTML() {
           if (isDisabled === "true") {
             button.disabled = true;
           }
-        });
+
+        })
   } catch (error) { }
-
-
 
   container.addEventListener("click", async (e) => {
     if (e.target.classList.contains("btn-react")) {
@@ -96,20 +95,11 @@ async function createHTML() {
     }
   });
 }
-document.addEventListener("DOMContentLoaded", createHTML());
-
+createHTML()
 
 //check state of btn
 
-
-
-
-
 //
-
-
-
-
 
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".btn-react");
@@ -122,10 +112,6 @@ document.addEventListener("DOMContentLoaded", createHTML());
       }
     });
   });
-
-
-
-
 
 
 //filter Search bar

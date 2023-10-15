@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jmjjmj994/some-j-k#readme",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.69.3"
   }
 }
