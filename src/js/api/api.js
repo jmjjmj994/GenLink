@@ -60,7 +60,11 @@ export async function changeAvatar(param, bodyData) {
     }
 }
 
-export async function PUT_BODY(param, bodyData) {
+
+
+
+
+/* export async function PUT_BODY(param, bodyData) {
   try {
     const res = await fetch("https://api.noroff.dev/api/v1/" + param, {
       method: "PUT",
@@ -81,3 +85,4 @@ export async function PUT_BODY(param, bodyData) {
     throw error; 
   }
 }
+ */

@@ -42,7 +42,6 @@ async function createSidebarSuggestions(data) {
     container.appendChild(nameElement);
     container.appendChild(span);
     config.sidebarContainer.appendChild(container);
-    const closest = config.sidebarContainer.querySelector(".closest");
   }
 
   async function createSidebarUsers() {

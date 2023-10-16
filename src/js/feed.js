@@ -7,6 +7,7 @@ const container = getSingleElements(".feed-main__posts");
 const allPosts = await GET("social/posts?_author=true");
 
 async function createHTML() {
+ 
   try {
     const filterPosts = allPosts.filter((post) => {
       const postAuthor = post;
