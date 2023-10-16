@@ -156,6 +156,9 @@ align-items: center;
 
 
 .feed-search-form__container, .tag-search-container {
+  @media screen and (max-width:1035px) {
+  display: none;
+}
    position: relative;
    width: 50rem;
    background-color: red;

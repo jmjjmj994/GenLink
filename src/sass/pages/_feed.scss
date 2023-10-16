@@ -77,14 +77,17 @@
 
 .feed-main {
   position: relative;
+
 }
 
 .feed-main__wrapper {
-  flex-grow: 1;
-  width: 100%; overflow-y: scroll;
+  flex: 1;
+  width: 100%;
+   overflow: scroll;
 
 }
 .feed-main__posts {
+ 
   width: 100%;
   display: grid;
   position: relative;
@@ -255,14 +258,20 @@
   position: absolute;
   height: 3rem;
   max-height: 30rem;
+@media screen and (max-width:1035px) {
+  display: none;
+}
 }
 
 .list-output {
+@media screen and (max-width:1035px) {
+  display: none;
+}
   width: 30rem;
   max-height: 20rem;
   width: 50rem;
   overflow-y: auto;
-}
+} 
 
 .search-bar-img {
   height: 3rem;
