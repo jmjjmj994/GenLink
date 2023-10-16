@@ -110,16 +110,17 @@ function renderProfilePosts(data) {
   }
 }
 
-async function editPost(id) {
+
+async function createPost(title, body, tags, media) {
+  console.log(title, body, tags, media);
   try {
-    const res = await fetch(BASE_URL + `social/posts/${id}`, {
-      method: "PUT",
+    const res = await fetch(BASE_URL + `social/posts`, {
+      method: "POST",
       body: JSON.stringify({
-        title: "string",
-        body: "string",
-        tags: ["string"],
-        media:
-          "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        title: title,
+        body: body,
+        tags: tags,
+        media: media,
       }),
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -127,6 +128,7 @@ async function editPost(id) {
       },
     });
     const data = await res.json();
+    console.log(data);
   } catch (error) {}
 }
 
