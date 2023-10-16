@@ -504,7 +504,9 @@ h1, h2 {
 .sub-navbar {
   display: flex;
   background-color: #f4f4f4;
-  color: white; }
+  color: white;
+  position: fixed;
+  bottom: 0; }
   @media screen and (min-width: 748px) {
     .sub-navbar {
       display: none; } }
@@ -606,20 +608,10 @@ h1, h2 {
 .feed-main {
   position: relative; }
 
-.feed-main__observer {
-  flex: 1;
-  overflow-y: scroll; }
-
 .feed-main__wrapper {
   flex-grow: 1;
-  width: 100%; }
-  .feed-main__wrapper .observer-trigger {
-    visibility: hidden;
-    position: absolute;
-    padding: 10px;
-    bottom: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  width: 100%;
+  overflow-y: scroll; }
 
 .feed-main__posts {
   width: 100%;

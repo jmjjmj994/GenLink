@@ -78,22 +78,11 @@
 .feed-main {
   position: relative;
 }
-.feed-main__observer {
-  flex: 1;
-  overflow-y: scroll;
-}
+
 .feed-main__wrapper {
   flex-grow: 1;
-  width: 100%;
+  width: 100%; overflow-y: scroll;
 
-  .observer-trigger {
-    visibility: hidden;
-    position: absolute;
-    padding: 10px;
-    bottom: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 .feed-main__posts {
   width: 100%;
