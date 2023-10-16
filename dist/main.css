@@ -213,6 +213,28 @@ h1, h2 {
 .error-sign {
   color: red; }
 
+#change-banner {
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: 2;
+  right: 10px;
+  position: absolute;
+  gap: 5px;
+  border-radius: 5px; }
+  @media screen and (max-width: 550px) {
+    #change-banner {
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  #change-banner #change-banner--input, #change-banner .btn-banner-submit {
+    border-radius: inherit;
+    padding: 4px; }
+  #change-banner #change-banner--input {
+    width: 100%; }
+  #change-banner .btn-banner-submit {
+    background-color: #f4f4f4; }
+
 .btn-close__wrapper {
   position: absolute;
   top: 10px;
@@ -875,12 +897,14 @@ h1, h2 {
   flex-direction: column;
   position: relative; }
 
-.profile-main__wrapper, .profile-main__stats, .profile-main__buttons {
+.profile-main__wrapper,
+.profile-main__stats,
+.profile-main__buttons {
   display: flex; }
 
 .profile-main__wrapper {
   position: relative;
-  color: black;
+  color: white;
   padding-block: 30px;
   /*   @media screen and (min-width:1440px) {
      height: 30rem;
@@ -888,14 +912,6 @@ h1, h2 {
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
       height: auto; } }
-  .profile-main__wrapper .btn-change-banner {
-    z-index: 2;
-    right: 10px;
-    position: absolute;
-    cursor: pointer; }
-    .profile-main__wrapper .btn-change-banner i {
-      color: black;
-      font-size: 18px; }
   .profile-main__wrapper .profile-main__wrapper--banner {
     position: absolute;
     top: 0;
@@ -904,11 +920,8 @@ h1, h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    backdrop-filter: brightness;
-    z-index: 0;
-    /*   @media screen and (min-width:1440px) {
-      display: none;
-    } */ }
+    filter: brightness(0.4);
+    z-index: 0; }
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
       flex-direction: column; } }
@@ -939,19 +952,19 @@ h1, h2 {
         width: 9rem;
         height: 9rem; } }
   @media screen and (min-width: 1441px) {
-    .profile-main__user .profile-main__user--img, .profile-main__user .profile-main__user--name {
+    .profile-main__user .profile-main__user--img,
+    .profile-main__user .profile-main__user--name {
       margin-inline-start: 15rem; } }
 
 .profile-main__stats {
   z-index: 1;
   flex: 1;
   flex-direction: column;
-  padding-inline: 5px;
-  /*     @media screen and (max-width:767px) {
-   flex: 2;
-
-   } */ }
-  .profile-main__stats [data-follow-stat], .profile-main__stats [data-followers-stat], .profile-main__stats [data-posts-stat], .profile-main__stats .count {
+  padding-inline: 5px; }
+  .profile-main__stats [data-follow-stat],
+  .profile-main__stats [data-followers-stat],
+  .profile-main__stats [data-posts-stat],
+  .profile-main__stats .count {
     margin-inline-start: 15px;
     text-align: center; }
   @media screen and (max-width: 1440px) {
@@ -971,9 +984,6 @@ h1, h2 {
 
 .profile-main-posts {
   flex: 1;
-  /* display: grid;
-grid-template-columns: repeat(2, minmax(5rem, auto));
-grid-auto-rows: 15rem  */
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll; }

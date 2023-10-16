@@ -12,12 +12,17 @@ const config = {
   ),
   bannerImage: getSingleElements(".profile-main__wrapper--banner"),
   postsContainer: getSingleElements(".profile-main-posts"),
+  followCount: getSingleElements("[data-follow-stat]"),
+  followersCount: getSingleElements("[data-followers-stat]"),
+  postsCount: getSingleElements("[data-posts-stat]"),
 };
 
 const inputElements = {
   newImageForm: getSingleElements(".change-user-img__form"),
   newImageInput: getSingleElements("#change-user-img__form--input-avatar"),
   submitNewImage: getSingleElements(".btn-change-img"),
+  newBannerInput: getSingleElements("#change-banner--input"),
+  submitNewBanner: getSingleElements(".btn-banner-submit"),
 };
 
 function getCurrentUsername() {
@@ -43,43 +48,20 @@ function renderProfile() {
   }
 }
 
-async function changeUserImage(username, imgUrl) {
+async function userDetails() {
   try {
-    const res = await changeAvatar(`social/profiles/${username}/media`, {
-      avatar: imgUrl,
-    });
-
-    userData.avatar = res.avatar;
-    localStorage.setItem("user", JSON.stringify(userData));
+    const res = await GET(`social/profiles/${config.username}`);
+    const posts = res._count.posts;
+    const followers = res._count.followers;
+    const following = res._count.following;
+    config.followCount.textContent = following;
+    config.postsCount.textContent = posts;
+    config.followersCount.textContent = followers;
   } catch (error) {}
 }
-
-async function changeUserProfileImage() {
-  const image =
-    userData.avatar ||
-    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
-  config.profileImageForm.src = image;
-
-  inputElements.submitNewImage.addEventListener("click", async (e) => {
-    e.preventDefault();
-    const username = getCurrentUsername();
-    const imageInputValue = inputElements.newImageInput.value.trim();
-    if (!imageInputValue) {
-      console.log("please enter a valid image url");
-    } else {
-      try {
-        await changeUserImage(username, imageInputValue);
-        inputElements.newImageInput.value = "";
-        window.location.reload();
-      } catch (error) {}
-    }
-  });
-}
-
 async function profilePosts() {
-  const username = getCurrentUsername();
   try {
-    const res = await GET(`social/profiles/${username}/posts`);
+    const res = await GET(`social/profiles/${config.username}/posts`);
     processData(res);
   } catch (error) {
     console.log(error);
@@ -87,7 +69,6 @@ async function profilePosts() {
 }
 
 function processData(data) {
-  console.log(data);
   const filterByMedia = data.filter(({ media }) => {
     if (media) return data;
   });
@@ -110,72 +91,71 @@ function renderProfilePosts(data) {
   }
 }
 
-async function createPost(title, body, tags, media) {
-  console.log(title, body, tags, media);
+async function changeUserImage(username, imgUrl) {
   try {
-    const res = await fetch(BASE_URL + `social/posts`, {
-      method: "POST",
-      body: JSON.stringify({
-        title: title,
-        body: body,
-        tags: tags,
-        media: media,
-      }),
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
-      },
+    const res = await changeAvatar(`social/profiles/${username}/media`, {
+      avatar: imgUrl,
     });
-    const data = await res.json();
-    console.log(data);
+
+    userData.avatar = res.avatar;
+    localStorage.setItem("user", JSON.stringify(userData));
+  } catch (error) {}
+}
+async function changeUserBanner(username, bannerUrl) {
+  try {
+    const res = await changeAvatar(`social/profiles/${username}/media`, {
+      banner: bannerUrl,
+    });
+
+    userData.banner = res.banner;
+    localStorage.setItem("user", JSON.stringify(userData));
   } catch (error) {}
 }
 
+async function handleProfileInput() {
+  const image =
+    userData.avatar ||
+    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
+  config.profileImageForm.src = image;
+
+  inputElements.submitNewImage.addEventListener("click", async (e) => {
+    e.preventDefault();
+    const username = getCurrentUsername();
+    const imageInputValue = inputElements.newImageInput.value.trim();
+    if (!imageInputValue) {
+      console.log("please enter a valid image url");
+    } else {
+      try {
+        await changeUserImage(username, imageInputValue);
+        inputElements.newImageInput.value = "";
+        window.location.reload();
+      } catch (error) {}
+    }
+  });
+}
+
+async function handleBannerInput() {
+  inputElements.submitNewBanner.addEventListener("click", async (e) => {
+    e.preventDefault();
+    const username = getCurrentUsername();
+    const bannerInputValue = inputElements.newBannerInput.value.trim();
+    if (!bannerInputValue) {
+      console.log("please enter a valid image url");
+    } else {
+      try {
+        await changeUserBanner(username, bannerInputValue);
+        inputElements.newBannerInput.value = "";
+        window.location.reload();
+      } catch (error) {}
+    }
+  });
+}
+
 (() => {
-  changeUserProfileImage();
+  userDetails();
+  handleBannerInput();
+  handleProfileInput();
   renderProfile();
   getCurrentUsername();
   profilePosts();
 })();
-
-// flytt til feed og search
-/* async function singleEntry(param) {
-  try {
-    const response = await fetch(BASE_URL + `social/profiles/${param}`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
-      },
-    });
-    const data = await response.json();
- 
-  } catch (error) {}
-}
-
-singleEntry("norofftest123"); */
-
-/* 
-const ALL_PROFILES_URL = `social/profiles`;
-const SINGLE_PROFILE_URL = `social/profiles/`; */
-
-/* function showUserDetails() {
-  const btnView = getSingleElements(".btn-view");
-  const userModal = getSingleElements(".show-user-wrapper");
-  const userName = getSingleElements(".show-user-information__username");
-  const userEmail = getSingleElements(".show-user-information__useremail");
-  const profileImage = getSingleElements(".show-user-information__image");
-  btnView.addEventListener("click", (e) => {
-    userModal.style.visibility = "visible";
-    userName.textContent = userData.name;
-    userEmail.textContent = userData.email;
-    if (!userData.avatar) {
-      profileImage.src =
-        "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png ";
-    } else {
-      profileImage.src = userData.avatar;
-    }
-  });
-} */
-
-// change profile picture //

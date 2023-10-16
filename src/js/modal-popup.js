@@ -44,8 +44,6 @@ function handleNavbarClick() {
     changeImgWrapper.classList.remove("hidden");
   }
 
-
-
   function hideModals() {
     modalFormWrapper.addEventListener("click", (e) => {
       if (e.currentTarget === modalForm || modalForm.contains(e.target)) {
@@ -73,7 +71,6 @@ function handleNavbarClick() {
         changeImgWrapper.classList.add("hidden");
       }
     });
-
   }
   hideModals();
 }

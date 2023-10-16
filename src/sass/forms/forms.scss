@@ -223,3 +223,31 @@ color: green;
 .error-sign {
 color: red;
 }
+
+#change-banner {
+  width: auto;
+height: auto;
+display: flex;
+  z-index: 2;
+     right: 10px;
+    position: absolute;
+    gap: 5px;
+    border-radius:5px;
+@media screen and(max-width:550px) {
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    #change-banner--input, .btn-banner-submit {
+          border-radius:inherit;
+padding: 4px;
+    }
+  #change-banner--input {
+    width: 100%;
+    
+  }
+  .btn-banner-submit {
+    background-color: $secondary--clr;
+    
+  }
+}
