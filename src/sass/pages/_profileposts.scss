@@ -1,144 +1,131 @@
 .profile-posts-body {
-  
-    display: flex;
+  display: flex;
 }
 .profile-posts-main {
-   position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    @media screen and (min-width: 1440px) { 
-        flex-direction: row;
-    }
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
-.profile-posts-main__content, .profile-posts-main__image {
-height: 100%;
+.profile-posts-main__content,
+.profile-posts-main__image {
+  height: 100%;
 }
 .profile-posts-main__image {
-    flex: 2;
-    display: flex;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 375px) {
+    flex: 1;
+  }
+  .profile-posts-main__image--img {
+    display: block;
     justify-content: center;
-    align-items: center;
-
-    @media screen and (max-width:375px) {
-        flex: 1;
-    }
-    .profile-posts-main__image--img {
-   display: block;
-   justify-content: center;
-   max-width: 50%;
-   width: 100%;
+    max-width: 50%;
+    width: 100%;
+  }
 }
-   
-}
-
-
 
 .profile-posts-main__content {
-  
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 
-.profile-posts-main__content-header,.profile-posts-main__content-body, .profile-posts-main__content-footer {
+  .profile-posts-main__content-header,
+  .profile-posts-main__content-body,
+  .profile-posts-main__content-footer {
     color: white;
     flex-basis: auto;
     outline: 1px solid red;
-  /*   background-color: $modal--clr; */
     padding-block-start: 5px;
     padding-inline-start: 5px;
+  }
 
+  .profile-posts-main__content-header {
+    padding-inline: 10px;
+    padding-block: 10px;
+    @media screen and (min-width: 1440px) {
+    }
+  }
+  .profile-posts-main__content-body {
+    @media screen and (min-width: 1440px) {
+    }
+  }
+  .profile-posts-main__content-footer {
+    @media screen and (min-width: 1440px) {
+      flex: 0;
+    }
+  }
 }
 
- .profile-posts-main__content-header {
- padding-inline: 10px;
- padding-block: 10px;
-   /*  h1 {} */
-     @media screen and (min-width:1440px) {
-   
-
-    }
- }   
- .profile-posts-main__content-body {
-   
-     @media screen and (min-width:1440px) {
-   
-    
-
-    
-    }
-   
-
-
- }
- .profile-posts-main__content-footer {
-    
-        @media screen and (min-width:1440px) {
-        flex: 0;}
-
- }
+.edit-post-modal,
+.delete-post-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
+.edit-postBtn,
+.delete-postBtn {
+  width: 5rem;
+  height: 3rem;
+  border: solid 1px black;
+}
 
+.modal-content-changes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
 
-.edit-post-modal, .delete-post-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .edit-postBtn, .delete-postBtn{
-    width: 5rem;
-    height: 3rem;
-    border: solid 1px black;
-  }
+.close,
+.close-delete-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-  .modal-content-changes {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .close, .close-delete-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  #post-title, #post-tags, #post-content {
-    width: 100%;
-    margin-bottom: 10px;
-    border-bottom: 1px solid gray;
-  }
-  
-  #saveChanges {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+#post-title,
+#post-tags,
+#post-content {
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
 
-  #deletePost{
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+#saveChanges {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#deletePost {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

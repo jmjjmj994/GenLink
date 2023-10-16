@@ -635,8 +635,7 @@ h1, h2 {
     .feed-main__posts {
       grid-template-columns: 25rem;
       grid-auto-rows: 65dvh;
-      justify-content: center;
-      background-color: orange; } }
+      justify-content: center; } }
   @media screen and (min-width: 1200px) {
     .feed-main__posts {
       grid-template-columns: 27rem;
@@ -777,38 +776,6 @@ h1, h2 {
   width: 50rem;
   height: 3rem; }
 
-.card-skeleton {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-
-.card-skeleton-image {
-  height: 150px;
-  background-color: #ccc;
-  margin-bottom: 10px; }
-
-.card-skeleton-content {
-  display: flex;
-  flex-direction: column; }
-
-.card-skeleton-title {
-  height: 20px;
-  width: 80%;
-  background-color: #ccc;
-  margin-bottom: 6px; }
-
-.card-skeleton-text {
-  height: 16px;
-  width: 100%;
-  background-color: #ccc;
-  margin-bottom: 6px; }
-
-/* Hide the skeleton elements initially */
-.card-skeleton.hidden {
-  display: none; }
-
 .index-main {
   display: flex;
   justify-content: center;
@@ -831,7 +798,8 @@ h1, h2 {
     .profile-posts-main {
       flex-direction: row; } }
 
-.profile-posts-main__content, .profile-posts-main__image {
+.profile-posts-main__content,
+.profile-posts-main__image {
   height: 100%; }
 
 .profile-posts-main__image {
@@ -852,22 +820,23 @@ h1, h2 {
   flex: 1;
   display: flex;
   flex-direction: column; }
-  .profile-posts-main__content .profile-posts-main__content-header, .profile-posts-main__content .profile-posts-main__content-body, .profile-posts-main__content .profile-posts-main__content-footer {
+  .profile-posts-main__content .profile-posts-main__content-header,
+  .profile-posts-main__content .profile-posts-main__content-body,
+  .profile-posts-main__content .profile-posts-main__content-footer {
     color: white;
     flex-basis: auto;
     outline: 1px solid red;
-    /*   background-color: $modal--clr; */
     padding-block-start: 5px;
     padding-inline-start: 5px; }
   .profile-posts-main__content .profile-posts-main__content-header {
     padding-inline: 10px;
-    padding-block: 10px;
-    /*  h1 {} */ }
+    padding-block: 10px; }
   @media screen and (min-width: 1440px) {
     .profile-posts-main__content .profile-posts-main__content-footer {
       flex: 0; } }
 
-.edit-post-modal, .delete-post-modal {
+.edit-post-modal,
+.delete-post-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -876,7 +845,8 @@ h1, h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); }
 
-.edit-postBtn, .delete-postBtn {
+.edit-postBtn,
+.delete-postBtn {
   width: 5rem;
   height: 3rem;
   border: solid 1px black; }
@@ -892,20 +862,23 @@ h1, h2 {
   border-radius: 5px;
   text-align: center; }
 
-.close, .close-delete-modal {
+.close,
+.close-delete-modal {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 20px;
   cursor: pointer; }
 
-#post-title, #post-tags, #post-content {
+#post-title,
+#post-tags,
+#post-content {
   width: 100%;
   margin-bottom: 10px;
   border-bottom: 1px solid gray; }
 
 #saveChanges {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -934,10 +907,7 @@ h1, h2 {
 .profile-main__wrapper {
   position: relative;
   color: white;
-  padding-block: 30px;
-  /*   @media screen and (min-width:1440px) {
-     height: 30rem;
-    } */ }
+  padding-block: 30px; }
   @media screen and (max-width: 1440px) {
     .profile-main__wrapper {
       height: auto; } }
@@ -966,8 +936,7 @@ h1, h2 {
     .profile-main__user {
       gap: 15px; } }
   .profile-main__user .profile-main__user--img {
-    border-radius: 100%;
-    /*   padding: 10px; */ }
+    border-radius: 100%; }
     @media screen and (min-width: 300px) and (max-width: 767px) {
       .profile-main__user .profile-main__user--img {
         width: 5.5rem;
@@ -1015,12 +984,18 @@ h1, h2 {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  gap: 0; }
 
 .profile-main-posts__container {
   height: 15rem;
   width: 15rem;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .profile-main-posts__container {
+      height: 10rem;
+      max-width: 10rem;
+      background-color: orange; } }
 
 .profile-main-posts__container-img {
   position: absolute;
