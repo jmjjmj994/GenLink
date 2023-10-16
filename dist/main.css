@@ -994,8 +994,7 @@ h1, h2 {
   @media screen and (max-width: 768px) {
     .profile-main-posts__container {
       height: 10rem;
-      max-width: 10rem;
-      background-color: orange; } }
+      max-width: 10rem; } }
 
 .profile-main-posts__container-img {
   position: absolute;
