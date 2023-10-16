@@ -817,9 +817,19 @@ h1, h2 {
   .profile-posts-main__content .profile-posts-main__content-footer {
     color: white;
     flex-basis: auto;
-    outline: 1px solid red;
     padding-block-start: 5px;
-    padding-inline-start: 5px; }
+    padding-inline-start: 5px;
+    width: 70%; }
+  .profile-posts-main__content #content-placement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem; }
+  .profile-posts-main__content #button-placement {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem; }
   .profile-posts-main__content .profile-posts-main__content-header {
     padding-inline: 10px;
     padding-block: 10px; }
