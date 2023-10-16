@@ -728,6 +728,11 @@ h1, h2 {
   width: 0rem;
   margin-left: 31px; }
 
+#feed-search-form {
+  height: 10rem;
+  max-height: 10rem;
+  overflow-y: hidden; }
+
 .feed-main__user-popup.show {
   width: 50rem;
   z-index: 1; }
@@ -735,7 +740,26 @@ h1, h2 {
 .search-bar-container {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  height: 5rem;
+  background-color: white;
+  padding: 1rem; }
+
+.search-bar-container:hover {
+  background-color: lightgray; }
+
+.output-container {
+  z-index: 1;
+  margin-top: 6rem;
+  position: absolute;
+  height: 3rem;
+  max-height: 30rem; }
+
+.list-output {
+  width: 30rem;
+  max-height: 20rem;
+  width: 50rem;
+  overflow-y: auto; }
 
 .search-bar-img {
   height: 3rem;

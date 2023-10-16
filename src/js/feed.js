@@ -133,10 +133,16 @@ async function userSearchInput(name, avatar) {
     const data = await response.json();
 
     const output = getSingleElements(".list-output");
-    const inputBox = getSingleElements("#search-posts");
+    const inputBox = getSingleElements("#search-users");
 
-    inputBox.addEventListener("input", () => {
-      const input = inputBox.value.trim().toLowerCase();
+    inputBox.addEventListener("input", (e) => {
+      const input = inputBox.value.trim().toLowerCase()
+      if (input === "" ){
+        output.style.display = "none";
+      }else{
+        output.style.display = "block";
+      }
+
 
       const result = data.filter((post) => {
         return post.name.toLowerCase().includes(input);
@@ -155,12 +161,13 @@ async function userSearchInput(name, avatar) {
         output.innerHTML = "No matching posts found.";
       }
     });
+
   } catch (err) {
     console.error(err);
   }
 }
 
-const userSearch = getSingleElements("#search-posts");
+const userSearch = getSingleElements("#search-users");
 userSearch.addEventListener("input", (e) => {
   const userSearchValue = userSearch.value;
   userSearchInput(userSearchValue);
