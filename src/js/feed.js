@@ -37,7 +37,7 @@ async function createHTML() {
           return `
 <div class="feed-main__posts-card">
 <div class="feed-main__posts-card__avatar">
-<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
+<a  href="./otherprofile.html?name=${authorName}"> <img src="${media}" /> 
 </a>
 <span> ${authorName}</span>
 </div>

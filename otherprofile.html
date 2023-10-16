@@ -14,57 +14,76 @@
   <body class="profile-body">
     <nav class="main-navbar">
       <ul class="main-navbar__menu">
+        <li class="main-navbar__menu-item">
+          <button
+            href="#"
+            class="btn main-navbar__menu--item--link main-msg--link"
+            id="main-navbar-btn"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </li>
+        <li class="main-navbar__menu-item">
+          <a href="./feed.html" class="main-navbar__menu-item--link"
+            ><i class="fa-solid fa-house-user"></i
+          ></a>
+        </li>
 
-          <li class="main-navbar__menu-item">
-              <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn">
-                  <i class="fa-solid fa-plus"></i>
-              </button>
-          </li>
-          <li class="main-navbar__menu-item">
-              <a href="./feed.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
-          </li>
+        <li class="main-navbar__menu-item">
+          <a href="./profile.html" class="main-navbar__menu-item--link"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </li>
 
-          <li class="main-navbar__menu-item">
-              <a href="./profile.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-user"></i></a>
-          </li>
-
-
-          <li class="main-navbar__menu-item">
-              <a href="./index.html" class="main-navbar__menu-item--link" id="main-logout-btn">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              </a>
-          </li>
+        <li class="main-navbar__menu-item">
+          <a
+            href="./index.html"
+            class="main-navbar__menu-item--link"
+            id="main-logout-btn"
+          >
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </a>
+        </li>
       </ul>
-  </nav>
+    </nav>
     <nav class="sub-navbar">
       <ul class="sub-navbar__menu">
-          <li class="sub-navbar__menu-item">
-              <a href="./feed.html" class=" sub-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
-          </li>
-          <li class="sub-navbar__menu-item">
-              <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-          <li class="sub-navbar__menu-item">
-              <a class=" sub-navbar__menu--item--link sub-msg--link" id="sub-navbar-btn">
-                  <i class="fa-solid fa-plus"></i>
-              </a>
-          </li>
-          <li class="sub-navbar__menu-item">
-              <a class="sub-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
-          </li>
-          <li class="sub-navbar__menu-item">
-              <a href="./profile.html" class="sub-navbar__menu-item--link"><i class="fa-regular fa-user"></i></a>
-          </li>
+        <li class="sub-navbar__menu-item">
+          <a href="./feed.html" class="sub-navbar__menu-item--link"
+            ><i class="fa-solid fa-house-user"></i
+          ></a>
+        </li>
+        <li class="sub-navbar__menu-item">
+          <a class="sub-navbar__menu-item--link"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
+        <li class="sub-navbar__menu-item">
+          <a
+            class="sub-navbar__menu--item--link sub-msg--link"
+            id="sub-navbar-btn"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </a>
+        </li>
+        <li class="sub-navbar__menu-item">
+          <a class="sub-navbar__menu-item--link"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+        <li class="sub-navbar__menu-item">
+          <a href="./profile.html" class="sub-navbar__menu-item--link"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </li>
       </ul>
-  </nav>
+    </nav>
 
     <main class="profile-main">
       <section class="profile-main__wrapper">
         <section class="profile-main__user">
           <img class="profile-main__user--img" alt="profil pic" />
           <h1 class="profile-main__user--name">Username</h1>
-          <!--                 <h2 class="profile-main__user--tagname">@JohnDoe</h2>
- -->
         </section>
 
         <section class="profile-main__stats">
@@ -118,7 +137,7 @@
       </section>
     </main>
 
-    <script defer src="./js/otherProfile.js"></script>
-    <script defer src="./js/Followothers.js"></script>
+    <script defer src="src/js/otherProfile.js"></script>
+    
   </body>
 </html>

@@ -19,7 +19,7 @@ async function createPost(title, body, tags, media) {
       },
     });
     const data = await res.json();
-    console.log(data);
+    
   } catch (error) {}
 }
 
@@ -43,7 +43,7 @@ function handleNavbarClick() {
   function hideModals() {
     modalFormWrapper.addEventListener("click", (e) => {
       if (e.currentTarget === modalForm || modalForm.contains(e.target)) {
-        console.log("ok"); //error
+        
       } else if (
         e.currentTarget !== modalForm ||
         !modalForm.contains(e.target)
@@ -97,7 +97,7 @@ function handleInput() {
 
 
 (() => {
-  /*   logOut() */
+ 
   handleNavbarClick();
   handleInput();
 })();

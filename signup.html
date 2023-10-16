@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
-<script src="/src/js/user-authentication.js" type="module"></script>
+    <script src="/src/js/user-authentication.js" type="module"></script>
     <title>Create account</title>
   </head>
-
   <body class="index-body">
     <main class="index-main">
       <form id="signup-form" class="index-main__form">
         <input
-        placeholder="Full name"
-        class="full-name form-input"
-        id="full-name"
-        name="full-name"
-        type="text"
-      />
-        <!--             <label for="current-email"></label>
- -->
+          placeholder="Full name"
+          class="full-name form-input"
+          id="full-name"
+          name="full-name"
+          type="text"
+        />
+
         <input
           placeholder="@stud.noroff.no"
           class="new-email form-input"
@@ -27,9 +25,6 @@
           name="new-email"
           type="text"
         />
-
-        <!--             <label for="current-password"></label>
- -->
         <input
           placeholder="New Password"
           class="new-password form-input"
@@ -41,18 +36,29 @@
         <button class="btn signup-btn success danger">Sign up</button>
 
         <div class="alert-container"></div>
-       
+
         <div class="terms-container">
           <div class="privacy-container">
-            <input type="checkbox" name="agreed-privacy" id="agreed-privacy">
-            <label id="privacy-text" for="agreed-privacy">* I agree to the terms and privacy policy </label>
+            <input type="checkbox" name="agreed-privacy" id="agreed-privacy" />
+            <label id="privacy-text" for="agreed-privacy"
+              >* I agree to the terms and privacy policy
+            </label>
           </div>
           <div class="news-letter">
-            <input type="checkbox" name="agreed-to-newsletter" id="agreed-to-newsletter">
-            <label id="newsletter-text" for="agreed-to-newsletter">I agree to receive periodic product updates, offers and promotions </label>
+            <input
+              type="checkbox"
+              name="agreed-to-newsletter"
+              id="agreed-to-newsletter"
+            />
+            <label id="newsletter-text" for="agreed-to-newsletter"
+              >I agree to receive periodic product updates, offers and
+              promotions
+            </label>
           </div>
         </div>
-        <p id="existing-text">Already have an account? <a href="./index.html">Log in</a></p>
+        <p id="existing-text">
+          Already have an account? <a href="./index.html">Log in</a>
+        </p>
       </form>
     </main>
 
