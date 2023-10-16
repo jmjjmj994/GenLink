@@ -49,8 +49,7 @@ height: 100%;
   /*   background-color: $modal--clr; */
     padding-block-start: 5px;
     padding-inline-start: 5px;
-/*     @media screen and (min-width:1440px) {
-        flex: 0;} */
+
 }
 
  .profile-posts-main__content-header {
@@ -71,19 +70,18 @@ height: 100%;
     
     }
    
-       
-/*  p {} */
+
 
  }
  .profile-posts-main__content-footer {
     
         @media screen and (min-width:1440px) {
         flex: 0;}
-/*     p{} */
+
  }
 }
 
-//edit post 
+
 
 .edit-post-modal, .delete-post-modal {
     display: none;

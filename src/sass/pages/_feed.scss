@@ -111,12 +111,14 @@ background-color: $primary--bg;
     grid-template-columns: 25rem;
     grid-auto-rows: 65dvh;
     justify-content: center;
+     background-color: orange;
   }
   
-    @media screen and (min-width: 1440px )  {
+    @media screen and (min-width: 1200px )  {
     grid-template-columns: 27rem;
     grid-auto-rows: 70dvh;
     justify-content: center;
+   
   }
 }
 .feed-main__posts-card {
