@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');@import "./sass/base/reset";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import "./sass/base/reset";
 @import "./sass/base/typography";
 @import "./sass/components/buttons";
 @import "./sass/utils/mixins";
@@ -14,37 +15,35 @@
 @import "./sass/pages/profile";
 @import "./sass/utils/placeholders";
 @import "./sass/components/error";
+@import "./sass/components/spinner";
 
-
- html, body {
+html,
+body {
   height: 100%;
-
 }
-
 
 body {
-font-family: 'Poppins', sans-serif;
-background-color: $primary--bg;
-
+  font-family: "Poppins", sans-serif;
+  background-color: $primary--bg;
 }
 
-.error-body {display: flex;}
-.error-main{flex: 1;
-display: grid;
-grid-template-columns: minmax(10rem, 30rem);
-grid-auto-rows: auto;
-place-content: center;
+.error-body {
+  display: flex;
+}
+.error-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(10rem, 30rem);
+  grid-auto-rows: auto;
+  place-content: center;
 
   .error-main__image {
-background-color: blue;
-background-color: orange;
+    background-color: blue;
+    background-color: orange;
 
-img {
-  display: block;
-  max-width: 100%;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
 }
-  }
-
-
-
-  }

@@ -1,4 +1,5 @@
 import { getSingleElements } from "./dom.js";
+import { GET, PUT_BODY } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const userData = JSON.parse(localStorage.getItem("user"));
 const config = {
@@ -16,7 +17,7 @@ const config = {
 const inputElements = {
   newImageForm: getSingleElements(".change-user-img__form"),
   newImageInput: getSingleElements("#change-user-img__form--input-avatar"),
-  submitNewImage: getSingleElements(".btn-change-img"),
+  submitNewImage: getSingleElements(".btn-change-img"),     
 };
 
 function getCurrentUsername() {
@@ -42,23 +43,13 @@ function renderProfile() {
   }
 }
 
-async function changeUserImage(imgUrl, username) {
+async function changeUserImage(username, imgUrl) {
   try {
-    const res = await fetch(
-      config.BASE_URL + `social/profiles/${username}/media`,
-      {
-        method: "PUT",
-        body: JSON.stringify({
-          avatar: imgUrl,
-        }),
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          "content-type": "application/json; charset=UTF-8",
-        },
-      }
-    );
-    const data = await res.json();
-    userData.avatar = data.avatar;
+    const res = await PUT_BODY(`social/profiles/${username}/media`, {
+      avatar: imgUrl,
+    });
+
+    userData.avatar = res.avatar;
     localStorage.setItem("user", JSON.stringify(userData));
   } catch (error) {}
 }
@@ -77,7 +68,7 @@ async function changeUserProfileImage() {
       console.log("please enter a valid image url");
     } else {
       try {
-        await changeUserImage(imageInputValue, username);
+        await changeUserImage(username, imageInputValue);
         inputElements.newImageInput.value = "";
         window.location.reload();
       } catch (error) {}
@@ -88,26 +79,15 @@ async function changeUserProfileImage() {
 async function profilePosts() {
   const username = getCurrentUsername();
   try {
-    const res = await fetch(BASE_URL + `social/profiles/${username}/posts`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
-      },
-    });
-
-    if (res.status !== 200) {
-      throw new Error(res.status, "failed");
-    } else {
-      const data = await res.json();
-      processData(data);
-    }
+    const res = await GET(`social/profiles/${username}/posts`);
+    processData(res);
   } catch (error) {
     console.log(error);
   }
 }
 
 function processData(data) {
+  console.log(data);
   const filterByMedia = data.filter(({ media }) => {
     if (media) return data;
   });

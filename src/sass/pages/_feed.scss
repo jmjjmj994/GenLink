@@ -268,3 +268,44 @@ gap: 10px;}
   border-radius: 25px;
 }
 
+
+//////////////
+/// 
+/// /* Skeleton styles */
+.card-skeleton {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-skeleton-image {
+  height: 150px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.card-skeleton-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-skeleton-title {
+  height: 20px;
+  width: 80%;
+  background-color: #ccc;
+  margin-bottom: 6px;
+}
+
+.card-skeleton-text {
+  height: 16px;
+  width: 100%;
+  background-color: #ccc;
+  margin-bottom: 6px;
+}
+
+/* Hide the skeleton elements initially */
+.card-skeleton.hidden {
+  display: none;
+}

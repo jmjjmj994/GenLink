@@ -31,13 +31,12 @@ async function createHTML() {
         const authorName = author.name;
         const reactions = _count.reactions;
 
-        let authorAvatar = author.avatar;
 
         if (media) {
           return `
 <div class="feed-main__posts-card">
 <div class="feed-main__posts-card__avatar">
-<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
+<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" alt="profile avatar"/> 
 </a>
 <span> ${authorName}</span>
 </div>
@@ -90,8 +89,6 @@ async function createHTML() {
         button.disabled = true;
         localStorage.setItem(`btn-disabled-${cardId}`, "true");
       }
-    } else {
-      console.log("not found");
     }
   });
 }

@@ -66,7 +66,6 @@ class Login {
   }
 
   async userLogin(email, password) {
-    console.log(email, password);
     try {
       const res = await fetch(BASE_URL + LOGIN_URL, {
         method: "POST",

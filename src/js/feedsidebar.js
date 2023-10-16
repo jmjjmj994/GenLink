@@ -1,36 +1,25 @@
 import { getMultipleElements, getSingleElements } from "./dom.js";
+import { GET } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
-const sidebarContainer = getSingleElements(".feed-sidebar-users__container");
+
+const config = {
+  sidebarContainer: getSingleElements(".feed-sidebar-users__container"),
+  sidebarImage: getMultipleElements(
+    ".feed-sidebar-users__container-wrapper img"
+  ),
+};
 
 async function getProfiles() {
   try {
-    const res = await fetch(BASE_URL + `social/profiles`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "content-type": "application/json; charset=UTF-8",
-      },
-    });
-
-    if (res.status === 404) {
-      throw new Error(res.status);
-    } else {
-      const data = await res.json();
-      createSidebarSuggestions(data);
-    }
-  } catch (error) {
-    console.log("response error");
-  }
+    const res = await GET(`social/profiles`);
+    createSidebarSuggestions(res);
+  } catch (error) {}
 }
 
 getProfiles();
 
 async function createSidebarSuggestions(data) {
   const sidebarData = await data;
-
-  const sidebarImg = getMultipleElements(
-    ".feed-sidebar-users__container-wrapper img"
-  );
 
   const filterData = sidebarData.filter((data) => {
     if (data.avatar && data.name) {
@@ -49,17 +38,15 @@ async function createSidebarSuggestions(data) {
     nameElement.className = "closest";
     const span = document.createElement("span");
     span.className = "sidebar-circle";
-
     container.appendChild(image);
     container.appendChild(nameElement);
     container.appendChild(span);
-    sidebarContainer.appendChild(container);
-    const closest = sidebarContainer.querySelector(".closest");
+    config.sidebarContainer.appendChild(container);
+    const closest = config.sidebarContainer.querySelector(".closest");
   }
 
   async function createSidebarUsers() {
     const feedSidebarUsersAllUsers = document.createElement("div");
-
     await data.forEach((user) => {
       const { avatar, name } = user;
       feedSidebarUsersAllUsers.className = "feed-sidebar-users__allUsers";
@@ -78,7 +65,7 @@ async function createSidebarSuggestions(data) {
       }
       feedSidebarUsersAllUsersWrapper.append(allUsernames);
       feedSidebarUsersAllUsers.append(feedSidebarUsersAllUsersWrapper);
-      sidebarContainer.append(feedSidebarUsersAllUsers);
+      config.sidebarContainer.append(feedSidebarUsersAllUsers);
     });
   }
   createSidebarUsers();

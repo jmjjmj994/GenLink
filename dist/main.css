@@ -720,6 +720,38 @@ h1, h2 {
   width: 3rem;
   border-radius: 25px; }
 
+.card-skeleton {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+.card-skeleton-image {
+  height: 150px;
+  background-color: #ccc;
+  margin-bottom: 10px; }
+
+.card-skeleton-content {
+  display: flex;
+  flex-direction: column; }
+
+.card-skeleton-title {
+  height: 20px;
+  width: 80%;
+  background-color: #ccc;
+  margin-bottom: 6px; }
+
+.card-skeleton-text {
+  height: 16px;
+  width: 100%;
+  background-color: #ccc;
+  margin-bottom: 6px; }
+
+/* Hide the skeleton elements initially */
+.card-skeleton.hidden {
+  display: none; }
+
 .index-main {
   display: flex;
   justify-content: center;
@@ -964,11 +996,36 @@ grid-auto-rows: 15rem  */
 .index-main__form .login-btn.danger {
   background-color: red; }
 
-html, body {
+.spinner {
+  width: 7rem;
+  height: 7rem;
+  background: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.spinner:before {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border-left: 1px solid green;
+  animation: spin 1s infinite; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+html,
+body {
   height: 100%; }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #afafaf; }
 
 .error-body {
