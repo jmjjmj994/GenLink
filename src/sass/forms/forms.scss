@@ -140,7 +140,7 @@ padding: 10px;
 }
 
 
-#feed-search-form {
+#feed-search-form, #tag-search-form {
 @media screen and (max-width:1035px) {
   display: none;
 }
@@ -155,10 +155,11 @@ align-items: center;
 
 
 
-.feed-search-form__container {
+.feed-search-form__container, .tag-search-container {
    position: relative;
    width: 50rem;
    background-color: red;
+   border-bottom: 1px solid black;
   
    input[type="search"] {
   padding: 10px;

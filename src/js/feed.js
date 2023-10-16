@@ -6,6 +6,7 @@ const container = getSingleElements(".feed-main__posts");
 
 const allPosts = await GET("social/posts?_author=true");
 
+
 async function createHTML() {
  
   try {
@@ -62,8 +63,7 @@ async function createHTML() {
 <p> ${tags}</p>
 </div>
 </div>
-    </div> 
-    `;
+    </div> `;
         }
       })
       .join("");
@@ -103,6 +103,114 @@ async function createHTML() {
   });
 }
 createHTML();
+
+//create filterdHTML
+
+
+const tagSearch = getSingleElements("#filter-tags");
+tagSearch.addEventListener("input", (e) => {
+  const searchTag = tagSearch.value.trim().toLowerCase();
+  createFilterHTML(searchTag);
+});
+
+async function createFilterHTML(filterTag) {
+  try {
+    // Filter posts based on whether they contain the filterTag
+    const filteredPosts = allPosts.filter((post) => {
+      return post.tags.some((tag) => tag.toLowerCase().includes(filterTag));
+    });
+
+    container.innerHTML = "";
+
+    filteredPosts.forEach((post) => {
+      const {
+        id,
+        title,
+        body,
+        tags,
+        media,
+        created,
+        updated,
+        author,
+        _count,
+      } = post;
+      const authorName = author.name;
+      const reactions = _count.reactions;
+
+      let authorAvatar = author.avatar;
+
+      if (media) {
+        const postHTML =  `
+        <div class="feed-main__posts-card">
+        <div class="feed-main__posts-card__avatar">
+        <a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
+        </a>
+        <span> ${authorName}</span>
+        </div>
+        <div class="feed-main__posts-card__header">
+        <img  class="feed-main__posts-card--header--img" src="${media}" />
+        </div>
+        <div class="feed-main__posts-card__body">
+        <div class="feed-main__posts-card__body-content">
+        <p class="feed-main__posts-card--body-content--title" >${title} </p>
+        <p class="feed-main__posts-card--body-content--text"> ${body}</p>
+        
+        </div>
+        <div class="feed-main__posts-card--body-reactions">
+        <button class="btn btn-react" post-id="${id}">👍</button><span class="reactions">${reactions} </span>
+        <button class="btn btn-comment"><i class="fa-regular fa-comment"></i> </button> 
+        </div>
+        </div>
+        <div class="feed-main__posts-card__footer">
+        <div class="feed-main__posts-card-footer-links">
+        <a class="feed-main__posts-card-footer-links--href" href="post-specific-page.html?id=${id}">View Post</a>
+        </div>
+        <div class="feed-main__posts-card-footer-tags">
+        <p> ${tags}</p>
+        </div>
+        </div>
+            </div> `;
+        container.innerHTML += postHTML;
+      }
+    });
+
+    const buttons = document.querySelectorAll(".btn-react");
+    buttons.forEach((button) => {
+      const cardId = button.getAttribute("post-id");
+      const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
+      if (isDisabled === "true") {
+        button.disabled = true;
+      }
+    });
+  } catch (error) {
+    console.error(error);
+  }
+
+  container.addEventListener("click", async (e) => {
+    if (e.target.classList.contains("btn-react")) {
+      const cardId = e.target.getAttribute("post-id");
+      const button = e.target;
+      if (!button.disabled) {
+        const updatedLikeCount = await likePost(
+          `social/posts/${parseInt(cardId)}/react/👍`
+        );
+
+        if (updatedLikeCount !== undefined) {
+          const cardButton = button.closest(".feed-main__posts-card");
+          const reactionCount = cardButton.querySelector(".reactions");
+          if (reactionCount) {
+            reactionCount.textContent = updatedLikeCount;
+          }
+        }
+
+        button.disabled = true;
+        localStorage.setItem(`btn-disabled-${cardId}`, "true");
+      }
+    } else {
+      console.log("not found");
+    }
+  });
+}
 
 //check state of btn
 
