@@ -284,3 +284,13 @@
   width: 50rem;
   height: 3rem;
 }
+
+
+
+.post-details-container{   
+  display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  flex-direction: column;   
+  max-width: 80%;   
+  img{     width: 50%;   } }

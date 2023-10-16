@@ -59,7 +59,7 @@ async function fetchPostData(id) {
 function buildPostHTML(data) {
   return `
     <div class="post-details-container">
-      <img src="${data.media}">
+      <img  src="${data.media}">
       <h1>${data.title}</h1>
       <h2>${data.body}</h2>
       <div class="post-reations">
