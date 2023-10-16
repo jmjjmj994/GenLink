@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+    <script src="https://kit.fontawesome.com/868d223859.js" crossorigin="anonymous"></script>
+    <script src="/src/js/userprofile.js" type="module"></script>
+    <script src="/src/js/modal-popup.js" type="module"></script>
+    <script src="/src/js/profileposts.js" type="module"></script>
+
+    <title>Profile</title>
+</head>
+
+<body class="profile-body">
+    <nav class="main-navbar">
+        <ul class="main-navbar__menu">
+
+            <li class="main-navbar__menu-item">
+                <button href="#" class="btn main-navbar__menu--item--link main-msg--link" id="main-navbar-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </li>
+            <li class="main-navbar__menu-item">
+                <a href="./feed.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
+            </li>
+
+            <li class="main-navbar__menu-item">
+                <a href="./profile.html" class="main-navbar__menu-item--link"><i class="fa-solid fa-user"></i></a>
+            </li>
+
+
+            <li class="main-navbar__menu-item">
+                <a href="./index.html" class="main-navbar__menu-item--link" id="main-logout-btn">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-navbar">
+        <ul class="sub-navbar__menu">
+            <li class="sub-navbar__menu-item">
+                <a href="./feed.html" class=" sub-navbar__menu-item--link"><i class="fa-solid fa-house-user"></i></a>
+            </li>
+            <li class="sub-navbar__menu-item">
+                <a class=" sub-navbar__menu-item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li class="sub-navbar__menu-item">
+                <a class=" sub-navbar__menu--item--link sub-msg--link" id="sub-navbar-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </a>
+            </li>
+            <li class="sub-navbar__menu-item">
+                <a class="sub-navbar__menu-item--link"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li class="sub-navbar__menu-item">
+                <a href="./profile.html" class="sub-navbar__menu-item--link"><i class="fa-regular fa-user"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <main class="profile-main">
+        <section class="profile-main__wrapper">
+            <form id="change-banner">
+                <input type="text" id="change-banner--input" placeholder="Change your banner">
+                <button class="btn-banner-submit ">Submit</button>
+            </form>
+
+            <img class="profile-main__wrapper--banner" alt="">
+            <section class="profile-main__user">
+                <img class="profile-main__user--img" alt="profile-image">
+                <h1 class="profile-main__user--name"></h1>
+
+            </section>
+
+
+
+            <section class="profile-main__stats">
+                <div class="profile-main__stats-wrapper">
+                    <div class="profile-main-stats-stat">
+                        <p data-follow-stat class="subheading"></p>
+                        <span class="count follow-count" class="subheading">Following</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-followers-stat class="subheading"></p>
+                        <span class="count followers-count" class="subheading">Followers</span>
+                    </div>
+                    <div class="profile-main-stats-stat">
+                        <p data-posts-stat class="subheading"></p>
+                        <span class="count posts-count" class="subheading">Posts</span>
+                    </div>
+                </div>
+                <section class="profile-main__buttons">
+                    <button class="btn btn-edit btn-standard" class="subheading">Edit</button>
+                    <button class="btn btn-view btn-standard" class="subheading">View profile</button>
+                </section>
+            </section>
+        </section>
+
+
+
+
+
+        <section class="profile-main-posts">
+
+        </section>
+
+        <!--Modals-->
+        <section class="create-post-wrapper hidden">
+            <button class="btn btn-close__wrapper "><i class="fa-solid fa-xmark"></i></button>
+            <form class="create-post__form">
+                <label for="create-post__title" class="label-hidden">Title*</label>
+                <input type="text" id="create-post__title" placeholder="Title*">
+                <label for="create-post__image" class="label-hidden">Image*</label>
+                <input type="text" id="create-post__image" placeholder="Image*">
+                <label for="create-post__tags" class="label-hidden">Post tags</label>
+                <input type="text" id="create-post__tags" placeholder="Post tags">
+                <label for="create-post__content" class="label-hidden">Content</label>
+                <textarea name="create-post__content" id="create-post__content" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn btn-create__post btn-standard">
+                    Submit
+                </button>
+            </form>
+        </section>
+
+
+
+        <!-- 
+        <section class="show-user-wrapper hidden">
+                <button class="btn btn-close__wrapper btn-standard">X</button>
+            <div class="show-user-information">
+                <img class="show-user-information__image" alt="">
+                <p class="show-user-information__username"></p>
+                <p class="show-user-information__useremail"></p>
+                <p class="show-user-information__avatar"></p>
+            </div>
+        </section> -->
+
+
+
+
+        <section class="change-user-img-wrapper hidden">
+            <button class="btn btn-close__wrapper "><i class="fa-solid fa-xmark"></i></button>
+            <form id="change-user-img__form">
+
+                <label for="change-user-img__form--input-avatar">Change your avatar</label>
+                <input type="text" id="change-user-img__form--input-avatar"
+                    placeholder="https://www.example.com/images/pic.jpg">
+
+
+                <div class="change-user-img__form-current-img">
+                    <img class="change-user-img__form-current-img--image" alt="">
+                </div>
+                <button class="btn btn-change-img btn-standard">Submit</button>
+                </div>
+            </form>
+        </section>
+
+
+        <!--      <section class="profile-posts-modal">
+     
+            
+         <section class="profile-posts-modal__options">
+  
+        
+          
+         </section>
+      
+        </section> -->
+        <!--Modals-->
+
+    </main>
+
+</body>
+
+</html>
