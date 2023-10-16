@@ -1,5 +1,5 @@
 import { getSingleElements } from "./dom.js";
-import { GET, PUT_BODY } from "./api/api.js";
+import { GET, changeAvatar } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const userData = JSON.parse(localStorage.getItem("user"));
 const config = {
@@ -17,7 +17,7 @@ const config = {
 const inputElements = {
   newImageForm: getSingleElements(".change-user-img__form"),
   newImageInput: getSingleElements("#change-user-img__form--input-avatar"),
-  submitNewImage: getSingleElements(".btn-change-img"),     
+  submitNewImage: getSingleElements(".btn-change-img"),
 };
 
 function getCurrentUsername() {
@@ -45,7 +45,7 @@ function renderProfile() {
 
 async function changeUserImage(username, imgUrl) {
   try {
-    const res = await PUT_BODY(`social/profiles/${username}/media`, {
+    const res = await changeAvatar(`social/profiles/${username}/media`, {
       avatar: imgUrl,
     });
 
@@ -109,7 +109,6 @@ function renderProfilePosts(data) {
     config.postsContainer.appendChild(container);
   }
 }
-
 
 async function createPost(title, body, tags, media) {
   console.log(title, body, tags, media);

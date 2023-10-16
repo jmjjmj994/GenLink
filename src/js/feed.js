@@ -1,12 +1,10 @@
-import { getSingleElements } from "./dom.js";
-import { GET, PUT_BODY, PUT_NO_BODY } from "./api/api.js";
+import { getSingleElements, getMultipleElements } from "./dom.js";
+import { GET, likePost } from "./api/api.js";
 const BASE_URL = `https://api.noroff.dev/api/v1/`;
 const POST_PARAM = `social/posts`;
 const container = getSingleElements(".feed-main__posts");
 
 const allPosts = await GET("social/posts?_author=true");
-const likePosts = await PUT_NO_BODY;
-
 
 async function createHTML() {
   try {
@@ -31,12 +29,13 @@ async function createHTML() {
         const authorName = author.name;
         const reactions = _count.reactions;
 
+        let authorAvatar = author.avatar;
 
         if (media) {
           return `
 <div class="feed-main__posts-card">
 <div class="feed-main__posts-card__avatar">
-<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" alt="profile avatar"/> 
+<a  href="otherprofile.html?name=${authorName}"> <img src="${media}" /> 
 </a>
 <span> ${authorName}</span>
 </div>
@@ -67,49 +66,58 @@ async function createHTML() {
         }
       })
       .join("");
-        const buttons = document.querySelectorAll(".btn-react");
-        buttons.forEach((button) => {
-          const cardId = button.getAttribute("post-id");
-          const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
-          if (isDisabled === "true") {
-            button.disabled = true;
-          }
-
-        })
-  } catch (error) { }
+    const buttons = document.querySelectorAll(".btn-react");
+    buttons.forEach((button) => {
+      const cardId = button.getAttribute("post-id");
+      const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
+      if (isDisabled === "true") {
+        button.disabled = true;
+      }
+    });
+  } catch (error) {}
 
   container.addEventListener("click", async (e) => {
     if (e.target.classList.contains("btn-react")) {
       const cardId = e.target.getAttribute("post-id");
       const button = e.target;
       if (!button.disabled) {
-        console.log(parseInt(cardId));
-        likePosts(`social/posts/${parseInt(cardId)}/react/👍`);
-        console.log(button);
+        const updatedLikeCount = await likePost(
+          `social/posts/${parseInt(cardId)}/react/👍`
+        );
+
+        if (updatedLikeCount !== undefined) {
+          const cardButton = button.closest(".feed-main__posts-card");
+          const reactionCount = cardButton.querySelector(".reactions");
+          if (reactionCount) {
+            reactionCount.textContent = updatedLikeCount;
+          }
+        }
+
         button.disabled = true;
         localStorage.setItem(`btn-disabled-${cardId}`, "true");
       }
+    } else {
+      console.log("not found");
     }
   });
 }
-createHTML()
+createHTML();
 
 //check state of btn
 
 //
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".btn-react");
-    buttons.forEach((button) => {
-      const cardId = button.getAttribute("post-id");
-      const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".btn-react");
+  buttons.forEach((button) => {
+    const cardId = button.getAttribute("post-id");
+    const isDisabled = localStorage.getItem(`btn-disabled-${cardId}`);
 
-      if (isDisabled === "true") {
-        button.disabled = true;
-      }
-    });
+    if (isDisabled === "true") {
+      button.disabled = true;
+    }
   });
-
+});
 
 //filter Search bar
 async function userSearchInput(name, avatar) {
@@ -122,7 +130,6 @@ async function userSearchInput(name, avatar) {
       },
     });
     const data = await response.json();
-    
 
     const output = getSingleElements(".list-output");
     const inputBox = getSingleElements("#search-posts");
@@ -132,24 +139,20 @@ async function userSearchInput(name, avatar) {
 
       const result = data.filter((post) => {
         return post.name.toLowerCase().includes(input);
-        
       });
 
       if (result.length > 0) {
         const list = result.map((post) => {
-          if (post.avatar){
+          if (post.avatar) {
             return `<li class="list-item"><div class="search-bar-container"><a href="otherprofile.html?name=${post.name}"><img class="search-bar-img" src ="${post.avatar}">${post.name}</a></div></li>`;
           } else {
-           return `<li class="list-item"><div class="search-bar-container"><a href="otherprofile.html?name=${post.name}"><img class="search-bar-img" src ="../blank.webp">${post.name}</a></div></li>`;
-
+            return `<li class="list-item"><div class="search-bar-container"><a href="otherprofile.html?name=${post.name}"><img class="search-bar-img" src ="../blank.webp">${post.name}</a></div></li>`;
           }
         });
         output.innerHTML = `<ul class="list-item">${list.join("")}</ul>`;
       } else {
         output.innerHTML = "No matching posts found.";
       }
-
-      
     });
   } catch (err) {
     console.error(err);
@@ -161,4 +164,3 @@ userSearch.addEventListener("input", (e) => {
   const userSearchValue = userSearch.value;
   userSearchInput(userSearchValue);
 });
-

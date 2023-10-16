@@ -17,7 +17,7 @@ export async function GET(param) {
   } catch (error) {}
 }
 
-export async function PUT_NO_BODY(param) {
+export async function likePost(param) {
   console.log(param);
 
   try {
@@ -27,9 +27,37 @@ export async function PUT_NO_BODY(param) {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     });
-    const data = await res.json();
-    console.log(data);
+  const data = await res.json();
+return data.count
   } catch (error) {}
+}
+
+
+
+
+
+
+
+export async function changeAvatar(param, bodyData) {
+    try {
+      const res = await fetch("https://api.noroff.dev/api/v1/" + param, {
+        method: "PUT",
+        body: JSON.stringify(bodyData),
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      });
+
+      if (res.status === 200) {
+        const data = await res.json();
+        return data;
+      } else {
+        throw new Error("Request failed " + res.status);
+      }
+    } catch (error) {
+      throw error; 
+    }
 }
 
 export async function PUT_BODY(param, bodyData) {
@@ -47,9 +75,9 @@ export async function PUT_BODY(param, bodyData) {
       const data = await res.json();
       return data;
     } else {
-      throw new Error("PUT request failed with status: " + res.status);
+      throw new Error("Request failed: " + res.status);
     }
   } catch (error) {
-    throw error; // Re-throw the error to propagate it
+    throw error; 
   }
 }
