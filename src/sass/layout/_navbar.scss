@@ -54,6 +54,8 @@ color: white;
   display: flex;
  background-color: $secondary--clr;
   color: white;
+  position:fixed;
+  bottom:0;
   @media screen and (min-width: 748px) {
     display: none;
   }
